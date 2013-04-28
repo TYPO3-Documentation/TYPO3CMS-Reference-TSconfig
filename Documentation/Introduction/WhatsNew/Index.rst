@@ -19,6 +19,9 @@ background colors for page tree branches. Additionally the options
 pageTree.showPathAboveMounts and
 pageTree.doktypesToShowInNewPageDragArea have been appended.
 
+The property mod.SHARED.colPos_list has been removed. Use Backend
+Layouts instead (see example here :ref:`example_for_backend_layout`).
+
 The description of some properties has been added or updated.
 
 .. figure:: ../../Images/manual_html_m3858f798.png

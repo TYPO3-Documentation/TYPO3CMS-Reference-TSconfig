@@ -408,6 +408,60 @@ Shared options for modules (mod.SHARED)
 
             mod.SHARED.colPos_list = 0,3
 
+         **Note:**
+
+         Since TYPO3 6.0 mod.SHARED.colPos_list is no longer working.
+         Instead, use backend layouts.
+
+         .. _example_for_backend_layout:
+
+         **Example for a Backend Layout**
+
+         * Create a record of type "Backend Layout"
+           (e.g. in the root page of your website).
+
+         * Add a title (e.g. My Layout).
+
+         * Add in field "Config" the following configuration:
+
+            .. HINT::
+               You can use the wizard next to the configuration field as a help.
+
+           ::
+
+             backend_layout {
+                 colCount = 2
+                 rowCount = 1
+                 rows {
+                     1 {
+                         columns {
+                             1 {
+                                 name = Left
+                                 colPos = 1
+                             }
+                             2 {
+                                 name = Content
+                                 colPos = 0
+                             }
+                         }
+                     }
+                 }
+             }
+
+         * Click on the root page of your website.
+
+         * Click Page Properties > Appearance.
+
+         * Select the new Backend Layout for this page and for the subpages.
+           This way the new Backend Layout will be preselected for all subpages
+           (also for new ones).
+
+         * Now the columns with colPos=1 and colPos=0 are displayed, labeled
+           with "Left" and "Content".
+
+         .. figure:: ../../Images/simpleBackendLayout.png
+            :alt: A simple Backend Layout
+
    Default
          1,0,2,3
 
