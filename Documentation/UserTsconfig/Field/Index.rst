@@ -16,6 +16,91 @@ records:
 .. figure:: ../../Images/manual_html_m2a166eee.png
    :alt: The TSconfig inside the backend user or backend group properties
 
+
+.. _useroverwritingandmodifyingvalues:
+
+Overwriting and modifying values
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Properties, which are set in the TSconfig field of a group, are valid
+for all users of that group.
+
+Values, which are set in one group, can be overwritten and
+:ref:`modified <t3tssyntax:syntax-value-modification>` in the same or
+another group. If a user is member of multiple groups, the TSconfig
+settings are evaluated in *the* order, in which the groups are included
+in the user account: When you are editing the backend user, the
+selected groups are evaluated from top to bottom.
+
+**Example:**
+
+* Add in User TSconfig::
+
+   page.RTE.default.showButtons = bold
+
+* You get the value "bold".
+
+* Add later in User TSconfig::
+
+   page.RTE.default.showButtons := addToList(italic)
+
+* You get the value "bold,italic".
+
+Finally you can overwrite or :ref:`modify
+<t3tssyntax:syntax-value-modification>` settings from groups, of which your
+user is a member, in the User TSconfig field of that user himself.
+
+**Example:**
+
+Let's say the user is a member of a *usergroup* with this
+configuration::
+
+   TCAdefaults.tt_content {
+     hidden = 1
+     header = Hello!
+   }
+
+Then we set the following values in the TSconfig field of the *user*
+himself::
+
+   TCAdefaults.tt_content.header = 234
+   options.clearCache.all = 1
+
+This would override the default value of the header ("234") and add the
+clear cache option. The default value of the hidden field is not
+changed and simply inherited directly from the group.
+
+
+.. _userrelationshiptovaluessetinpagetsconfig:
+
+Relationship to values set in Page TSconfig
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+All properties from Page TSconfig can be **overwritten** in User
+TSconfig (by prepending the property name with "page."). When a Page
+TSconfig property is set in **User** TSconfig that way (no matter, if
+in the TSconfig field of a group or a user), it **overwrites** the
+value of the according **Page** TSconfig property.
+
+.. IMPORTANT::
+   It is **not** possible to *reference* the value of a property from Page
+   TSconfig and to *modify* this value in User TSconfig!
+   If you set a property in User TSconfig, which already had been set in
+   *Page* TSconfig, then the value from Page TSconfig will be overwritten.
+
+**Example:**
+
+* Add in **Page TSconfig**::
+
+   RTE.default.showButtons = bold
+
+* Add in User TSconfig::
+
+   page.RTE.default.showButtons := addToList(italic)
+
+* Finally you do *not* get the value "bold,italic", but the value "italic".
+
+
 .. _userverifyingthefinalconfiguration:
 
 Verifying the final configuration
@@ -29,26 +114,6 @@ TSconfig tree among other information. Here is an example:
 .. figure:: ../../Images/manual_html_464ee54.png
    :alt: Comparing backend user or backend group settings with the User Admin module
 
-.. _useroverridingpreviouslysetoptions:
-
-Overriding previously set options
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Now, lets say the user is a member of a *usergroup* with this
-configuration::
-
-   TCAdefaults.tt_content {
-     hidden = 1
-     header = Hello!
-   }
-
-Then setting these values in the TSconfig field of the user himself,
-would override the default value of the header (marked red) and add
-the clear cache option (marked blue). The default value of the hidden
-field is not changed and simply inherited directly from the group::
-
-   TCAdefaults.tt_content.header = 234
-   options.clearCache.all = 1
 
 .. _usersettingdefaultusertsconfig:
 

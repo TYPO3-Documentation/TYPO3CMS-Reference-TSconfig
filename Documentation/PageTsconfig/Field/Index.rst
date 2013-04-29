@@ -24,6 +24,39 @@ The "TSconfig" field here is available in the tab called "Resources":
 .. figure:: ../../Images/manual_html_1194c6cf.png
    :alt: The Page TSconfig field inside the page properties
 
+
+.. _pageoverwritingandmodifyingvalues:
+
+Overwriting and modifying values
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Properties, which are set in Page TSconfig, are valid for the page, on
+which they are set, and for all pages hierarchically below. You can
+overwrite and :ref:`modify <t3tssyntax:syntax-value-modification>` them
+in the Page TSconfig of the same page or a subpage.
+
+**Example:**
+
+* Add in Page TSconfig::
+
+   RTE.default.showButtons = bold
+
+* You get the value "bold".
+
+* Add later in Page TSconfig::
+
+   RTE.default.showButtons := addToList(italic)
+
+* Finally you get the value "bold,italic".
+
+
+Page TSconfig itself can be overwritten by User TSconfig.
+
+.. IMPORTANT:: It is *not* possible to *modify* Page TSconfig in User
+   TSconfig. Page TSconfig can only be :ref:`overwritten in User
+   TSconfig <userrelationshiptovaluessetinpagetsconfig>`.
+
+
 .. _pageverifyingthefinalconfiguration:
 
 Verifying the final configuration
