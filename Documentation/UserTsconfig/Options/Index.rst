@@ -794,21 +794,34 @@ Various options for the user affecting the core at various points.
          folderTree.altElementBrowserMountPoints
 
    Data type
-         *(list of folder names)*
+         *(list of "storageUid:folderName" items) (since TYPO3 6.2)*
+         *(list of folderNames) (TYPO3 4.x)*
 
    Description
-         Sets alternative filemounts for use in the Element Browser. The
-         folders you specify here must exist within the fileadmin/ folder. You
-         separate folders by a comma. If a folder you specify does not exist it
-         will not get mounted. Effective in workspaces too.
+         Sets alternative filemounts for read-only use in the File List (since TYPO3 6.2) 
+         and Element Browser (TYPO3 4.x and since 6.2). 
+         
+         (TYPO3 4.x) The folder name specified must exist within the fileadmin/ folder. The 
+         alternative filemounts are **added** to the existing filemounts.
+         
+         (Since TYPO3 6.2) A folder name specified without prepended "storageUid:" is assumed
+         to be located in the default storage. The alternative filemounts are **merged** with
+         the existing filemounts.
+         
+         You separate items by a comma. If a folder you specify does not exist it will not get
+         mounted. Effective in workspaces too.
 
-         The alternative filemounts are **added** to the existing filemounts.
-
-         **Example**
+         **Example (since TYPO3 6.2)**
 
          .. code-block:: typoscript
 
-			options.folderTree.altElementBrowserMountPoints = _temp_/, templates
+			options.folderTree.altElementBrowserMountPoints = _temp_/, 2:/templates, 1:/files/images
+
+         **Example (TYPO3 4.x)**
+
+         .. code-block:: typoscript
+
+			options.folderTree.altElementBrowserMountPoints = _temp_/, files
 
 
 .. container:: table-row
