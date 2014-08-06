@@ -527,6 +527,7 @@ Shared options for modules (mod.SHARED)
          Filename of the file with the flag icon for the default language. Do
          not use the complete filename, but only the name without dot and
          extension. The file will be taken from typo3/gfx/flags/.
+         Use "multiple" to specify the multi-language flag.
 
          Used in Web > List and TemplaVoilà page module.
 
