@@ -189,6 +189,27 @@ Examples from the TYPO3 core are listed in the table below:
 .. container:: table-row
 
    Property
+         web\_ts.disableCacheClearing
+
+   Description
+         **Web > Template module**
+
+         (Since TYPO3 6.3) By default, all caches are cleared in the template module on these events:
+
+         * saving the setup or the constants in the t3editor
+         * saving changes in the constant editor
+         * changing values in the template info module
+         * creating new templates with the template module
+         * editing values in the object browser
+
+         When this option is enabled none of these events will trigger a cache clearing any more.
+
+         This can be used to reduce the performance impact when values in the template are changed.
+
+
+.. container:: table-row
+
+   Property
          web\_ts.menu.function
 
    Description
