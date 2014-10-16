@@ -141,7 +141,7 @@
 			# Will clear ALL cache:
 			TCEMAIN.clearCacheCmd = all
 			# Will clear cache for all pages tagged with tag "pagetag1"
-			TCE.clearCacheCmd = cacheTag:pagetag1
+			TCEMAIN.clearCacheCmd = cacheTag:pagetag1
 
 
 .. container:: table-row
