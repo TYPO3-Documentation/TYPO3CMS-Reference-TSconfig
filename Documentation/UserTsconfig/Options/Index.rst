@@ -76,7 +76,7 @@ Various options for the user affecting the core at various points.
 .. container:: table-row
 
    Property
-         clearCache.clearRTECache
+         clearCache.clearLangCache
 
    Data type
          boolean
