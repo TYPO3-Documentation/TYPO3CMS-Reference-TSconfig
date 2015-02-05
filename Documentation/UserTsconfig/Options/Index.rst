@@ -81,7 +81,7 @@ Various options for the user affecting the core at various points.
          boolean
 
    Description
-         This will allow a non-admin user to clear frontend and page-related caches.
+         This will allow a non-admin user to clear frontend caches.
 
    Default
          0
@@ -95,7 +95,7 @@ Various options for the user affecting the core at various points.
          boolean
 
    Description
-         This will allow a non-admin user to clear frontend and page-related caches, plus some
+         This will allow a non-admin user to clear frontend caches, plus some
          backend-related caches (that is everything including templates). This property is equivalent to clearCache.all.
 
    Default
@@ -110,7 +110,7 @@ Various options for the user affecting the core at various points.
          boolean
 
    Description
-         This will allow a non-admin user to clear frontend and page-related caches, plus some
+         This will allow a non-admin user to clear frontend caches, plus some
          backend-related caches (that is everything including templates).
 
    Default
