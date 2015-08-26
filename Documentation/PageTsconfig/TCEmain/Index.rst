@@ -370,7 +370,7 @@ Processing options for a $GLOBALS['TCA'] configured table.
          The number of days elements are in the history at most. Takes
          precedence over keepEntries.
 
-         Default is 7 days. Range 0-200. Zero turns the maxAgeDays off.
+         Default is 30 days. Range 0-365. Zero turns the maxAgeDays off.
 
          **Note:** This option has been removed in TYPO3 6.0.
 
