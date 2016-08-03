@@ -741,26 +741,6 @@ Various options for the user affecting the core at various points.
          pageTree.altElementBrowserMountPoints.append
 
    Data type
-         boolean
-
-   Description
-         If this option is set to TRUE the mount points configured in
-         ``altElementBrowserMountPoints`` will be appended to the
-         configured DB mount points. By default the mount points will
-         be replaced.
-
-         **Example**
-
-         .. code-block:: typoscript
-
-			options.pageTree.altElementBrowserMountPoints.append = 1
-
-.. container:: table-row
-
-   Property
-         pageTree.altElementBrowserMountPoints.append
-
-   Data type
         boolean
 
    Description
