@@ -675,18 +675,6 @@ Various options for the user affecting the core at various points.
 .. container:: table-row
 
    Property
-         pageTree.onlineWorkspaceInfo
-
-   Data type
-         boolean
-
-   Description
-         If set, the workspace info box will also be shown in the page tree
-         even in online mode. Recommended when working with workspaces a lot.
-
-.. container:: table-row
-
-   Property
          pageTree.hideFilter
 
    Data type
@@ -1079,101 +1067,7 @@ Various options for the user affecting the core at various points.
 
          .. code-block:: typoscript
 
-			options.hideRecords.pages = 12,45
-
-
-.. container:: table-row
-
-   Property
-         workspaces.previewLinkTTLHours
-
-   Data type
-         integer
-
-   Description
-         Number of hours for expiry of preview links to workspaces. Default is
-         48 hours.
-
-
-.. container:: table-row
-
-   Property
-         workspaces.swapMode
-
-   Data type
-         string
-
-   Description
-         Possible values are:
-
-         "any" - if page or element (meaning any record on the page) is
-         published, all content elements on the page and page itself will be
-         published regardless of the current editing stage.
-
-         "page" - if page is published, all content elements on the page will
-         be published as well. If element is published, its publishing does not
-         affect other elements or page.
-
-   Default
-         normal behavior (same as in 4.0)
-
-
-.. container:: table-row
-
-   Property
-         workspaces.changeStageMode
-
-   Data type
-         string
-
-   Description
-         Possible values are:
-
-         "any" - if page or element (meaning any record on the page) stage is
-         changed (for example, from "editing" to "review"), all content
-         elements on the page and page will change to that new stage as well
-         (possibly bypassing intermediate stages).
-
-         "page" - if page stage is changed (for example, from "editing" to
-         "review"), all content elements on the page will change stage as well
-         (possibly bypassing intermediate stages). If stage is changed for
-         element, all other elements on the page and page itself remain in the
-         previous stage.
-
-   Default
-         normal behavior (same as in 4.0)
-
-
-.. container:: table-row
-
-   Property
-         workspaces.considerReferences
-
-   Data type
-         boolean
-
-   Description
-         If elements which are part of an interdependent structure (e.g. Inline
-         Relational Record Editing) are swapped, published or sent to a stage
-         alone, the whole related parent/child structure is taken into account
-         automatically.
-
-   Default
-         1
-
-
-.. container:: table-row
-
-   Property
-         workspaces.allowed\_languages.[workspaceId]
-
-   Data type
-         *(list of sys\_language ids)*
-
-   Description
-         This is a list of sys\_language uids which will be allowed in a
-         workspace. This list - if set - will override the allowed languages
-         list in the BE user group configuration.
+            options.hideRecords.pages = 12,45
 
 
 .. container:: table-row
