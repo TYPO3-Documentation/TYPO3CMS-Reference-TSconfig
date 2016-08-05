@@ -396,51 +396,15 @@ This table shows the keys for both defaults and override values:
 .. container:: table-row
 
    Property
-         resizeTextareas\_Flexible
+         enableFlashUploader
 
    Data type
          boolean
 
    Description
-         This option makes textareas flexible, which means that their height
-         grows automatically while typing. Limit is the maximal height set.
-         This is active by default.
-
-   Default
-         1
-
-
-.. container:: table-row
-
-   Property
-         resizeTextareas\_Flexible
-
-   Data type
-         boolean
-
-   Description
-         This option makes textareas flexible, which means that their height
-         grows automatically while typing. Limit is the maximal height set.
-         This is active by default.
-
-   Default
-         1
-
-
-.. container:: table-row
-
-   Property
-         default.tx_form.showWizardByDefault
-
-   Data type
-         boolean
-
-   Description
-         Enables the forms wizard of EXT:form. If set to 0 only predefined forms will be
-         selectable by the editor.
-
-   Default
-         1
+         This option enables the Flash-based uploader in the File module, which
+         allows to select multiple files at once when uploading files. It
+         requires to have the Flash plugin installed (Flash 9 or higher).
 
 
 .. ###### END~OF~TABLE ######

@@ -85,6 +85,7 @@ can call it like this to set default configuration::
 
    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
       RTE.default {
+         proc.preserveTables = 1
          showButtons = cut,copy,paste,fontstyle,fontsize,textcolor
          hideButtons = class,user,chMode
       }
