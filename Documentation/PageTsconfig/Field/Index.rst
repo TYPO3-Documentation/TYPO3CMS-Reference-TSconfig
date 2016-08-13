@@ -85,10 +85,10 @@ initialized from the root of the tree.
 
 In extensions this is easily done by the extension API function,
 :code:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig()`.
-In the :file:`ext_localconf.php` file you
-can call it like this to set default configuration:
+In the :code:`ext_localconf.php` file of your extension you
+can call it like this to set default configuration::
 
-.. code-block:: typoscript
+.. code-block:: php
 
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
 		RTE.default {
@@ -98,5 +98,5 @@ can call it like this to set default configuration:
 		}
 	');
 
-This API function simply adds the content to
+This API function during runtime adds the content to
 :code:`$TYPO3_CONF_VARS['BE']['defaultPageTSconfig']`.
