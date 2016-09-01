@@ -11,6 +11,28 @@ ext\_tables.php file, inside the
 :code:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addModule()`
 call with the key name :code:`name`.
 
+
+.. _commonmodules:
+
+.. list-table:: Common module names
+   :header-rows: 1
+
+   * - Title
+     - ``module_name``
+   * - Web -> Page
+     - ``web_page``
+   * - Web -> View
+     - ``web_layout``
+   * - Web -> List
+     - ``web_list``
+   * - Web -> Info
+     - ``web_info``
+   * - Web -> Functions
+     - ``web_func``
+   * - File -> Filelist
+     - ``file_list``
+
+
 .. _pageblindingfunctionmenuoptions:
 
 Blinding Function Menu options in Backend Modules
