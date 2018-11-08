@@ -377,24 +377,6 @@ noThumbsInRTEimageSelect
          As :ts:`noThumbsInEB` but for the Rich Text Editor image selector.
 
 
-.. _useroptions-uploadFieldsInTopOfEB:
-
-uploadFieldsInTopOfEB
-=====================
-
-.. container:: table-row
-
-   Property
-         uploadFieldsInTopOfEB
-
-   Data type
-         boolean
-
-   Description
-         If set, the upload-fields in the element browser are put in the top of
-         the window.
-
-
 .. _useroptions-saveDocNew:
 
 saveDocNew
