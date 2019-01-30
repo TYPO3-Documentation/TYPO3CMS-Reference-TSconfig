@@ -1520,7 +1520,7 @@ Add a new element (header) to the "common" group
 .. code-block:: typoscript
 
    mod.wizards.newContentElement.wizardItems.common.elements.header {
-      icon = gfx/c_wiz/regular_text.gif
+      iconIdentifier = content-header
       title = Header
       description = Adds a header element only
       tt_content_defValues {
@@ -1541,7 +1541,7 @@ Create a new group and add a (pre-filled) element to it
    mod.wizards.newContentElement.wizardItems.myGroup {
       header = LLL:EXT:cms/layout/locallang.xlf:advancedFunctions
       elements.customText {
-         icon = gfx/c_wiz/regular_text.gif
+         iconIdentifier = content-text
          title = Introductory text for national startpage
          description = Use this element for all national startpages
          tt_content_defValues {
