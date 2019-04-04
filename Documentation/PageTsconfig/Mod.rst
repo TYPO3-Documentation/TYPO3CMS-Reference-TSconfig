@@ -323,6 +323,8 @@ disableNewContentElementWizard
 :aspect:`Description`
     Disables the fact that the new-content-element icons links to the
     content element wizard and not directly to a blank "NEW" form.
+    
+    Attention! This setting will break your Backend in a 9.5 installation!
 
 
 disableSearchBox
