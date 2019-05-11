@@ -13,7 +13,7 @@ for various TCA types, for instance for :ref:`type=input <t3tca:columns-input-pr
 The full path of a setting include the table and the field name: `TCAdefaults.[table name].[field]`
 
 This key is also available on :ref:`Page TSconfig level <pageTsTcaDefaults>`, the order of default
-values when creating new records in the backend is this:
+values when creating new records in the Backend is this:
 
 #. Value from :php:`$GLOBALS['TCA']`
 
