@@ -60,3 +60,7 @@ Example:
         of an extension::
 
             $GLOBALS['TCA']['pages']['ctrl']['useColumnsForDefaultValues'] = 'doktype,fe_group';
+            
+         To avoid that other values are removed from the record you can use this code:
+         
+            $GLOBALS['TCA']['pages']['ctrl']['useColumnsForDefaultValues'] = str_replace(',hidden',',',$GLOBALS['TCA']['pages']['ctrl']['useColumnsForDefaultValues']);
