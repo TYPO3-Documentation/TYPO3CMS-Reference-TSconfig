@@ -29,7 +29,7 @@ Properties
    `clearCache\_pageSiblingChildren`_  boolean
    `disableHideAtCopy`_                boolean
    `disablePrependAtCopy`_             boolean
-   `history.maxAgeDays`_               integer
+   history.maxAgeDays                  integer
    `permissions (user and group)`_     integer
    `permissions (actions)`_            list of strings / integer
    `preview`_                          array
