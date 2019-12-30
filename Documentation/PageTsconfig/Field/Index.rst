@@ -86,7 +86,7 @@ initialized from the root of the tree.
 In extensions this is easily done by the extension API function,
 :code:`\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig()`.
 In the :code:`ext_localconf.php` file of your extension you
-can call it like this to set default configuration::
+can call it like this to set default configuration:
 
 .. code-block:: php
 

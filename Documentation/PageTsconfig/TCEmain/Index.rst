@@ -11,13 +11,6 @@
 ^^^^^^^^^
 
 
-.. only:: html
-
-   .. contents::
-      :local:
-      :depth: 1
-
-
 .. _pagetcemain-properties:
 
 Properties
