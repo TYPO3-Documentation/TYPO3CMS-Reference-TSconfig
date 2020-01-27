@@ -1,6 +1,5 @@
 .. include:: ../Includes.txt
 
-.. _conditions:
 
 Conditions
 ----------
@@ -10,7 +9,6 @@ User TSconfig and Page TSconfig, just as it is done in TypoScript for
 templates.
 
 
-.. _conditions-example:
 
 Examples
 ^^^^^^^^

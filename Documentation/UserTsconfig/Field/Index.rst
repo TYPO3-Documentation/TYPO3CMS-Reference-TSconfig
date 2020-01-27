@@ -1,6 +1,5 @@
 .. include:: ../../Includes.txt
 
-.. _userthetsconfigfield:
 
 The "TSconfig" field
 ^^^^^^^^^^^^^^^^^^^^
@@ -12,10 +11,15 @@ records:
    :alt: The TSconfig inside the backend user or backend group properties
 
 
-.. _useroverwritingandmodifyingvalues:
 
 Overwriting and modifying values
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. attention::
+
+   This part of the documentation has been moved to :ref:`typoscript-syntax-using-setting`
+   for newer versions of this manual. This version 8.7 of this manual contains some
+   duplicate information. 
 
 Properties, which are set in the TSconfig field of a group, are valid
 for all users of that group.
@@ -74,7 +78,6 @@ clear cache option. The default value of the hidden field is not
 changed and simply inherited directly from the group.
 
 
-.. _userrelationshiptovaluessetinpagetsconfig:
 
 Relationship to values set in Page TSconfig
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -109,7 +112,6 @@ value of the according **Page** TSconfig property.
 * Finally you do *not* get the value "bold,italic", but the value "italic".
 
 
-.. _userverifyingthefinalconfiguration:
 
 Verifying the final configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -117,7 +119,6 @@ Verifying the final configuration
 It's vital to check the resulting configuration of the users.
 
 
-.. _usersettingdefaultusertsconfig:
 
 Setting default User TSconfig
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

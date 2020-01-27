@@ -1,9 +1,15 @@
 .. include:: ../../Includes.txt
 
-.. _pagethetsconfigfield:
 
 The "TSconfig" field
 ^^^^^^^^^^^^^^^^^^^^
+
+.. attention::
+
+   This part of the documentation has been moved to :ref:`typoscript-syntax-using-setting`
+   for newer versions of this manual. This version 8.7 of this manual contains some
+   duplicate information. 
+
 
 This is an example of the TSconfig field with a snippet of
 configuration for the Rich Text Editor. Precisely the Rich Text Editor
@@ -20,10 +26,10 @@ The "TSconfig" field here is available in the tab called "Resources":
    :alt: The Page TSconfig field inside the page properties
 
 
-.. _pageoverwritingandmodifyingvalues:
 
 Overwriting and modifying values
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 Properties, which are set in Page TSconfig, are valid for the page, on
 which they are set, and for all pages hierarchically below. You can
@@ -58,7 +64,6 @@ Page TSconfig itself can be overwritten by User TSconfig.
    :ref:`overwritten in User TSconfig <userrelationshiptovaluessetinpagetsconfig>`.
 
 
-.. _pageverifyingthefinalconfiguration:
 
 Verifying the final configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -69,7 +74,6 @@ in the website, use the 'Web > Info' module:
 .. figure:: ../../Images/PageTsconfigVerification.png
    :alt: The Page TSconfig configuration for a page when using the Info module
 
-.. _pagesettingdefaultpagetsconfig:
 
 Setting default Page TSconfig
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

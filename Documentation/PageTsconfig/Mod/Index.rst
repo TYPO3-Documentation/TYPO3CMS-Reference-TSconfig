@@ -172,7 +172,6 @@ This is the function menu of the **WEB > Template** module.
    }
 
 
-.. _pageoverridingpagetsconfigwithusertsconfig:
 
 Overriding Page TSconfig with User TSconfig
 """""""""""""""""""""""""""""""""""""""""""
