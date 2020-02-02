@@ -24,7 +24,7 @@ Each variant is further detailed in its own chapter. TSconfig offers
 vast possibilities of customizing the TYPO3 backend.
 
 For details about the nature of TypoScript as a syntax, please read
-the document :ref:`TypoScript Syntax and In-depth Study <t3tssyntax:start>`.
+:ref:`TypoScript Syntax <t3coreapi:typoscript-syntax-start>` in "TYPO3 Explained".
 
 .. _whatsnew:
 
