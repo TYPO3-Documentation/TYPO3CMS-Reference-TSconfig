@@ -84,8 +84,10 @@ The following condition will apply only if the BE user is an admin.
 References
 ^^^^^^^^^^
 
-For a general discussion about TypoScript conditions, please refer to
-:ref:`TypoScript Syntax and In-depth Study <t3tssyntax:start>`.
+* For a general discussion about TypoScript conditions, please refer to
+  :ref:`TypoScript Conditions <t3coreapi:typoscript-syntax-conditions>`
+  in "TYPO3 Explained".
 
-For a list of available conditions, please refer to the
-:ref:`TypoScript Reference <t3tsref:start>`.
+* For a list of available conditions, please refer to the
+  :ref:`Conditition Reference <t3tsref:condition-reference>`
+  in the "TypoScript Templating Reference".
