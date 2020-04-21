@@ -1,0 +1,1 @@
+docker run --rm --name "t3docsrun" --user=1000:1000 -v  -v   makehtml  0.04s user 0.03s system 0% cpu 20.197 total
