@@ -788,22 +788,6 @@ pageTree.showPathAboveMounts
       :alt: Active user db mount
 
 
-.. _useroptions-popupWindowSize:
-
-popupWindowSize
-===============
-
-:aspect:`Datatype`
-   string
-
-:aspect:`Description`
-   Defines the size of the element browser.
-
-   .. note::
-
-      This property is outdated.
-
-
 .. _useroptions-saveClipboard:
 
 saveClipboard
