@@ -403,18 +403,6 @@ disableSearchBox
 :aspect:`Default`
     0
 
-
-editFieldsAtATime
------------------
-
-:aspect:`Datatype`
-    positive integer
-
-:aspect:`Description`
-    Specifies the number of subsequent content elements to load in the
-    edit form when clicking the edit icon of a content element in the
-    'Columns' view of the module.
-
 :aspect:`Default`
     1
 
