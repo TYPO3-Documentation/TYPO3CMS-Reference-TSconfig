@@ -110,7 +110,7 @@ defaultLanguageFlag
 .. warning::
 
    Note that this option has largely been superseded by site configuration since **TYPO3 10** and will only
-   work for in the Backend for a "NullSite". For instance a global sysfolder in the page tree without an
+   work in the Backend for a "NullSite". For instance a global sysfolder in the page tree without an
    attached site configuration. Once a page tree has a site configuration, the default language icon is
    set from the site configuration's language settings and this option will have no effect at all.
 
@@ -129,7 +129,7 @@ defaultLanguageLabel
 .. warning::
 
    Note that this option has largely been superseded by site configuration since **TYPO3 10** and will only
-   work for in the Backend for a "NullSite". For instance a global sysfolder in the page tree without an
+   work in the Backend for a "NullSite". For instance a global sysfolder in the page tree without an
    attached site configuration. Once a page tree has a site configuration, the default language label is
    set from the site configuration's language settings and this option will have no effect at all.
 
@@ -145,7 +145,7 @@ disableLanguages
 .. warning::
 
    Note that this option has largely been superseded by site configuration since **TYPO3 10** and will only
-   work for in the Backend for a "NullSite". For instance a global sysfolder in the page tree without an
+   work in the Backend for a "NullSite". For instance a global sysfolder in the page tree without an
    attached site configuration. Once a page tree has a site configuration, the language settings
    from the site configuration are applied and this option will have no effect at all.
 
@@ -331,7 +331,7 @@ defaultLanguageLabel
 .. warning::
 
    Note that this option has largely been superseded by site configuration since **TYPO3 10** and will only
-   work for in the Backend for a "NullSite". For instance a global sysfolder in the page tree without an
+   work in the Backend for a "NullSite". For instance a global sysfolder in the page tree without an
    attached site configuration. Once a page tree has a site configuration, the default language label is
    set from the site configuration's language settings and this option will have no effect at all.
 
