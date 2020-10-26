@@ -431,8 +431,8 @@ localization.enableTranslate
 
 .. _pageblindingfunctionmenuoptions-weblayout:
 
-menu.function
--------------
+menu.functions
+--------------
 
 :aspect:`Datatype`
     array
@@ -463,7 +463,7 @@ menu.function
     .. code-block:: typoscript
 
         # Disables "Languages" from function menu
-        mod.web_layout.menu.function {
+        mod.web_layout.menu.functions {
             2 = 0
         }
 
