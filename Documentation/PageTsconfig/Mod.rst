@@ -818,9 +818,18 @@ itemsLimitPerTable
 
 :aspect:`Description`
     Set the default maximum number of items to show per table.
+    The number must be between `5` and `10000`. If below or above this range,
+    the nearest valid number will be used.
 
 :aspect:`Default`
     20
+    
+:aspect:`Example`
+    .. code-block:: typoscript
+
+        mod.web_list {
+           itemsLimitPerTable = 10
+        }
 
 
 itemsLimitSingleTable
@@ -831,9 +840,18 @@ itemsLimitSingleTable
 
 :aspect:`Description`
     Set the default maximum number of items to show in single table view.
+    The number must be between `5` and `10000`. If below or above this range,
+    the nearest valid number will be used.
 
 :aspect:`Default`
     100
+    
+:aspect:`Example`
+    .. code-block:: typoscript
+
+        mod.web_list {
+           itemsLimitSingleTable = 10
+        }
 
 
 listOnlyInSingleTableView
