@@ -75,7 +75,7 @@ proc
 ====
 
 The `proc` section allows customization of the server processing of the content, see
-the :ref:`transformation section <t3coreapi:transformations-process>` of the RTE chapter in
+the :ref:`transformation section <t3coreapi:transformations-tsconfig>` of the RTE chapter in
 the core API document for more general information on server processing.
 
 The `proc` properties are in :code:`\TYPO3\CMS\Core\Html\RteHtmlParser` and
@@ -84,7 +84,7 @@ configuration of the transformations. For instance you may disable the mapping b
 :code:`<b>-<strong>` and :code:`<i>-<em>` tags which is done by the `ts_transform` transformation.
 
 Notice how many properties relate to specific transformations only! Also notice that the meta-transformations
-`ts_css` imply other transformations :ref:`as explained in the overview <transformations-overview-meta>`.
+`ts_css` imply other transformations :ref:`as explained in the overview <t3coreapi:transformations-tsconfig>`.
 This means that options limited to `ts_transform` will also work for `ts_css` of course.
 
 
