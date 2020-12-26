@@ -197,6 +197,13 @@ clearCacheCmd
             TCEMAIN.clearCacheCmd = cacheTag:pagetag1
 
 
+.. note::
+
+   In order for the :ts:`pages` and :ts:`all` commands to work for non-admin users,
+   make sure to set :ts:`options.clearCache.pages = 1` or :ts:`options.clearCache.all = 1` accordingly
+   in the user TSconfig.
+
+
 .. _pagetcemain-clearcache-pagesiblingchildren:
 
 clearCache\_pageSiblingChildren
