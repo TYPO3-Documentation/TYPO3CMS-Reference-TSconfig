@@ -1,5 +1,5 @@
-.. include:: ../Includes.txt
-
+.. include:: /Includes.rst.txt
+.. index:: TCEMAIN
 .. _pagetcemain:
 .. _pagetcemain-properties:
 
@@ -12,6 +12,8 @@ the :ref:`according section of the TYPO3 Core API document <t3coreapi:tce>`.
 
 .. youtube:: HnAdDHkes5A
 
+
+.. index:: Clear cache; On saving record
 .. _pagetcemain-clearcachecmd:
 
 clearCacheCmd
@@ -43,8 +45,15 @@ clearCacheCmd
             # Clear cache for all pages tagged with tag "pagetag1"
             clearCacheCmd = cacheTag:pagetag1
         }
+        
+    .. note::
+
+        In order for the :ts:`pages` and :ts:`all` commands to work for non-admin users,
+        make sure to set :ts:`options.clearCache.pages = 1` or :ts:`options.clearCache.all = 1` accordingly
+        in the user TSconfig.
 
 
+.. index:: Clear cache; Disable
 .. _pagetcemain-clearcache-disable:
 
 clearCache_disable
@@ -60,6 +69,7 @@ clearCache_disable
     and :ref:`clearCache_pageGrandParent <pagetcemain-clearcache-pagegrandparent>`
 
 
+.. index:: Clear cache; On saving child page
 .. _pagetcemain-clearcache-pagegrandparent:
 
 clearCache_pageGrandParent
@@ -72,6 +82,7 @@ clearCache_pageGrandParent
     If set, then the grand parent of a page being edited will have the page cache cleared.
 
 
+.. index:: Clear cache; On saving sibling page
 .. _pagetcemain-clearcache-pagesiblingchildren:
 
 clearCache_pageSiblingChildren
@@ -83,9 +94,10 @@ clearCache_pageSiblingChildren
 :aspect:`Description`
     If set, then children of all siblings of a page being edited will have the page cache cleared.
 
-    Default is that when a page record is edited, the cache for itself and siblings (same level) is cleared.
+    Default is that when a page record is edited, the cache for itself, the parent, and siblings (same level) is cleared.
 
 
+.. index:: Copy record; Disable hide
 .. _pagetcemaintables-disablehideatcopy:
 
 disableHideAtCopy
@@ -121,6 +133,7 @@ disableHideAtCopy
         Hidden page with added suffix after copying its original page
 
 
+.. index:: Copy record; Disable prepend string (copy)
 .. _pagetcemaintables-disableprependatcopy:
 
 disablePrependAtCopy
@@ -158,11 +171,14 @@ disablePrependAtCopy
         Hidden page with added suffix after copying its original page
 
 
+.. index:: Page permissions
 .. _pagetcemain-permissions-user-group:
 
 permissions
 ===========
 
+
+.. index:: Page permissions; everybody
 
 everybody
 ---------
@@ -198,6 +214,8 @@ everybody
         Page with altered permissions for backend users, groups and everybody
 
 
+.. index:: Page permissions; Group
+
 group
 -----
 
@@ -231,6 +249,7 @@ group
 
         Page with altered permissions for backend users, groups and everybody
 
+.. index:: Page permissions; Group id
 
 groupid
 -------
@@ -261,6 +280,7 @@ groupid
         Page with altered permissions for backend groups
 
 
+.. index:: Page permissions; User
 .. _pagetcemain-permissions-actions:
 
 user
@@ -285,6 +305,8 @@ user
             # User can do anything, this is identical to the default value
             user = 31
         }
+
+.. index:: Page permissions; User id
 
 userid
 ------
@@ -315,6 +337,7 @@ userid
         Page with altered permissions for backend users
 
 
+.. index:: Page preview
 .. _pagetcemain-preview:
 
 preview
@@ -334,6 +357,7 @@ preview
         TCEMAIN.preview {
             <table name> {
                 previewPageId = 123
+                disableButtonForDokType = 199, 254, 255
                 useDefaultLanguageRecord = 0
                 fieldToParameterMap {
                     uid = tx_myext_pi1[showUid]
@@ -341,12 +365,14 @@ preview
                 additionalGetParameters {
                     tx_myext_pi1.special = HELLO # results in tx_myext_pi1[special]
                 }
-                useCacheHash = 1
             }
         }
 
     The :ts:`previewPageId` is the uid of the page to use for preview. If this setting is omitted the
     current page will be used. If the current page is not a normal page, the root page will be chosen.
+
+    The :ts:`disableButtonForDokType` setting allows you to disable the preview button for a given list
+    of doktypes. If none are configured, this defaults to: 199, 254, 255 (Spacer, Folder and Recycler).
 
     The :ts:`useDefaultLanguageRecord` defaults to `1` and ensures that translated records will use the
     uid of the default record for the preview link. You may disable this, if your extension can deal
@@ -357,13 +383,12 @@ preview
     the GET-parameter name.
 
     Finally :ts:`additionalGetParameters` allow you to add arbitrary GET-parameters and even override others.
+    If the plugin on your target page shows a list of records by default you will also need something like
+    :ts:`tx_myext_pi1.action = show` to ensure the record details are displayed.
 
     The core automatically sets the "no_cache" and the "L" parameter. The language matches the language of
     the current record. You may override each parameter by using the :ts:`additionalGetParameters` configuration
     option.
-    
-    Enable :ts:`useCacheHash` to add a cHash. This is essential for records displayed using Extbase which enforces 
-    cHash usage. If useCacheHash = 1 is not set, the no_cache parameter will be added just like before.
 
     .. note::
 
@@ -371,6 +396,7 @@ preview
         will not be displayed when editing records of your table.
 
 
+.. index:: Copy record; Table based configuration
 .. _pagetcemaintables:
 .. _pagetcemain-table-table-name:
 
@@ -381,6 +407,7 @@ Processing options for tables. The table name is added, for instance `TCEMAIN.ta
 or `TCEMAIN.table.tt_content.disablePrependAtCopy = 1`.
 
 
+.. index:: Localization; Translate to message
 .. _pagetcemain-translatetomessage:
 
 translateToMessage

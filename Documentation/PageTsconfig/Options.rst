@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _pageoptions:
 
@@ -8,7 +8,9 @@ options
 
 Various options for the page affecting the core at various points.
 
-
+.. index::
+   options.backendLayout
+   Backend; Layout
 .. _pagebackendlayout:
 
 backendLayout
@@ -27,7 +29,6 @@ exclude
     Use the uid/identifier of the record in the default data provider.
 
 :aspect:`Example`
-
     .. figure:: ../Images/BackendLayoutID.png
         :alt: Two backend layout records shown in list module
 

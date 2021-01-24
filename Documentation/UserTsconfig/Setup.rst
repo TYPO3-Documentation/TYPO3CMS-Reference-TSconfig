@@ -1,5 +1,7 @@
-.. include:: ../Includes.txt
-
+.. include:: /Includes.rst.txt
+.. index::
+   User settings; override
+   User settings; default
 .. _usersetup:
 
 =====
@@ -53,6 +55,9 @@ setup.fields.[fieldName].disabled
         setup.override.emailMeAtLogin = 1
 
 
+.. index::
+   User settings; Copy levels
+
 copyLevels
 ==========
 
@@ -62,6 +67,8 @@ copyLevels
 :aspect:`Description`
     Recursive Copy: Enter the number of page sub-levels to include, when a page is copied
 
+
+.. index:: File upload; In doc module
 
 edit_docModuleUpload
 ====================
@@ -73,6 +80,8 @@ edit_docModuleUpload
     File upload directly in Doc. module
 
 
+.. index:: RTE; Enable
+
 edit_RTE
 ========
 
@@ -82,6 +91,7 @@ edit_RTE
 :aspect:`Description`
     Enable Rich Text Editor
 
+.. index:: Email me at login
 
 emailMeAtLogin
 ==============
@@ -93,15 +103,7 @@ emailMeAtLogin
     Notify me by email, when somebody logs in from my account
 
 
-helpText
-========
-
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Description`
-    Show help text when applicable
-
+.. index:: Backend; Language
 
 lang
 ====
@@ -114,6 +116,8 @@ lang
     :file:`typo3/sysext/core/Classes/Localization/Locales.php`, e.g. `dk`, `de`, `es` etc.
 
 
+.. index:: Records; Hide at copy
+
 neverHideAtCopy
 ===============
 
@@ -124,15 +128,7 @@ neverHideAtCopy
     If set, then the hideAtCopy feature for records in TCE will not be used.
 
 
-recursiveDelete
-===============
-
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Description`
-    Recursive Delete(!): Allow ALL subpages to be deleted when deleting a page
-
+.. index:: Textareas; Resize
 
 resizeTextareas
 ===============
@@ -148,21 +144,7 @@ resizeTextareas
 :aspect:`Default`
     1
 
-
-resizeTextareas_Flexible
-========================
-
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Description`
-    This option makes textareas flexible, which means that their height
-    grows automatically while typing. Limit is the maximal height set.
-    This is active by default.
-
-:aspect:`Default`
-    1
-
+.. index:: Textareas; Resize max height
 
 resizeTextareas_MaxHeight
 =========================
@@ -176,6 +158,7 @@ resizeTextareas_MaxHeight
 :aspect:`Default`
     600
 
+.. index:: Start module
 
 startModule
 ===========
@@ -187,6 +170,8 @@ startModule
     Name of the module that is called when the user logs into the Backend
 
 
+.. index:: Title length, max
+
 titleLen
 ========
 
@@ -196,6 +181,8 @@ titleLen
 :aspect:`Description`
     Max. Title Length
 
+
+.. index:: Thumbnails; Show by default
 
 thumbnailsByDefault
 ===================

@@ -1,4 +1,5 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
+.. index:: user TSconfig; Overrider page TSconfig
 
 ====
 page
@@ -10,7 +11,6 @@ in the :ref:`Using and setting <useroverwritingandmodifyingvalues>` section.
 
 Example:
 
-    .. code-block:: typoscript
+.. code-block:: typoscript
 
-        page.TCEMAIN.table.pages.disablePrependAtCopy = 1
-
+    page.TCEMAIN.table.pages.disablePrependAtCopy = 1

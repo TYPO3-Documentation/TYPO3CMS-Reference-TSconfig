@@ -1,5 +1,7 @@
-.. include:: ../Includes.txt
-
+.. include:: /Includes.rst.txt
+.. index::
+   TCAdefaults
+   Records; Default values
 .. _pageTsTcaDefaults:
 
 ===========
@@ -18,7 +20,7 @@ values when creating new records in the backend is this:
 
 #. Value from :ref:`User TSconfig <userTsTcaDefaults>`
 
-#. Value from Page TSconfig (these settings)
+#. Value from page TSconfig (these settings)
 
 #. Value from "defVals" GET variables
 
@@ -26,7 +28,7 @@ values when creating new records in the backend is this:
 
 Example:
 
-    .. code-block:: typoscript
+.. code-block:: typoscript
 
-        # Show newly created pages by default
-        TCAdefaults.pages.hidden = 0
+    # Show newly created pages by default
+    TCAdefaults.pages.hidden = 0

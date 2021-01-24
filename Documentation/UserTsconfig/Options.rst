@@ -1,5 +1,5 @@
-.. include:: ../Includes.txt
-
+.. include:: /Includes.rst.txt
+.. index:: User TSconfig; Options
 .. _useroptions:
 
 =======
@@ -15,7 +15,8 @@ cache menu for non admin users:
 
    options.clearCache.pages = 1
 
-
+.. todo:: How does this work with site configurations?
+.. index:: Localization; preview languages
 .. _useroptions-additionalPreviewLanguages:
 
 additionalPreviewLanguages
@@ -29,6 +30,7 @@ additionalPreviewLanguages
    TCEforms. The list are uid numbers of sys_language records.
 
 
+.. index:: Backend; Alert popups
 .. _useroptions-alertPopups:
 
 alertPopups
@@ -54,6 +56,7 @@ alertPopups
    255 (show all warnings)
 
 
+.. index:: Backend; Bookmark groups
 .. _useroptions-bookmarkGroups:
 
 bookmarkGroups
@@ -83,7 +86,6 @@ bookmarkGroups
    default) or "string" to change the label accordingly.
 
 :aspect:`Example`
-
    .. code-block:: typoscript
 
       bookmarkGroups {
@@ -98,7 +100,18 @@ bookmarkGroups
    Group 5 has not been set, so it will be displayed by default, just
    like group 1.
 
+   .. versionadded:: 11.0
 
+   Custom language labels can also be used instead of a fixed label:
+
+   .. code-block:: typoscript
+
+      bookmarkGroups {
+         2 = LLL:EXT:sitepackage/Resources/Private/Language/locallang_be.xlf:bookmarkGroups.2
+      }
+
+
+.. index:: Clear cache; Clear all button for non admins
 .. _useroptions-clearCache-all:
 
 clearCache.all
@@ -116,6 +129,7 @@ clearCache.all
    0
 
 
+.. index:: Clear cache; Clear pages button for non admins
 .. _useroptions-clearCache-pages:
 
 clearCache.pages
@@ -131,6 +145,7 @@ clearCache.pages
    0
 
 
+.. index:: Clipboard; Number of pads
 .. _useroptions-clipboardNumberPads:
 
 clipboardNumberPads
@@ -146,6 +161,7 @@ clipboardNumberPads
    3
 
 
+.. index:: ContextMenu; Disable items
 .. _useroptions-contextMenu-key-disableItems:
 
 contextMenu disableItems
@@ -187,7 +203,6 @@ contextMenu disableItems
    options become available: `exportT3d` and `importT3d`
 
 :aspect:`Example`
-
    .. code-block:: typoscript
 
       # Remove "New" and "Create New wizard" for pages context menu (list module)
@@ -199,7 +214,7 @@ contextMenu disableItems
       # Remove the "More options" item in the page tree context menu and all its subelements
       options.contextMenu.table.pages.tree.disableItems = newWizard, pagesSort, pagesNewMultiple, openListModule, mountAsTreeRoot, exportT3d, importT3d, hideInMenus, showInMenus, permissions
 
-
+.. index:: Element browser; Create Folders
 .. _useroptions-createFoldersInEB:
 
 createFoldersInEB
@@ -213,6 +228,7 @@ createFoldersInEB
    admin-users this is always enabled).
 
 
+.. index:: Upload folder; Default
 .. _useroptions-defaultUploadFolder:
 
 defaultUploadFolder
@@ -231,12 +247,12 @@ defaultUploadFolder
    The syntax is "storage_uid:file_path".
 
 :aspect:`Example`
-
    .. code-block:: typoscript
 
       options.defaultUploadFolder = 2:user_folders/my_folder/
 
 
+.. index:: Records; Delete disabled
 .. _useroptions-disableDelete:
 
 disableDelete
@@ -252,6 +268,7 @@ disableDelete
    Any value set for a single table will override the default value set for "disableDelete".
 
 
+.. index:: DB mounts; Hide root from admins
 .. _useroptions-dontMountAdminMounts:
 
 dontMountAdminMounts
@@ -261,7 +278,6 @@ dontMountAdminMounts
    boolean
 
 :aspect:`Description`
-
    This options prevents the root to be mounted for an admin user.
 
    .. note::
@@ -269,6 +285,7 @@ dontMountAdminMounts
       Only for admin-users. For other users it has no effect.
 
 
+.. index:: Bookmarks; enable
 .. _useroptions-enableBookmarks:
 
 enableBookmarks
@@ -284,48 +301,13 @@ enableBookmarks
    1
 
 
-feedit
-======
-
-.. _useroptions-feedit-popupHeight:
-
-feedit.popupHeight
-------------------
-
-:aspect:`Datatype`
-   integer
-
-:aspect:`Description`
-   Sets the height of the popup window of feedit.
-
-:aspect:`Example`
-
-   .. code-block:: typoscript
-
-      options.feedit.popupHeight = 700
-
-
-.. _useroptions-feedit-popupWidth:
-
-feedit.popupWidth
------------------
-
-:aspect:`Datatype`
-   integer
-
-:aspect:`Description`
-   Sets the width of the popup window of feedit.
-
-:aspect:`Example`
-
-   .. code-block:: typoscript
-
-      options.feedit.popupWidth = 700
-
+.. index:: File list
 
 file_list
 =========
 
+
+.. index:: File list; Clipboard enable
 .. _useroptions-file_list-enableClipBoard:
 
 file_list.enableClipBoard
@@ -351,6 +333,7 @@ file_list.enableClipBoard
    selectable
 
 
+.. index:: File list; Extended view enable
 .. _useroptions-file_list-enableDisplayBigControlPanel:
 
 file_list.enableDisplayBigControlPanel
@@ -378,6 +361,7 @@ file_list.enableDisplayBigControlPanel
    selectable
 
 
+.. index:: File list; Thumbnails enable
 .. _useroptions-file_list-enableDisplayThumbnails:
 
 file_list.enableDisplayThumbnails
@@ -402,6 +386,7 @@ file_list.enableDisplayThumbnails
    selectable
 
 
+.. index:: File list; Files per page
 .. _useroptions-file_list-filesPerPage:
 
 file_list.filesPerPage
@@ -417,6 +402,7 @@ file_list.filesPerPage
    40
 
 
+.. index:: File list; Thumbnails height
 .. _useroptions-file_list-thumbnail-height:
 
 file_list.thumbnail.height
@@ -432,6 +418,7 @@ file_list.thumbnail.height
    64
 
 
+.. index:: File list; Thumbnails width
 .. _useroptions-file_list-thumbnail-width:
 
 file_list.thumbnail.width
@@ -446,6 +433,8 @@ file_list.thumbnail.width
 :aspect:`Default`
    64
 
+
+.. index:: Uploader; Name collision default action
 .. _useroptions-file_list-uploader-defaultaction:
 
 file_list.uploader.defaultAction
@@ -465,9 +454,14 @@ file_list.uploader.defaultAction
 :aspect:`Default`
    Cancel
 
+
+.. index:: Folder tree
+
 folderTree
 ==========
 
+
+.. index:: Folder tree; File mounts in element browser
 .. _useroptions-folderTree-altElementBrowserMountPoints:
 
 folderTree.altElementBrowserMountPoints
@@ -477,8 +471,8 @@ folderTree.altElementBrowserMountPoints
    list of "storageUid:folderName" items
 
 :aspect:`Description`
-   Sets alternative filemounts for use in the File List and in
-   Element Browser. Each item consists of storage Uid followed by a colon
+   Sets alternative filemounts for use in the file list and in the
+   element browser. Each item consists of storage Uid followed by a colon
    and the folder name inside that storage. You separate multiple items by
    a comma.
 
@@ -491,12 +485,12 @@ folderTree.altElementBrowserMountPoints
    The alternative filemounts are added to the existing filemounts.
 
 :aspect:`Example`
-
    .. code-block:: typoscript
 
       options.folderTree.altElementBrowserMountPoints = _temp_/, 2:/templates, 1:/files/images
 
 
+.. index:: Folder tree; Create folder; hide
 .. _useroptions-folderTree-hideCreateFolder:
 
 folderTree.hideCreateFolder
@@ -512,6 +506,9 @@ folderTree.hideCreateFolder
    false
 
 
+.. index::
+   Uploader; File number
+   Uploader; Hide
 .. _useroptions-folderTree-uploadFieldsInLinkBrowser:
 
 folderTree.uploadFieldsInLinkBrowser
@@ -527,7 +524,7 @@ folderTree.uploadFieldsInLinkBrowser
 :aspect:`Default`
    3
 
-
+.. index:: Modules; Hide
 .. _useroptions-hideModules:
 
 hideModules.[moduleGroup]
@@ -546,7 +543,6 @@ hideModules.[moduleGroup]
    *SYSTEM -> Configuration -> $GLOBALS['TBE_MODULES'] (BE Modules)*
 
 :aspect:`Example`
-
    .. code-block:: typoscript
 
       # Hide module groups "file" and "help"
@@ -558,7 +554,7 @@ hideModules.[moduleGroup]
       # Hide module BELogLog from "system" group
       options.hideModules.system = BelogLog
 
-
+.. index:: Records; Hide on pages
 .. _useroptions-hideRecords-pages:
 
 hideRecords.pages
@@ -581,12 +577,11 @@ hideRecords.pages
    - New record wizard
 
 :aspect:`Example`
-
    .. code-block:: typoscript
 
       options.hideRecords.pages = 12,45
 
-
+.. index:: Import export; Enable for non admins
 .. _useroptions-impexp-enableImportForNonAdminUser:
 
 impexp.enableImportForNonAdminUser
@@ -603,36 +598,7 @@ impexp.enableImportForNonAdminUser
 :aspect:`Default`
    0
 
-
-.. _useroptions-lockToIP:
-
-lockToIP
-========
-
-:aspect:`Datatype`
-   string
-
-:aspect:`Description`
-   Comma separated list of IP-numbers with wildcards.
-
-   .. note::
-
-      This option is only enabled if the :php:`$GLOBALS['TYPO3_CONF_VARS']['BE']['enabledBeUserIPLock']` configuration is true.
-
-:aspect:`Example`
-
-   .. code-block:: typoscript
-
-      # Allow all from 192.168-network
-      options.lockToIP = 192.168.*.*
-
-      # Allow all from 192.168-network plus all from REMOTE_ADDR 212.22.33.44
-      options.lockToIP = 192.168.\*.\*, 212.22.33.44
-
-      # Same as the previous. Leaving out parts of the IP address is the same as wild cards.
-      options.lockToIP = 192.168, 212.22.33.44
-
-
+.. index:: Bookmarks; Create and delete disabled
 .. _useroptions-mayNotCreateEditBookmarks:
 
 mayNotCreateEditBookmarks
@@ -645,6 +611,9 @@ mayNotCreateEditBookmarks
    If set, the user can not create or edit bookmarks.
 
 
+.. index::
+   Thumbnails; Disable in element browser
+   Element browser; Disable thumbnails
 .. _useroptions-noThumbsInEB:
 
 noThumbsInEB
@@ -656,7 +625,7 @@ noThumbsInEB
 :aspect:`Description`
    If set, then image thumbnails are not shown in the element browser.
 
-
+.. todo:: can we remove this?
 .. _useroptions-overridePageModule:
 
 overridePageModule
@@ -675,16 +644,18 @@ overridePageModule
       and can be achieved using :ref:`hideModules <useroptions-hideModules>`, too.
 
 :aspect:`Example`
-
    .. code-block:: typoscript
 
       # Enable TemplaVoila page module as default page module.
       options.overridePageModule = web_txtemplavoilaM1
 
+.. index:: Page tree
 
 pageTree
 ========
 
+
+.. index:: Page tree; Webmounts replace
 .. _useroptions-pageTree-altElementBrowserMountPoints:
 
 pageTree.altElementBrowserMountPoints
@@ -703,13 +674,13 @@ pageTree.altElementBrowserMountPoints
    unless you use the ``altElementBrowserMountPoints.append`` option
    described below.
 
-   **Example**
-
+:aspect:`Example`
    .. code-block:: typoscript
 
       options.pageTree.altElementBrowserMountPoints = 34,123
 
 
+.. index:: Page tree; Webmounts append
 .. _useroptions-pageTree-altElementBrowserMountPoints-append:
 
 pageTree.altElementBrowserMountPoints.append
@@ -725,13 +696,13 @@ pageTree.altElementBrowserMountPoints.append
    existing UserTSconfig option.
 
 :aspect:`Example`
-
    .. code-block:: typoscript
 
       options.pageTree.altElementBrowserMountPoints = 34,123
       options.pageTree.altElementBrowserMountPoints.append = 1
 
 
+.. index:: Page tree; Background colors
 .. _useroptions-pageTree-backgroundColor:
 
 pageTree.backgroundColor
@@ -760,6 +731,7 @@ pageTree.backgroundColor
       Tree branches with configured background colors
 
 
+.. index:: Page tree; Doktypes for new pages
 .. _useroptions-pageTree-doktypesToShowInNewPageDragArea:
 
 pageTree.doktypesToShowInNewPageDragArea
@@ -782,6 +754,8 @@ pageTree.doktypesToShowInNewPageDragArea
    1,6,4,7,3,254,255,199
 
 
+.. todo:: does this still work with site configuration?
+.. index:: Page tree; Show domain names
 .. _useroptions-pageTree-showDomainNameWithTitle:
 
 pageTree.showDomainNameWithTitle
@@ -796,6 +770,7 @@ pageTree.showDomainNameWithTitle
    Useful if there are several domains in one page tree.
 
 
+.. index:: Page tree; Show navigation title
 .. _useroptions-pageTree-showNavTitle:
 
 pageTree.showNavTitle
@@ -810,6 +785,7 @@ pageTree.showNavTitle
    tooltip if the mouse hovers the navigation title.
 
 
+.. index:: Page tree; Show page id
 .. _useroptions-pageTree-showPageIdWithTitle:
 
 pageTree.showPageIdWithTitle
@@ -822,6 +798,7 @@ pageTree.showPageIdWithTitle
    If set, the titles in the page tree will have their ID numbers printed before the title.
 
 
+.. index:: Page tree; Show path above mounts
 .. _useroptions-pageTree-showPathAboveMounts:
 
 pageTree.showPathAboveMounts
@@ -838,22 +815,7 @@ pageTree.showPathAboveMounts
       :alt: Active user db mount
 
 
-.. _useroptions-popupWindowSize:
-
-popupWindowSize
-===============
-
-:aspect:`Datatype`
-   string
-
-:aspect:`Description`
-   Defines the size of the element browser.
-
-   .. note::
-
-      This property is outdated.
-
-
+.. index:: Clipboard; Save for next login
 .. _useroptions-saveClipboard:
 
 saveClipboard
@@ -863,11 +825,11 @@ saveClipboard
    boolean
 
 :aspect:`Description`
-
    If set, the clipboard content will be preserved for the next login.
    Normally the clipboard content lasts only during the session.
 
 
+.. index:: Buttons; Save and create new
 .. _useroptions-saveDocNew:
 
 saveDocNew
@@ -886,7 +848,6 @@ saveDocNew
    1
 
 :aspect:`Example`
-
    In this example the button is disabled for all tables, except
    tt\_content where it will appear, and in addition create the records
    in the top of the page (default is after instead of top).
@@ -897,6 +858,7 @@ saveDocNew
       options.saveDocNew.tt_content = top
 
 
+.. index:: Buttons; Save and view
 .. _useroptions-saveDocView:
 
 saveDocView
@@ -915,6 +877,7 @@ saveDocView
    1
 
 
+.. index:: Buttons; Duplicate record
 .. _useroptions-showDuplicate:
 
 showDuplicate
@@ -933,6 +896,7 @@ showDuplicate
    0
 
 
+.. index:: Buttons; History of record
 .. _useroptions-showHistory:
 
 showHistory
@@ -948,24 +912,3 @@ showHistory
    Any value set for a single table will override the default value set for "showHistory".
 
 
-
-.. _useroptions-view-languageOrder:
-
-view.languageOrder
-==================
-
-:aspect:`Datatype`
-   list of sys_language ids
-
-:aspect:`Description`
-   When a backend user clicks a view-page link in the backend (magnifying glass) the first language uid in this
-   list which the user has access to edit will be added as the language parameter to the view-link.
-
-   This is a useful setting for translators which primarily wish to see
-   their translation when they click the view-links.
-
-:aspect:`Example`
-
-   .. code-block:: typoscript
-
-      options.view.languageOrder = 2,1

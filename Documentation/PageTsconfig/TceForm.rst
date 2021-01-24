@@ -1,5 +1,7 @@
-.. include:: ../Includes.txt
-
+.. include:: /Includes.rst.txt
+.. index::
+   TCEFORM
+   Records; editing options
 .. _tceform:
 .. _pagetceformconfobj:
 .. _pagetceformflexformsheet:
@@ -42,6 +44,10 @@ While all that property path munging looks messy at first, it should become more
 clear if reading through the single properties below and looking at the examples.
 
 .. youtube:: B3IQq7pIJ_o
+
+
+.. index::
+   Records; select items added
 
 addItems
 ========
@@ -87,6 +93,10 @@ addItems
 
     Instead of adding files by path, icon identifiers should be used.
 
+
+.. index::
+   Records; labels changed
+
 altLabels
 =========
 
@@ -114,7 +124,6 @@ altLabels
         Where `sDEF` is the sheet name.
 
 :aspect:`Example`
-
    ::
 
         TCEFORM.pages.doktype {
@@ -139,6 +148,9 @@ altLabels
 
       Note the *double dot* after `altLabels`.
 
+
+.. index::
+   Records; field configuration
 .. _pageTsConfigTceFormConfig:
 
 config
@@ -182,6 +194,8 @@ config
         Where `sDEF` is the sheet name.
 
 
+.. index::
+   Records; tree configuration
 .. _pageTsConfigTceFormConfigTreeConfig:
 
 config.treeConfig
@@ -201,7 +215,7 @@ config.treeConfig
         config.treeConfig.rootUid
         config.treeConfig.appearance.expandAll
         config.treeConfig.appearance.maxLevels
-        config.treeConfig.appearance.notSelectableLevels
+        config.treeConfig.appearance.nonSelectableLevels
 
     This property is available for various levels:
 
@@ -216,6 +230,9 @@ config.treeConfig
 
         Where `sDEF` is the sheet name.
 
+
+.. index::
+   Records; field disabled
 
 disabled
 ========
@@ -252,6 +269,8 @@ disabled
         }
 
 
+.. index::
+   Records; select items  disable "INVALID VALUE"
 .. _pageFormEngineDisableNoMatchingElement:
 
 disableNoMatchingValueElement
@@ -301,6 +320,9 @@ disableNoMatchingValueElement
         Instead of show a warning message the system choose the first element in the selector box
 
 
+.. index::
+   Records; select items user function
+
 itemsProcFunc
 =============
 
@@ -325,6 +347,9 @@ itemsProcFunc
 
         Where `sDEF` is the sheet name.
 
+
+.. index::
+   Records; select items remove
 
 keepItems
 =========
@@ -357,6 +382,9 @@ keepItems
             keepItems = 1, 199
         }
 
+
+.. index::
+   Records; Field label
 
 label
 =====
@@ -393,6 +421,9 @@ label
         }
 
 
+.. index::
+   Records; label for no matching value
+
 noMatchingValue_label
 =====================
 
@@ -420,7 +451,6 @@ noMatchingValue_label
         Where `sDEF` is the sheet name.
 
 :aspect:`Example`
-
     .. code-block:: typoscript
 
         TCEFORM.pages.doktype {
@@ -433,6 +463,9 @@ noMatchingValue_label
 
         An invalid selector box value is indicated by a warning message
 
+
+.. index::
+   Records; select items remove
 
 removeItems
 ===========
@@ -465,6 +498,8 @@ removeItems
             removeItems = 199, 255
         }
 
+.. index::
+   FlexForm; Sheet description
 
 sheetDescription
 ================
@@ -481,6 +516,9 @@ sheetDescription
         Where `sDEF` is the sheet name.
 
 
+.. index::
+   FlexForm; Sheet short description
+
 sheetShortDescr
 ===============
 
@@ -495,6 +533,8 @@ sheetShortDescr
 
         Where `sDEF` is the sheet name.
 
+.. index::
+   FlexForm; Sheet title
 
 sheetTitle
 ==========
@@ -519,6 +559,9 @@ sheetTitle
         }
 
 
+.. index::
+   Records; Suggest wizard
+   Suggest wizard
 .. _pagetceformsuggest:
 
 suggest
@@ -554,6 +597,10 @@ Configuration of one suggest wizard field in a flex form field of one table for 
     `TCEFORM.[tableName].[fieldName].[dataStructureKey].[sheetName].[flexFieldName].suggest.[queryTable]`
 
 
+
+.. index::
+   Suggest wizard; Search fields additional
+
 additionalSearchFields
 ----------------------
 
@@ -565,6 +612,9 @@ additionalSearchFields
     fields listed in the :ref:`label <t3tca:ctrl-reference-label>` and :ref:`label_alt <t3tca:ctrl-reference-label-alt>`
     of TCA :ref:`ctrl properties <t3tca:ctrl-reference>`.
 
+
+.. index::
+   Suggest wizard;  Where statement
 
 addWhere
 --------
@@ -590,6 +640,8 @@ addWhere
             addWhere = AND pages.pid=###PAGE_TSCONFIG_ID###
         }
 
+.. index::
+   Suggest wizard; CSS class
 
 cssClass
 --------
@@ -610,6 +662,9 @@ cssClass
         }
 
 
+.. index::
+   Suggest wizard; hide
+
 hide
 ----
 
@@ -627,6 +682,9 @@ hide
         }
 
 
+.. index::
+   Suggest wizard; Characters max
+
 maxPathTitleLength
 ------------------
 
@@ -643,6 +701,8 @@ maxPathTitleLength
             maxPathTitleLength = 30
         }
 
+.. index::
+   Suggest wizard; Characters min
 
 minimumCharacters
 -----------------
@@ -664,6 +724,9 @@ minimumCharacters
         }
 
 
+.. index::
+   Suggest wizard; pid levels
+
 pidDepth
 --------
 
@@ -681,6 +744,8 @@ pidDepth
             pidDepth = 4
         }
 
+.. index::
+   Suggest wizard; pid list
 
 pidList
 -------
@@ -701,6 +766,9 @@ pidList
         }
 
 
+.. index::
+   Suggest wizard; receiver php class
+
 receiverClass
 -------------
 
@@ -715,6 +783,9 @@ receiverClass
     :php:`\TYPO3\CMS\Backend\Form\Element\SuggestDefaultReceiver`
 
 
+.. index::
+   Suggest wizard; rendering user function
+
 renderFunc
 ----------
 
@@ -724,6 +795,9 @@ renderFunc
 :aspect:`Description`
     User function to manipulate the displayed records in the result.
 
+
+.. index::
+   Suggest wizard; Where statement
 
 searchCondition
 ---------------
@@ -743,6 +817,8 @@ searchCondition
             searchCondition = doktype=1
         }
 
+.. index::
+   Suggest wizard; Search whole phrase
 
 searchWholePhrase
 -----------------

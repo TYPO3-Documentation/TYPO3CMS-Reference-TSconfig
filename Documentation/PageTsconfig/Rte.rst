@@ -1,5 +1,8 @@
-.. include:: ../Includes.txt
-
+.. include:: /Includes.rst.txt
+.. index::
+   RTE
+   Rich text editor
+   see: Rich text editor; RTE
 .. _pageTsRte:
 
 ===
@@ -17,9 +20,9 @@ for more general information on RTE configuration and data processing.
 
 The order in which configuration for the RTE is loaded is:
 
-1. preset defined for a specific field via PageTS 
-2. richtextConfiguration defined for a specific field via TCA 
-3. general preset defined via PageTS 
+1. preset defined for a specific field via PageTS
+2. richtextConfiguration defined for a specific field via TCA
+3. general preset defined via PageTS
 4. default
 
 The full property path building is a bit more complex than for other
@@ -58,6 +61,7 @@ Consider the following Page TSconfig examples:
     # But disable RTE for tt_content bodytext again if the record type is "text"
     RTE.config.tt_content.bodytext.types.text.disabled = 1
 
+.. index:: RTE; disable
 
 disabled
 ========
@@ -71,11 +75,15 @@ disabled
     disable RTE's in his user settings.
 
 
+.. index::
+   RTE; Server processing
+   RTE; proc
+
 proc
 ====
 
 The `proc` section allows customization of the server processing of the content, see
-the :ref:`transformation section <t3coreapi:transformations-process>` of the RTE chapter in
+the :ref:`transformation section <t3coreapi:transformations-tsconfig>` of the RTE chapter in
 the core API document for more general information on server processing.
 
 The `proc` properties are in :code:`\TYPO3\CMS\Core\Html\RteHtmlParser` and
@@ -87,6 +95,9 @@ Notice how many properties relate to specific transformations only! Also notice 
 `ts_css` imply other transformations :ref:`as explained in the overview <transformations-overview-meta>`.
 This means that options limited to `ts_transform` will also work for `ts_css` of course.
 
+
+.. index::
+   RTE; Classes allowed
 
 allowedClasses
 --------------
@@ -109,6 +120,10 @@ allowedClasses
     If a class name is not found in this list, the default is to remove the class.
 
 
+.. index::
+   RTE; HTML tags allowed
+   RTE; Tags allowed
+
 allowTags
 ---------
 
@@ -128,6 +143,9 @@ allowTags
         This information is outdated, the default list depends on the used
         rte_ckeditor YAML configuraton.
 
+
+.. index::
+   RTE; Tags outside paragraphs
 
 allowTagsOutside
 ----------------
@@ -149,6 +167,8 @@ allowTagsOutside
         # Allow only hr tags outside of p and div
         RTE.default.proc.allowTagsOutside = hr
 
+.. index::
+   RTE; block elements
 
 blockElementList
 ----------------
@@ -160,6 +180,8 @@ blockElementList
     Comma-separated list of uppercase tags (e.g. :code:`P,HR`) that overrides the list of HTML
     elements that will be treated as block elements by the RTE transformations.
 
+.. index::
+   RTE; tags denyed
 
 denyTags
 --------
@@ -173,37 +195,8 @@ denyTags
     Tags from above list to disallow.
 
 
-dontFetchExtPictures
---------------------
-
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Description`
-    Applies for `ts_images` only.
-
-    If set, images from external urls are not fetched for the page if content is pasted from
-    external sources. Normally this process of copying is done.
-
-
-dontRemoveUnknownTags_db
-------------------------
-
-:aspect:`Datatype`
-    boolean
-
-:aspect:`Description`
-    Applies for `ts_transform` and `css_transform` only.
-
-    Direction: From RTE to database, saving a record.
-
-    Default is to remove all unknown tags in the content going to the database. Generally this
-    is a very useful thing, because all kinds of bogus tags from pasted content like that from Word etc.
-    will be removed to have clean content in the database.
-
-    This property this disables that and allows all tags that are not in
-    the :ref:`HTMLparser_db list <pageTsRteProcHtmlParserDb>`.
-
+.. index::
+   RTE; HTMLparser DB entry
 
 entryHTMLparser_db
 -------------------
@@ -217,6 +210,8 @@ entryHTMLparser_db
     Allows to enable / disable the :ref:`HTMLparser <t3tsref:htmlparser>` *before* the
     content is processed with the predefined processors (e.g. ts_images or ts_transform).
 
+.. index::
+   RTE; HTMLparser RTE entry
 
 entryHTMLparser_rte
 -------------------
@@ -231,6 +226,9 @@ entryHTMLparser_rte
     content is processed with the predefined processors (e.g. ts_images or ts_transform).
 
 
+.. index::
+   RTE; HTMLparser DB exit
+
 exitHTMLparser_db
 -----------------
 
@@ -243,6 +241,9 @@ exitHTMLparser_db
     Allows to enable / disable the :ref:`HTMLparser <t3tsref:htmlparser>` *after* the
     content is processed with the predefined processors (e.g. ts_images or ts_transform).
 
+
+.. index::
+   RTE; HTMLparser RTE exit
 
 exitHTMLparser_rte
 ------------------
@@ -257,6 +258,8 @@ exitHTMLparser_rte
     content is processed with the predefined processors (e.g. ts_images or ts_transform).
 
 
+.. index::
+   RTE; HTMLparser DB
 .. _pageTsRteProcHtmlParserDb:
 
 HTMLparser_db
@@ -283,6 +286,9 @@ HTMLparser_db
        and :code:`htmlSpecialChars` are *not* observed. They are preset internally.
 
 
+.. index::
+   RTE; HTMLparser RTE
+
 HTMLparser_rte
 --------------
 
@@ -306,19 +312,8 @@ HTMLparser_rte
        Also note the :ref:`HTMLparser <t3tsref:htmlparser>` options :code:`keepNonMatchedTags`
        and :code:`htmlSpecialChars` are *not* observed. They are preset internally.
 
-
-keepPDIVattribs
----------------
-
-:aspect:`Datatype`
-    comma separated list of tag attributes
-
-:aspect:`Description`
-    Applies for `ts_transform` and `css_transform` only.
-
-    `align` and `class` are the only attributes preserved for `<P>` and `<DIV>` tags.
-    This property allows to specify a list of other attributes to preserve.
-
+.. index::
+   RTE; Transformations overruled
 
 overruleMode
 ------------
@@ -329,32 +324,3 @@ overruleMode
 :aspect:`Description`
     This can overrule the RTE transformation set from TCA. Notice, this is a  *comma list* of transformation keys.
 
-
-plainImageMode
---------------
-
-:aspect:`Datatype`
-    boolean/string
-
-:aspect:`Description`
-    Applies for `ts_images` only.
-
-    If set, all "plain" local images (those that are not magic images) will be cleaned up in some way.
-
-    If the value is just set, then the style attribute will be removed after detecting any special
-    width/height CSS attributes (which is what the RTE will set if you scale the image manually) and
-    the border attribute is set to zero.
-
-    You can also configure with special keywords. So setting `plainImageMode` to any of the value below
-    will perform special processing:
-
-    lockDimensions
-        This will read the real dimensions of the image file and force these values into the `<img>` tag.
-        Thus this option will prevent any user applied scaling in the image!
-
-    lockRatio
-        This will allow users to scale the image but will automatically correct the height dimension so
-        the aspect ratio from the original image file is preserved.
-
-    lockRatioWhenSmaller
-        Like `lockRatio`, but will not allow any scaling larger than the original size of the image.
