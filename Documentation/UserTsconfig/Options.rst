@@ -864,11 +864,25 @@ passwordReset
    will be disabled. This does not affect the  the password reset by
    cli command.
 
+   Disabling the password reset by user TSconfig overrules disabling the
+   password reset by setting
+
+   .. code-block:: php
+
+      $GLOBALS['TYPO3_CONF_VARS']['BE']['passwordReset'] = false
+
+   To completely disable the password reset in the backend for all users, you can
+   set the user TSconfig globally in your :php:`ext_localconf.php`:
+
    .. code-block:: php
 
       \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
          'options.passwordReset = 0'
       );
+
+   If  required, this can of be overwritten on a per user basis
+   in the corresponding :php:`TSconfig` field.
+
 
 .. index:: Clipboard; Save for next login
 .. _useroptions-saveClipboard:
