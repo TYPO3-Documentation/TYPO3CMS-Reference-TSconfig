@@ -861,18 +861,11 @@ passwordReset
 
 :aspect:`Description`
    If set to `0` the initiating of the password reset in the backend
-   will be disabled. This does not affect the  the password reset by
+   will be disabled. This does not affect the password reset by
    cli command.
 
-   Disabling the password reset by user TSconfig overrules disabling the
-   password reset by setting
-
-   .. code-block:: php
-
-      $GLOBALS['TYPO3_CONF_VARS']['BE']['passwordReset'] = false
-
    To completely disable the password reset in the backend for all users, you can
-   set the user TSconfig globally in your :php:`ext_localconf.php`:
+   set the user TSconfig globally in your :file:`ext_localconf.php`:
 
    .. code-block:: php
 
@@ -880,8 +873,15 @@ passwordReset
          'options.passwordReset = 0'
       );
 
-   If  required, this can of be overwritten on a per user basis
-   in the corresponding :php:`TSconfig` field.
+   If required, this setting can of be overwritten on a per user basis
+   in the corresponding :guilabel:`TSconfig` field of the backend
+   usergroup or user.
+
+   The password reset functionality can also be disabled globally by setting:
+
+   .. code-block:: php
+
+      $GLOBALS['TYPO3_CONF_VARS']['BE']['passwordReset'] = false
 
 
 .. index:: Clipboard; Save for next login
