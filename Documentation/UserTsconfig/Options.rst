@@ -27,7 +27,7 @@ additionalPreviewLanguages
 
 :aspect:`Description`
    The user will see these additional languages when localizing stuff in
-   TCEforms. The list are uid numbers of sys_language records.
+   TCEforms. The list are ids of site languages.
 
 
 .. index:: Backend; Alert popups
