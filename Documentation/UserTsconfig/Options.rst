@@ -873,7 +873,7 @@ passwordReset
          'options.passwordReset = 0'
       );
 
-   If required, this setting can of be overwritten on a per user basis
+   If required, this setting can be overwritten on a per user basis
    in the corresponding :guilabel:`TSconfig` field of the backend
    usergroup or user.
 
