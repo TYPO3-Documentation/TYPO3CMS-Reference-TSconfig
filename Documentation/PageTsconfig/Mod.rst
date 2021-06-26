@@ -797,7 +797,10 @@ displayColumnSelector
    true
 
 :aspect:`Description`
-    Enable the columns selector in the record list. This allows to compare
+   The column selector is enabled by default and can be disabled with this
+   option. The column selector is displayed at the top of each record list in
+   the :guilabel:`List` module. It can be used to compare different fields of
+   the listed records.
 
 :aspect:`Example`
     .. code-block:: typoscript
