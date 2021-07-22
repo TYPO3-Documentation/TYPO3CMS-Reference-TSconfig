@@ -706,9 +706,9 @@ csvDelimiter
    string
 
 :aspect:`Description`
-   Defines the default delimiter for CSV exports (Microsoft Excel expects
+   Defines the default delimiter for CSV downloads (Microsoft Excel expects
    `;` to be set). The value set will be displayed as default delimiter in the
-   export dialog in the list module.
+   download dialog in the list module.
 
 :aspect:`Default`
    ,
@@ -721,7 +721,7 @@ csvDelimiter
 
 .. index::
    csvQuote
-   CSV Exports; Quoting character
+   CSV Downloads; Quoting character
 
 csvQuote
 --------
@@ -730,8 +730,8 @@ csvQuote
     string
 
 :aspect:`Description`
-   Defines the default quoting character for CSV exports. The value set will
-   be displayed as default quoting in the export dialog in the list module.
+   Defines the default quoting character for CSV downloads. The value set will
+   be displayed as default quoting in the download dialog in the list module.
 
 
 :aspect:`Default`
@@ -1043,7 +1043,7 @@ noCreateRecordsLink
 .. index::
    noExportRecordsLinks
    Buttons; Export
-   Buttons; Download CSV file
+   Buttons; Download
 
 noExportRecordsLinks
 --------------------
@@ -1052,15 +1052,18 @@ noExportRecordsLinks
     boolean
 
 :aspect:`Description`
-   If set, the "Export" buttons are hidden in the list module. This applies to
-   the button in the top for t3d exports, the button directly on the table
-   listing for csv exports and the button in the tables single view.
+   If set, the :guilabel:`Download` and :guilabel:`Export` buttons are hidden
+   in the list module. This applies to
+   the :guilabel:`Export` button in the top for t3d exports, the
+   :guilabel:`Download` button directly on the table
+   listing for csv download and the :guilabel:`Download` button in the tables
+   single view.
 
    This option is for example important to disable batch
    download of sensitive data via CSV or t3d exports.
 
-   The buttons "Export" and "Download CSV file" are hidden
-   in single table view inside the list module:
+   The buttons :guilabel:`Export` and :guilabel:`Download` are hidden
+   in single table view and inside the list module:
 
    .. include:: /Images/AutomaticScreenshots/WebList/WithExportButtons.rst.txt
 

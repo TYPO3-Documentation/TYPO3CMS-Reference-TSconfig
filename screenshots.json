@@ -55,7 +55,7 @@
                         "fileName": "WebList/WithExportButtons",
                         "captionText": "The list module with export buttons after activating the single-table mode"
                     },
-                    {"action": "click", "link": "//button[contains(.,'Export')]"},
+                    {"action": "click", "link": "//button[contains(.,'Download')]"},
                     {"action": "waitForModalDialogInMainFrame"},
                     {
                         "action": "makeScreenshotOfElement",
