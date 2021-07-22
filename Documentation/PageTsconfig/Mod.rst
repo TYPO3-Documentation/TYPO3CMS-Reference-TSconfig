@@ -1054,7 +1054,7 @@ noExportRecordsLinks
 :aspect:`Description`
    If set, the :guilabel:`Download` and :guilabel:`Export` buttons are hidden
    in the list module. This applies to
-   the :guilabel:`Export` button in the top for t3d exports, the
+   the :guilabel:`Export` button located at the top left for t3d exports, the
    :guilabel:`Download` button directly on the table
    listing for csv download and the :guilabel:`Download` button in the tables
    single view.
