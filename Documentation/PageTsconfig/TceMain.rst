@@ -398,7 +398,7 @@ preview
     .. important::
 
         The configuration has to be defined for the page containing the records and :ts:`previewPageId`
-        (e.g. sysfolder holding the records is located outside of your root)
+        (for example sysfolder holding the records is located outside of your root)
 
 .. index:: Copy record; Table based configuration
 .. _pagetcemaintables:
