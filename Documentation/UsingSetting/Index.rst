@@ -81,9 +81,9 @@ overwrite and :ref:`modify <t3coreapi:typoscript-syntax-syntax-value-modificatio
 in the Page TSconfig of the same page or a subpage.
 
 You can define settings in a YAML file for the site configuration
-(e. g. :code:`config/sites/<site-name>/config.yml`):
+(for example :file:`config/sites/<site-name>/config.yml`):
 
-.. code-block:: typoscript
+.. code-block:: yaml
 
    settings:
      categoryPid: 658
