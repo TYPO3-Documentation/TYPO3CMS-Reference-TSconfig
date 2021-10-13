@@ -80,6 +80,21 @@ which they are set, and for all pages hierarchically below. You can
 overwrite and :ref:`modify <t3coreapi:typoscript-syntax-syntax-value-modification>` them
 in the Page TSconfig of the same page or a subpage.
 
+You can define settings in a YAML file for the site configuration
+(for example :file:`config/sites/<site-name>/config.yml`):
+
+.. code-block:: yaml
+
+   settings:
+     categoryPid: 658
+     styles:
+       content:
+         loginform:
+           pid: 23
+
+With this site configuration, you can use these constants as :code:`{$categoryPid}`
+and :code:`{$styles.content.loginform.pid}` in the Page TSconfig.
+
 Page TSconfig itself can be :ref:`overwritten in User TSconfig <userrelationshiptovaluessetinpagetsconfig>`.
 
 
