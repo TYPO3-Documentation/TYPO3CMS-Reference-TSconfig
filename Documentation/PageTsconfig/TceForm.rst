@@ -148,6 +148,95 @@ altLabels
 
       Note the *double dot* after `altLabels`.
 
+.. _page_tsconfig_id:
+
+PAGE_TSCONFIG_ID
+================
+
+:aspect:`Datatype`
+    integer
+
+:aspect:`Description`
+    *(applies to select-types with foreign table)*
+
+    For select-type fields relating to a foreign table. Additional SQL
+    conditions can be applied. These may contain markers defined in Page
+    TSconfig. See the description of the :ref:`foreign_table_where property <t3tca:columns-select-properties-foreign-table>`
+    in the TCA reference.
+
+:aspect:`Example`
+    .. code-block:: typoscript
+
+        TCEFORM.tt_content.pi_flexform.my_ext_pi1.sDEF.myField.PAGE_TSCONFIG_ID = 22
+
+    In this example, the value will substitute the marker in a plugin FlexForm.
+
+    .. code-block:: typoscript
+
+        TCEFORM.tx_myext_table.myfield.PAGE_TSCONFIG_ID = 22
+
+    This example might be used for a record in an extension. It refers to a
+    table called `tx_myext_table` and the field `myfield`. Here the marker will
+    be substituted by the value `22`.
+
+
+.. _page_tsconfig_idlist:
+
+PAGE_TSCONFIG_IDLIST
+====================
+
+:aspect:`Datatype`
+    list of integers
+
+:aspect:`Description`
+    *(applies to select-types with foreign table)*
+
+    See above.
+
+:aspect:`Example`
+    .. code-block:: typoscript
+
+        TCEFORM.tt_content.pi_flexform.my_ext_pi1.sDEF.myField.PAGE_TSCONFIG_IDLIST = 20,21,22
+
+    In this example, the value will substitute the marker in a plugin FlexForm.
+
+    .. code-block:: typoscript
+
+        TCEFORM.tx_myext_table.myfield.PAGE_TSCONFIG_IDLIST = 20,21,22
+
+    This example might be used for a record in an extension. It refers to a
+    table called `tx_myext_table` and the field `myfield`. Here the marker will
+    be substituted by the list of integers.
+
+
+.. _page_tsconfig_str:
+
+PAGE_TSCONFIG_STR
+=================
+
+:aspect:`Datatype`
+    string
+
+:aspect:`Description`
+    *(applies to select-types with foreign table)*
+
+    See above.
+
+:aspect:`Example`
+    .. code-block:: typoscript
+
+        TCEFORM.tt_content.pi_flexform.my_ext_pi1.sDEF.myField.PAGE_TSCONFIG_STR = %hello%
+
+    In this example, the value will substitute the marker in a plugin FlexForm.
+
+    .. code-block:: typoscript
+
+        TCEFORM.tx_myext_table.myfield.PAGE_TSCONFIG_STR = %hello%
+
+    This example might be used for a record in an extension. It refers to a
+    table called `tx_myext_table` and the field `myfield`. Here the marker will
+    be substituted by the given value.
+
 
 .. index::
    Records; field configuration
@@ -717,9 +806,9 @@ addWhere
 
     * ###THIS_UID###
     * ###CURRENT_PID###
-    * ###PAGE_TSCONFIG_ID###
-    * ###PAGE_TSCONFIG_IDLIST###
-    * ###PAGE_TSCONFIG_STR###
+    * :ref:`###PAGE_TSCONFIG_ID### <page_tsconfig_id>`
+    * :ref:`###PAGE_TSCONFIG_IDLIST### <page_tsconfig_idlist>`
+    * :ref:`###PAGE_TSCONFIG_STR### <page_tsconfig_str>`
 
 :aspect:`Example`
     .. code-block:: typoscript
