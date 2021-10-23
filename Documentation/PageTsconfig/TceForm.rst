@@ -157,12 +157,14 @@ PAGE_TSCONFIG_ID
     integer
 
 :aspect:`Description`
-    *(applies to select-types with foreign table)*
+    This option allows to provide a value for dynamic SQL-WHERE parameters. The
+    value is defined for a specific field of a table. For usage with flexform
+    fields, the entire path to a sub-field must be provided.
 
-    For select-type fields relating to a foreign table. Additional SQL
-    conditions can be applied. These may contain markers defined in Page
-    TSconfig. See the description of the :ref:`foreign_table_where property <t3tca:columns-select-properties-foreign-table>`
-    in the TCA reference.
+    .. note::
+
+       This value can be used for the TCA property :ref:`foreign_table_where <t3tca:columns-select-properties-foreign-table-where>`
+       and for the `addWhere` part of the :ref:`suggest wizard <pagetceformsuggest>`.
 
 :aspect:`Example`
     .. code-block:: typoscript
@@ -189,8 +191,6 @@ PAGE_TSCONFIG_IDLIST
     list of integers
 
 :aspect:`Description`
-    *(applies to select-types with foreign table)*
-
     See above.
 
 :aspect:`Example`
@@ -218,8 +218,6 @@ PAGE_TSCONFIG_STR
     string
 
 :aspect:`Description`
-    *(applies to select-types with foreign table)*
-
     See above.
 
 :aspect:`Example`
