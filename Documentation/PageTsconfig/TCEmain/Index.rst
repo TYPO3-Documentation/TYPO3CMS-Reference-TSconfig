@@ -319,31 +319,31 @@ preview
             }
 
          The :ts:`previewPageId` is the uid of the page to use for preview. If this setting
-         is omitted the current page will be used. If the current page is not a normal page, 
+         is omitted the current page will be used. If the current page is not a normal page,
          the root page will be chosen.
 
          The :ts:`disableButtonForDokType` setting allows you to disable the preview button for a given list
          of doktypes. If none are configured, this defaults to: 199, 254, 255 (Spacer, Folder and Recycler).
 
-         The :ts:`useDefaultLanguageRecord` defaults to `1` and ensures that translated 
-         records will use the uid of the default record for the preview link. You may 
+         The :ts:`useDefaultLanguageRecord` defaults to `1` and ensures that translated
+         records will use the uid of the default record for the preview link. You may
          disable this, if your extension can deal with the uid of translated records.
 
-         The :ts:`fieldToParameterMap` is a mapping which allows you to select fields 
-         of the record to be included as GET-parameters in the preview link. The key 
+         The :ts:`fieldToParameterMap` is a mapping which allows you to select fields
+         of the record to be included as GET-parameters in the preview link. The key
          specifies the field name and the value specifies the GET-parameter name.
 
          Finally :ts:`additionalGetParameters` allow you to add arbitrary GET-parameters
          and even override others.
 
-         The core automatically sets the "no_cache" and the "L" parameter. The language 
-         matches the language of the current record. You may override each parameter 
+         The core automatically sets the "no_cache" and the "L" parameter. The language
+         matches the language of the current record. You may override each parameter
          by using the :ts:`additionalGetParameters` configuration option.
-         
+
          .. note::
 
             Make sure not to set :ts:`options.saveDocView.<table name> = 0`,
-            otherwise the save+view button will not be displayed when editing 
+            otherwise the save+view button will not be displayed when editing
             records of your table.
 
 
@@ -368,9 +368,9 @@ previewDomain
 
          .. code-block:: typoscript
 
-            TCEMAIN.previewDomain = dev.local
-            TCEMAIN.previewDomain = http://dev.local
-            TCEMAIN.previewDomain = https://example.com
+            TCEMAIN.previewDomain = example.local
+            TCEMAIN.previewDomain = http://example.local
+            TCEMAIN.previewDomain = https://example.org
 
          .. note::
 
