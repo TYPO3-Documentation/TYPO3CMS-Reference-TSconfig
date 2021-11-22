@@ -43,7 +43,7 @@ clearCacheCmd
             # Clear cache for all pages tagged with tag "pagetag1"
             clearCacheCmd = cacheTag:pagetag1
         }
-        
+
     .. note::
 
         In order for the :ts:`pages` and :ts:`all` commands to work for non-admin users,
@@ -354,8 +354,8 @@ preview
 
     The :ts:`previewPageId` is the uid of the page to use for preview. If this setting is omitted the
     current page will be used. If the current page is not a normal page, the root page will be chosen.
-    
-    The :ts:`disableButtonForDokType` setting allows you to disable the preview button for a given list 
+
+    The :ts:`disableButtonForDokType` setting allows you to disable the preview button for a given list
     of doktypes. If none are configured, this defaults to: 199, 254, 255 (Spacer, Folder and Recycler).
 
     The :ts:`useDefaultLanguageRecord` defaults to `1` and ensures that translated records will use the
@@ -371,8 +371,8 @@ preview
     The core automatically sets the "no_cache" and the "L" parameter. The language matches the language of
     the current record. You may override each parameter by using the :ts:`additionalGetParameters` configuration
     option.
-    
-    Enable :ts:`useCacheHash` to add a cHash. This is essential for records displayed using Extbase which enforces 
+
+    Enable :ts:`useCacheHash` to add a cHash. This is essential for records displayed using Extbase which enforces
     cHash usage. If useCacheHash = 1 is not set, the no_cache parameter will be added just like before.
 
     .. note::
@@ -399,9 +399,9 @@ previewDomain
 :aspect:`Example`
     .. code-block:: typoscript
 
-        TCEMAIN.previewDomain = dev.local
-        TCEMAIN.previewDomain = http://dev.local
-        TCEMAIN.previewDomain = https://example.com
+        TCEMAIN.previewDomain = example.local
+        TCEMAIN.previewDomain = http://example.local
+        TCEMAIN.previewDomain = https://example.org
 
 
 .. _pagetcemaintables:
