@@ -368,9 +368,9 @@ previewDomain
 
          .. code-block:: typoscript
 
-            TCEMAIN.previewDomain = dev.local
-            TCEMAIN.previewDomain = http://dev.local
-            TCEMAIN.previewDomain = https://example.com
+            TCEMAIN.previewDomain = example.local
+            TCEMAIN.previewDomain = http://example.local
+            TCEMAIN.previewDomain = https://example.org
 
          .. note::
 
