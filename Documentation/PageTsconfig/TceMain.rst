@@ -399,8 +399,8 @@ previewDomain
 :aspect:`Example`
     .. code-block:: typoscript
 
-        TCEMAIN.previewDomain = example.local
-        TCEMAIN.previewDomain = http://example.local
+        TCEMAIN.previewDomain = example.localhost
+        TCEMAIN.previewDomain = http://example.localhost
         TCEMAIN.previewDomain = https://example.org
 
 
