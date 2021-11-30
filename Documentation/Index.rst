@@ -34,7 +34,7 @@ TSconfig Reference
 :License:
       Open Publication License available from `www.opencontent.org/openpub/`_.
 
-      .. _www.opencontent.org/openpub/: http://www.opencontent.org/openpub/
+      .. _www.opencontent.org/openpub/: https://www.opencontent.org/openpub/
 
 :Rendered:
       |today|
@@ -81,7 +81,7 @@ Please visit the complete :ref:`Sitemap`.
    UsingSetting/Index
    Conditions/Index
    UserTsconfig/Index
-   PageTsconfig/Index   
+   PageTsconfig/Index
    NextSteps/Index
    Targets
 
