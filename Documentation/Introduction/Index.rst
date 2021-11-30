@@ -53,37 +53,21 @@ Full list of changed properties
 You can find a list of changes for more recent TYPO3 versions in the
 wiki:
 
-TYPO3 4.2: `http://wiki.typo3.org/Documentation\_changes\_in\_4.2`_.
+TYPO3 4.2: https://wiki.typo3.org/Documentation_changes_in_4.2.
 
-.. _http://wiki.typo3.org/Documentation\_changes\_in\_4.2: http://wiki.typo3.org/Documentation_changes_in_4.2
+TYPO3 4.3: https://wiki.typo3.org/Documentation_changes_in_4.3.
 
-TYPO3 4.3: `http://wiki.typo3.org/Documentation\_changes\_in\_4.3`_.
+TYPO3 4.4 and 4.5: https://wiki.typo3.org/Documentation_changes_in_4.4_and_4.5.
 
-.. _http://wiki.typo3.org/Documentation\_changes\_in\_4.3: http://wiki.typo3.org/Documentation_changes_in_4.3
+TYPO3 4.6: https://wiki.typo3.org/Documentation_changes_in_4.6.
 
-TYPO3 4.4 and 4.5: `http://wiki.typo3.org/Documentation\_changes\_in\_4.4\_and\_4.5`_.
+TYPO3 4.7: https://forge.typo3.org/versions/1428.
 
-.. _http://wiki.typo3.org/Documentation\_changes\_in\_4.4\_and\_4.5: http://wiki.typo3.org/Documentation_changes_in_4.4_and_4.5
+TYPO3 6.0: https://forge.typo3.org/versions/1624.
 
-TYPO3 4.6: `http://wiki.typo3.org/Documentation\_changes\_in\_4.6`_.
+TYPO3 6.1: https://forge.typo3.org/versions/1961.
 
-.. _http://wiki.typo3.org/Documentation\_changes\_in\_4.6: http://wiki.typo3.org/Documentation_changes_in_4.6
-
-TYPO3 4.7: `https://forge.typo3.org/versions/1428`_.
-
-.. _https://forge.typo3.org/versions/1428: https://forge.typo3.org/versions/1428
-
-TYPO3 6.0: `https://forge.typo3.org/versions/1624`_.
-
-.. _https://forge.typo3.org/versions/1624: https://forge.typo3.org/versions/1624
-
-TYPO3 6.1: `https://forge.typo3.org/versions/1961`_.
-
-.. _https://forge.typo3.org/versions/1961: https://forge.typo3.org/versions/1961
-
-TYPO3 6.2: `https://forge.typo3.org/versions/2011`_.
-
-.. _https://forge.typo3.org/versions/2011: https://forge.typo3.org/versions/2011
+TYPO3 6.2: https://forge.typo3.org/versions/2011.
 
 
 .. _credits:
@@ -114,7 +98,7 @@ using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Reference
 Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
 If you want to support us, please join the documentation
-mailing list/forum (http://forum.typo3.org/index.php/f/44/).
+mailing list/forum (https://forum.typo3.org/index.php/f/44/).
 
 
 .. _versionnumbers:
