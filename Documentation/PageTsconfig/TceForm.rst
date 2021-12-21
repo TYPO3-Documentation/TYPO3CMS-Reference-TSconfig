@@ -372,8 +372,8 @@ disabled
     If set, the field is not displayed in the backend form of the record.
     However, the field can still be set by other means. For example if
     this property is set:
-    :typoscript:`TCEFORM.tt_content.colPos.disabled = 1` the field of
-    :guilabel:`Column` is not displayed in the content elements form. The
+    :typoscript:`TCEFORM.tt_content.colPos.disabled = 1` the :guilabel:`Column` field
+    will not be displayed in the content elements form. The
     content element can still be moved to another column which internally also
     sets the field :sql:`colPos`. Fields with the TSconfig property
     :tsconfig:`TCEFORM.<table>.<field>.disable` therefore show the same
