@@ -370,7 +370,7 @@ disabled
 
 :aspect:`Description`
     If set, the field is not displayed in the backend form of the record.
-    The field can still be set by other means, however. For example if
+    However, the field can still be set by other means. For example if
     this property is set:
     :typoscript:`TCEFORM.tt_content.colPos.disabled = 1` the field of
     :guilabel:`Column` is not displayed in the content elements form. The
