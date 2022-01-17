@@ -481,17 +481,28 @@ translateToMessage
 
 :aspect:`Datatype`
     string
+    
+:aspect:`Default`
+    Translate to %:
 
 :aspect:`Description`
     Defines the string that will be prepended to every field value if you copy an element to another
     language version. The special string "%s" will be replaced with the language title.
+    
+    You can disable the prepending of the string by setting `translateToMessage` to an empty String.
 
-    Default is `Translate to [language title]:`.
 
 :aspect:`Example`
     .. code-block:: typoscript
 
         TCEMAIN {
-            # Set a German label
+            # Set a German title prefix
             translateToMessage = Bitte in "%s" übersetzen:
+        }
+        
+    .. code-block:: typoscript
+
+        TCEMAIN {
+            # Disable the [Translate to %] prefix
+            translateToMessage = 
         }
