@@ -496,7 +496,7 @@ translateToMessage
     .. code-block:: typoscript
 
         TCEMAIN {
-            # Set a German title prefix
+            # Set a German prefix
             translateToMessage = Bitte in "%s" übersetzen:
         }
         
