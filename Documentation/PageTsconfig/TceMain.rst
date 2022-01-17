@@ -483,7 +483,7 @@ translateToMessage
     string
     
 :aspect:`Default`
-    Translate to %:
+    Translate to %s:
 
 :aspect:`Description`
     Defines the string that will be prepended to some field values if you copy an element to another
