@@ -507,7 +507,7 @@ translateToMessage
             translateToMessage = Bitte in "%s" übersetzen:
         }
       
-    Disable the [Translate to %] prefix:
+    Disable the [Translate to ...] prefix:
     
     .. code-block:: typoscript
        :caption: PageTSconfig
