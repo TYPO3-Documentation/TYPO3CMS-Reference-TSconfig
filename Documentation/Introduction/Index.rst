@@ -51,15 +51,7 @@ Full list of changed properties
 """""""""""""""""""""""""""""""
 
 You can find a list of changes for more recent TYPO3 versions in the
-wiki:
-
-TYPO3 4.2: https://wiki.typo3.org/Documentation_changes_in_4.2.
-
-TYPO3 4.3: https://wiki.typo3.org/Documentation_changes_in_4.3.
-
-TYPO3 4.4 and 4.5: https://wiki.typo3.org/Documentation_changes_in_4.4_and_4.5.
-
-TYPO3 4.6: https://wiki.typo3.org/Documentation_changes_in_4.6.
+forge:
 
 TYPO3 4.7: https://forge.typo3.org/versions/1428.
 
