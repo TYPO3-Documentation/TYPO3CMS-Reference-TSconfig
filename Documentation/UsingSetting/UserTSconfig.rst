@@ -125,7 +125,7 @@ selected groups are evaluated from top to bottom.
 Finally you can override or
 :ref:`modify <t3coreapi:typoscript-syntax-syntax-value-modification>`
 settings from groups, of which your user is a member, in the User TSconfig
-field of that user himself.
+field of that specific user.
 
 **Example:**
 
