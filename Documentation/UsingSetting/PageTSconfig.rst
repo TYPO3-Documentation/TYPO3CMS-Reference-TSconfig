@@ -99,13 +99,12 @@ Include static Page TSconfig into a page tree
 
 Static Page TSconfig that has been
 :ref:`registered <register-static-page-tsconfig>` by your sitepackage or a
-third party extension can be included in the page properties:
+third party extension can be included in the page properties.
 
-Got to the page properties of page where you want to include the page TSconfig.
-
-Got to tab :guilabel:`Resources` then to
-:guilabel:`Page TSconfig > Include static Page TSconfig (from extensions)` and
-select the desired configurations from the :guilabel:`Available Items`.
+#. Go to the page properties of the page where you want to include the page TSconfig.
+#. Go to the tab :guilabel:`Resources`, then to
+    :guilabel:`Page TSconfig > Include static Page TSconfig (from extensions)` and
+    select the desired configurations from the :guilabel:`Available Items`.
 
 .. _register-static-page-tsconfig:
 
