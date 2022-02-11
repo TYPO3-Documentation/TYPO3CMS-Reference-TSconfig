@@ -174,7 +174,7 @@ TSconfig:
       TYPO3\CMS\Info\Controller\TranslationStatusController = 0
    }
 
-If however we activate this configuration in the TSconfig of a certain backend user, that
+If we activate this configuration in the TSconfig of a certain backend user, that
 user would still be able to select this menu item because the value of his User TSconfig
 overrides the same value set in the Page TSconfig, just prefixed with `page.`:
 
