@@ -34,7 +34,7 @@ Setting the Page TSconfig globally
 Many page TSconfig settings can be set globally. This is useful for
 installations that contain only one site and use only one sitepackage extension.
 
-Extensions supplying custom default Page TSconfig that should always be included
+Extensions supplying custom default Page TSconfig that should always be included,
 can also set the Page TSconfig globally.
 
 Use extension API function :code:`addPageTSConfig()` in the
