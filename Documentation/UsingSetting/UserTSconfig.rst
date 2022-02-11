@@ -140,7 +140,6 @@ configuration
 	}
 
 Then we set the following values in the TSconfig field of the *user*
-himself
 
 .. code-block:: typoscript
 
