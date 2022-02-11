@@ -139,7 +139,7 @@ configuration
 		header = Hello!
 	}
 
-Then we set the following values in the TSconfig field of the *user*
+Then we set the following values in the TSconfig field of the specific *user*.
 
 .. code-block:: typoscript
 
