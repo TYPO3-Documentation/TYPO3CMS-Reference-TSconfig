@@ -163,7 +163,7 @@ page itself and all its subpages.
 
 .. note::
    The configuration is stored in the database and not in the file
-   system. Therefore it can not be kept under version control. This
+   system. Therefore it cannot be kept under version control. This
    strategy is not recommended. Setting Page TSconfig in the page properties
    directly is available for backward-compatibility reason and for quickly trying
    out some settings in development only.
