@@ -21,8 +21,8 @@ Page TSconfig can be defined globally as
 :ref:`page tree <include-static-page-tsconfig>`, a page and all its subpages.
 
 It is also possible to set
-:ref:`set Page TSconfig directly in the page properties <pagetsconfig-enter-data>`.
-This is not recommended anymore.
+:ref:`set Page TSconfig directly in the page properties <pagetsconfig-enter-data>` but
+this is not recommended anymore.
 
 
 .. index:: pair: Page TSconfig; Default values
