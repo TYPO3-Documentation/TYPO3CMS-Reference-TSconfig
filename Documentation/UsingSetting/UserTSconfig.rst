@@ -16,19 +16,21 @@ settings can be kept under version control.
 Importing the User TSconfig into a backend user or group
 ========================================================
 
-Open the record of the user or group. Go to
-:guilabel:`Options > TSconfig`.
+.. rst-class:: bignums
 
-.. figure:: /Images/ManualScreenshots/BackendUsers/TSconfigUserInput.png
-    :alt: The TSconfig field in the Options tab of a BE user
+#. Open the record of the user or group. Go to
+   :guilabel:`Options > TSconfig`.
 
-Enter the following TSconfig to import a configuration file from your
-sitepackage:
+   .. figure:: /Images/ManualScreenshots/BackendUsers/TSconfigUserInput.png
+      :alt: The TSconfig field in the Options tab of a BE user
 
-.. code-block:: typoscript
-   :caption: TsConfig added in the backend record of a backend user or group
+#. Enter the following TSconfig to import a configuration file from your
+   sitepackage:
 
-   @import 'EXT:my_sitepackage/Configuration/TSconfig/User/my_editor.tsconfig'
+   .. code-block:: typoscript
+      :caption: TsConfig added in the backend record of a backend user or group
+
+      @import 'EXT:my_sitepackage/Configuration/TSconfig/User/my_editor.tsconfig'
 
 This will make all settings from the file available for the user. The file
 itself can be kept under version control together with your sitepackage.
@@ -159,9 +161,9 @@ Overriding Page TSconfig in User TSconfig
 =========================================
 
 All properties from Page TSconfig can be **overridden** in User TSconfig by
-prepending the property name with `page.`. 
+prepending the property name with `page.`.
 
-When a Page TSconfig property is set in **User** TSconfig that way, regardless 
+When a Page TSconfig property is set in **User** TSconfig that way, regardless
 of whether it is in the TSconfig field of a
 group or a user, it **overrides** the value of the according **Page** TSconfig property.
 
