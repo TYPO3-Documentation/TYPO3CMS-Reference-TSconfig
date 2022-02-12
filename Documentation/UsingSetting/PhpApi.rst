@@ -38,7 +38,7 @@ trailing dot, while a single property is accessible by the property
 name itself. The example below gives more insight on this.
 
 If accessing TSconfig arrays, the PHP null coalescence operator `??` is
-almost always useful: TSconfig options may or not be set, accessing not existing
+almost always useful: TSconfig options may or not be set, accessing non-existent
 array keys in PHP would thus raise PHP notice level warnings.
 
 Combining the array access with a fallback using `??` helps accessing these
