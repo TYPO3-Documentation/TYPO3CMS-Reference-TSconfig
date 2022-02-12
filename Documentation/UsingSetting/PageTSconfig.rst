@@ -149,7 +149,7 @@ the API function:
 Set Page TSconfig directly in the page properties
 ==================================================
 
-Go to the page properties of page where you want to include the page TSconfig
+Go to the page properties of the page where you want to include the page TSconfig
 and open the tab :guilabel:`Resources`.
 
 You can enter page TSconfig directly into the field :guilabel:`Page TSconfig`:
