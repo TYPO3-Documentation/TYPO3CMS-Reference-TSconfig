@@ -159,10 +159,11 @@ Overriding Page TSconfig in User TSconfig
 =========================================
 
 All properties from Page TSconfig can be **overridden** in User TSconfig by
-prepending the property name with `page.`. When a Page TSconfig property is
-set in **User** TSconfig that way, no matter, if in the TSconfig field of a
-group or a user, it **overrides** the value of the according **Page**
-TSconfig property.
+prepending the property name with `page.`. 
+
+When a Page TSconfig property is set in **User** TSconfig that way, regardless 
+of whether it is in the TSconfig field of a
+group or a user, it **overrides** the value of the according **Page** TSconfig property.
 
 To illustrate this feature let's say the action
 :guilabel:`Web > Info > Localization Overview` has been disabled via Page
