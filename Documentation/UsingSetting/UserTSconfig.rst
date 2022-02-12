@@ -79,7 +79,7 @@ however should **not** be changed or set directly without using the API.
 Verify the final configuration
 ==============================
 
-The full User TSconfig of the currently logged in backend user can be viewed
+The full User TSconfig of the currently logged-in backend user can be viewed
 using the :guilabel:`System > Configuration` module and choosing the
 action :guilabel:`$GLOBALS['BE_USER']->getTSConfig() (User TSconfig)`. However
 this module can only be accessed by admins.
