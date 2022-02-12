@@ -97,9 +97,9 @@ Override and modify values
 Properties, which are set in the TSconfig field of a group, are valid
 for all users of that group.
 
-Values, which are set in one group, can be overridden and
+Values which are set in one group can be overridden and
 :ref:`modified <t3coreapi:typoscript-syntax-syntax-value-modification>` in the same or
-another group. If a user is member of multiple groups, the TSconfig
+another group. If a user is a member of multiple groups, the TSconfig
 settings are evaluated in *the* order, in which the groups are included
 in the user account: When you are editing the backend user, the
 selected groups are evaluated from top to bottom.
