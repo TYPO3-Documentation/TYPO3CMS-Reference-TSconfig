@@ -26,7 +26,7 @@ forward:
       $pageTsConfig = BackendUtility::getPagesTSconfig($currentPageId);
    }
 
-Both methods return the entire TSconfig as a php array. The earlier
+Both methods return the entire TSconfig as a php array. The former
 retrieves the User TSconfig while the latter retrieves the Page TSconfig.
 
 All imports, overrides, modifications etc are already resolved. This includes
