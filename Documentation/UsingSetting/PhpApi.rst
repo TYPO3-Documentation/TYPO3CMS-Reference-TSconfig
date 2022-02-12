@@ -41,7 +41,7 @@ If accessing TSconfig arrays, the PHP null coalescence operator `??` is
 almost always useful: TSconfig options may or not be set, accessing non-existent
 array keys in PHP would thus raise PHP notice level warnings.
 
-Combining the array access with a fallback using `??` helps accessing these
+Combining the array access with a fallback using `??` helps when accessing these
 optional array structures.
 
 .. code-block:: php
