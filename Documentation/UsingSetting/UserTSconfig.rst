@@ -35,7 +35,7 @@ itself can be kept under version control together with your sitepackage.
 
 TSconfig defined at user-level overrides TSconfig defined at group-level.
 
-If a user is member of several groups, the TSconfig from each
+If a user is a member of several groups, the TSconfig from each
 group is loaded. The order in which the groups are added to the user in field
 :guilabel:`General > Grooup` is used.
 
