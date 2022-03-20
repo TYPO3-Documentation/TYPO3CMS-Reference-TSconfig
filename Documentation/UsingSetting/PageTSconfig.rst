@@ -31,7 +31,7 @@ this is not recommended anymore.
 Setting the Page TSconfig globally
 ==================================
 
-.. versionadded:: 10.2
+.. versionadded:: 12.0
    Starting with TYPO3 12.0 page TSconfig in a file named
    :file:`Configuration/page.tsconfig` in an extension is automatically
    loaded during build time.
