@@ -87,7 +87,7 @@ References
 ^^^^^^^^^^
 
 For a general discussion about TypoScript conditions, please refer to
-:doc:`TypoScript Syntax and In-depth Study <t3tssyntax:Index>`.
+:doc:`TypoScript Syntax and In-depth Study <t3coreapi:Index>`.
 
 For a list of available conditions, please refer to the
 :doc:`TypoScript Reference <t3tsref:Index>`.
