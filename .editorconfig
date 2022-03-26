@@ -1,58 +1,25 @@
 # EditorConfig is awesome: https://EditorConfig.org
-# mb, 2017-10-07, 2017-10-07
-
-# *   match any sequence of characters with '/'
-# **  match any string
+#
+# Use as master: https://github.com/TYPO3-Documentation/T3DocTeam/blob/main/.editorconfig
 
 # top-most EditorConfig file
 root = true
 
-[*]
+[{*.rst,*.rst.txt}]
 charset = utf-8
 end_of_line = lf
-indent_size = 4
-indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
-
-[**.php]
-indent_style = space
-indent_size = 4
-
-[*.conf]
-indent_size = 2
-
-[*.rst]
 indent_style = space
 indent_size = 3
+max_line_length = 80
 
-[*.sql]
-indent_style = tab
-indent_size = 2
-
-[*.ts.txt]
+# MD-Files
+[*.md]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
 indent_style = space
-indent_size = 2
-
-[*.yml]
-indent_size = 2
-
-
-
-[Makefile]
-indent_style = tab
-
-[{package.json, .travis.yml, bower.json}]
-indent_style = space
-indent_size = 2
-
-
-[grunt.js]
-indent_style = tab
-
-[ui/**.js]
-indent_style = tab
-
-[tests/unit/**.js]
-indent_style = tab
-
+indent_size = 4
+max_line_length = 80

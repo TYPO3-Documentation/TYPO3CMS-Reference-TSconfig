@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _useroptions:
 
@@ -374,7 +374,7 @@ noThumbsInRTEimageSelect
          boolean
 
    Description
-         As :ts:`noThumbsInEB` but for the Rich Text Editor image selector.
+         As :typoscript:`noThumbsInEB` but for the Rich Text Editor image selector.
 
 
 .. _useroptions-uploadFieldsInTopOfEB:
