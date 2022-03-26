@@ -154,7 +154,7 @@ and open the tab :guilabel:`Resources`.
 
 You can enter page TSconfig directly into the field :guilabel:`Page TSconfig`:
 
-.. figure:: /Images/ManualScreenshots/List/TSconfigPageInput.png
+.. figure:: /Images/TSconfigPageInput.png
     :alt: TSconfig-related fields in the Resources tab of a page
     :class: with-shadow
 
@@ -177,7 +177,7 @@ Verify the final configuration
 The full Page TSconfig for any given page can be viewed using the module
 :guilabel:`Web > Info` module, action :guilabel:`Page TSconfig`.
 
-.. figure:: /Images/ManualScreenshots/Info/TSconfigOverview.png
+.. figure:: /Images/TSconfigOverview.png
    :alt: Viewing Page TSconfig using the Info module
 
 
