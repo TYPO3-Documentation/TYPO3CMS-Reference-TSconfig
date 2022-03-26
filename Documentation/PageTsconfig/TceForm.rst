@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _tceform:
 .. _pagetceformconfobj:
@@ -131,7 +131,7 @@ altLabels
 
    .. note::
 
-      If the item has an **empty** value, the syntax is slightly different and an additional dot must be provided, 
+      If the item has an **empty** value, the syntax is slightly different and an additional dot must be provided,
       like on this example::
 
          TCEFORM.tt_content.space_before_class.altLabels.. = foo
@@ -225,7 +225,7 @@ PAGE_TSCONFIG_STR
     table called `tx_myext_table` and the field `myfield`. Here the marker will
     be substituted by the given value.
 
-   
+
 .. _pageTsConfigTceFormConfig:
 
 config

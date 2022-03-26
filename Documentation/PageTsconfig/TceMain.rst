@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _pagetcemain:
 .. _pagetcemain-properties:
@@ -43,7 +43,7 @@ clearCacheCmd
             # Clear cache for all pages tagged with tag "pagetag1"
             clearCacheCmd = cacheTag:pagetag1
         }
-        
+
     .. note::
 
         In order for the :ts:`pages` and :ts:`all` commands to work for non-admin users,
