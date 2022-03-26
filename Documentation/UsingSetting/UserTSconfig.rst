@@ -7,7 +7,7 @@ User TSconfig
 =============
 
 It is recommended to always define custom User TSconfig in a project-specific
-:ref:`sitepackage <t3sitepackage:start>` extension. This way the User TSconfig
+:doc:`sitepackage <t3sitepackage:Index>` extension. This way the User TSconfig
 settings can be kept under version control.
 
 .. index:: pair: User TSconfig; Enter data
@@ -21,7 +21,7 @@ Importing the User TSconfig into a backend user or group
 #. Open the record of the user or group. Go to
    :guilabel:`Options > TSconfig`.
 
-   .. figure:: /Images/ManualScreenshots/BackendUsers/TSconfigUserInput.png
+   .. figure:: /Images/TSconfigUserInput.png
       :alt: The TSconfig field in the Options tab of a BE user
 
 #. Enter the following TSconfig to import a configuration file from your
@@ -86,7 +86,7 @@ using the :guilabel:`System > Configuration` module and choosing the
 action :guilabel:`$GLOBALS['BE_USER']->getTSConfig() (User TSconfig)`. However
 this module can only be accessed by admins.
 
-.. figure:: /Images/ManualScreenshots/Configuration/UserTSconfigOverview.png
+.. figure:: /Images/UserTSconfigOverview.png
     :alt: Viewing User TSconfig using the Configuration module
 
 

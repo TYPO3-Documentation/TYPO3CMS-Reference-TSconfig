@@ -10,7 +10,7 @@ Setting Page TSconfig
 =====================
 
 It is recommended to always define custom page TSconfig in a project-specific
-:ref:`sitepackage <t3sitepackage:start>` extension. This way the Page TSconfig
+:doc:`sitepackage <t3sitepackage:Index>` extension. This way the Page TSconfig
 settings can be kept under version control.
 
 The options described below are available for setting Page TSconfig in
@@ -60,7 +60,7 @@ however should **not** be changed or set directly (for example in the
 
 It is best practice to use the above API method to add your default
 Page TSconfig in a project-specific
-:ref:`sitepackage <t3sitepackage:start>` extension.
+:doc:`sitepackage <t3sitepackage:Index>` extension.
 
 Use the :typoscript:`@import '...'` syntax to keep the Page TSconfig in a
 separate file.
@@ -154,7 +154,7 @@ and open the tab :guilabel:`Resources`.
 
 You can enter page TSconfig directly into the field :guilabel:`Page TSconfig`:
 
-.. figure:: /Images/ManualScreenshots/List/TSconfigPageInput.png
+.. figure:: /Images/TSconfigPageInput.png
     :alt: TSconfig-related fields in the Resources tab of a page
     :class: with-shadow
 
@@ -177,7 +177,7 @@ Verify the final configuration
 The full Page TSconfig for any given page can be viewed using the module
 :guilabel:`Web > Info` module, action :guilabel:`Page TSconfig`.
 
-.. figure:: /Images/ManualScreenshots/Info/TSconfigOverview.png
+.. figure:: /Images/TSconfigOverview.png
    :alt: Viewing Page TSconfig using the Info module
 
 
