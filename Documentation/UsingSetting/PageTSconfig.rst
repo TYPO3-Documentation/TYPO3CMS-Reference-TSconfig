@@ -10,7 +10,7 @@ Setting Page TSconfig
 =====================
 
 It is recommended to always define custom page TSconfig in a project-specific
-:ref:`sitepackage <t3sitepackage:start>` extension. This way the Page TSconfig
+:doc:`sitepackage <t3sitepackage:Index>` extension. This way the Page TSconfig
 settings can be kept under version control.
 
 The options described below are available for setting Page TSconfig in
