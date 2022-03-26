@@ -28,7 +28,7 @@ additionalPreviewLanguages
 :aspect:`Description`
    The user will see these additional languages when localizing stuff in
    TCEforms. The list are ids of site languages, as defined in the
-   :ref:`config.yaml languageId <languageid>`
+   :ref:`config.yaml languageId <t3coreapi:sitehandling-addingLanguages>`.
 
 
 .. index:: Backend; Alert popups
