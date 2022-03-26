@@ -695,7 +695,7 @@ pageTree.backgroundColor
 
    Color can be any valid CSS color value. The best results can be achieved by using rgba values.
 
-   The syntax is: :ts:`options.pageTree.backgroundColor.<pageId> = <color>`
+   The syntax is: :typoscript:`options.pageTree.backgroundColor.<pageId> = <color>`
 
 :aspect:`Example`
    .. code-block:: typoscript
@@ -873,8 +873,8 @@ showDuplicate
 :aspect:`Description`
    If set, a button "Duplicate" will appear in TCEFORMs.
 
-   Note that it is possible to set this for single tables using :ts:`options.showDuplicate.[tableName]`.
-   Any value set for a single table will override the default value set for :ts:`saveDocView`.
+   Note that it is possible to set this for single tables using :typoscript:`options.showDuplicate.[tableName]`.
+   Any value set for a single table will override the default value set for :typoscript:`saveDocView`.
 
 :aspect:`Default`
    0
