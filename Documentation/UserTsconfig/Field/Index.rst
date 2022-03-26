@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 The "TSconfig" field
@@ -19,7 +19,7 @@ Overwriting and modifying values
 
    This part of the documentation has been moved to :ref:`typoscript-syntax-using-setting`
    for newer versions of this manual. This version 8.7 of this manual contains some
-   duplicate information. 
+   duplicate information.
 
 Properties, which are set in the TSconfig field of a group, are valid
 for all users of that group.

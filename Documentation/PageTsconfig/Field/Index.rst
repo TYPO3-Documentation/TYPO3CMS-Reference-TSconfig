@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 The "TSconfig" field
@@ -8,7 +8,7 @@ The "TSconfig" field
 
    This part of the documentation has been moved to :ref:`typoscript-syntax-using-setting`
    for newer versions of this manual. This version 8.7 of this manual contains some
-   duplicate information. 
+   duplicate information.
 
 
 This is an example of the TSconfig field with a snippet of
