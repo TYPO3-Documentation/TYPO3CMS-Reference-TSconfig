@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _useradmpanel:
 
@@ -71,7 +71,7 @@ enable
         admPanel.enable.tsdebug
         admPanel.enable.info
 
-:aspect:`Default` 
+:aspect:`Default`
     For admin users, `admPanel.enable.all = 1` is default.
 
     .. note::

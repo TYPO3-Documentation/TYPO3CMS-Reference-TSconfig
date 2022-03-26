@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _tceform:
 .. _pagetceformconfobj:
@@ -220,7 +220,7 @@ PAGE_TSCONFIG_STR
     table called `tx_myext_table` and the field `myfield`. Here the marker will
     be substituted by the given value.
 
-   
+
 .. _pageTsConfigTceFormConfig:
 
 config
