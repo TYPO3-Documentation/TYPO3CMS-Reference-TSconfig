@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _pagetsfe:
 
@@ -42,7 +42,7 @@ constants
 
     In the backend module (in the Web main module) you can reach the value
     by a few lines of code like these
-    
+
     .. code-block:: php
 
 			$PageTSconfig = \TYPO3\CMS\Backend\Utility\BackendUtility::getPagesTSconfig($this->pObj->id);

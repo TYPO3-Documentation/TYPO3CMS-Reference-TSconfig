@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _usertsconfig:
 .. _usertoplevelobjects:
@@ -7,7 +7,7 @@
 User TSconfig Reference
 =======================
 
-The User TSconfig uses several *top level keys*. Their details are listed below. 
+The User TSconfig uses several *top level keys*. Their details are listed below.
 
 The most important section is the `options` part.
 
