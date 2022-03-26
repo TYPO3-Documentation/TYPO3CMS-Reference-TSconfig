@@ -190,8 +190,8 @@ clearCacheCmd
 
 .. note::
 
-   In order for the :ts:`pages` and :ts:`all` commands to work for non-admin users,
-   make sure to set :ts:`options.clearCache.pages = 1` or :ts:`options.clearCache.all = 1` accordingly
+   In order for the :typoscript:`pages` and :typoscript:`all` commands to work for non-admin users,
+   make sure to set :typoscript:`options.clearCache.pages = 1` or :typoscript:`options.clearCache.all = 1` accordingly
    in the user TSconfig.
 
 
@@ -318,31 +318,31 @@ preview
                 }
             }
 
-         The :ts:`previewPageId` is the uid of the page to use for preview. If this setting
+         The :typoscript:`previewPageId` is the uid of the page to use for preview. If this setting
          is omitted the current page will be used. If the current page is not a normal page,
          the root page will be chosen.
 
-         The :ts:`disableButtonForDokType` setting allows you to disable the preview button for a given list
+         The :typoscript:`disableButtonForDokType` setting allows you to disable the preview button for a given list
          of doktypes. If none are configured, this defaults to: 199, 254, 255 (Spacer, Folder and Recycler).
 
-         The :ts:`useDefaultLanguageRecord` defaults to `1` and ensures that translated
+         The :typoscript:`useDefaultLanguageRecord` defaults to `1` and ensures that translated
          records will use the uid of the default record for the preview link. You may
          disable this, if your extension can deal with the uid of translated records.
 
-         The :ts:`fieldToParameterMap` is a mapping which allows you to select fields
+         The :typoscript:`fieldToParameterMap` is a mapping which allows you to select fields
          of the record to be included as GET-parameters in the preview link. The key
          specifies the field name and the value specifies the GET-parameter name.
 
-         Finally :ts:`additionalGetParameters` allow you to add arbitrary GET-parameters
+         Finally :typoscript:`additionalGetParameters` allow you to add arbitrary GET-parameters
          and even override others.
 
          The core automatically sets the "no_cache" and the "L" parameter. The language
          matches the language of the current record. You may override each parameter
-         by using the :ts:`additionalGetParameters` configuration option.
+         by using the :typoscript:`additionalGetParameters` configuration option.
 
          .. note::
 
-            Make sure not to set :ts:`options.saveDocView.<table name> = 0`,
+            Make sure not to set :typoscript:`options.saveDocView.<table name> = 0`,
             otherwise the save+view button will not be displayed when editing
             records of your table.
 
