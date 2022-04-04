@@ -38,7 +38,7 @@ Setting the Page TSconfig globally
 
 Global page TSconfig should be stored within an extension, usually a sitepackage
 extension. The content of the file :file:`Configuration/page.tsconfig` within
-and extension is automatically loaded during build time.
+an extension is automatically loaded during build time.
 
 It is possible to load other TSconfig files with the import syntax within this
 file:
