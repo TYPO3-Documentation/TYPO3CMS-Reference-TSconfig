@@ -6,29 +6,29 @@
 .. _setting-page-tsconfig:
 
 =====================
-Setting Page TSconfig
+Setting page TSconfig
 =====================
 
 It is recommended to always define custom page TSconfig in a project-specific
-:doc:`sitepackage <t3sitepackage:Index>` extension. This way the Page TSconfig
+:doc:`sitepackage <t3sitepackage:Index>` extension. This way the page TSconfig
 settings can be kept under version control.
 
-The options described below are available for setting Page TSconfig in
+The options described below are available for setting page TSconfig in
 non-sitepackage extensions.
 
 Page TSconfig can be defined globally as
-:ref:`Default Page TSconfig <pagesettingdefaultpagetsconfig>` or for a
+:ref:`Default page TSconfig <pagesettingdefaultpagetsconfig>` or for a
 :ref:`page tree <include-static-page-tsconfig>`, a page and all its subpages.
 
 It is also possible to set
-:ref:`set Page TSconfig directly in the page properties <pagetsconfig-enter-data>` but
+:ref:`set page TSconfig directly in the page properties <pagetsconfig-enter-data>` but
 this is not recommended anymore.
 
 
 .. index:: pair: Page TSconfig; Default values
 .. _pagesettingdefaultpagetsconfig:
 
-Setting the Page TSconfig globally
+Setting the page TSconfig globally
 ==================================
 
 .. versionadded:: 12.0
@@ -53,8 +53,8 @@ file:
 Many page TSconfig settings can be set globally. This is useful for
 installations that contain only one site and use only one sitepackage extension.
 
-Extensions supplying custom default Page TSconfig that should always be included,
-can also set the Page TSconfig globally.
+Extensions supplying custom default page TSconfig that should always be included,
+can also set the page TSconfig globally.
 
 Global page TSconfig, compatible with TYPO3 11 and 12
 -----------------------------------------------------
@@ -76,26 +76,26 @@ TYPO3 11 and 12 by importing the content of this file with the API function
 .. index:: pair: Page TSconfig; Static TSconfig files
 .. _pagesettingstaticpagetsconfigfiles:
 
-Static Page TSconfig
+Static page TSconfig
 ====================
 
 .. _include-static-page-tsconfig:
 
-Include static Page TSconfig into a page tree
+Include static page TSconfig into a page tree
 ---------------------------------------------
 
-Static Page TSconfig that has been
+Static page TSconfig that has been
 :ref:`registered <register-static-page-tsconfig>` by your sitepackage or a
 third party extension can be included in the page properties.
 
 #. Go to the page properties of the page where you want to include the page TSconfig.
 #. Go to the tab :guilabel:`Resources`, then to
-    :guilabel:`Page TSconfig > Include static Page TSconfig (from extensions)` and
+    :guilabel:`page TSconfig > Include static page TSconfig (from extensions)` and
     select the desired configurations from the :guilabel:`Available Items`.
 
 .. _register-static-page-tsconfig:
 
-Register static Page TSconfig files
+Register static page TSconfig files
 -----------------------------------
 
 Register PageTS config files in the :file:`Configuration/TCA/Overrides/pages.php`
@@ -133,7 +133,7 @@ the API function:
 .. _pagetsconfig-enter-data:
 .. _pagethetsconfigfield:
 
-Set Page TSconfig directly in the page properties
+Set page TSconfig directly in the page properties
 ==================================================
 
 Go to the page properties of the page where you want to include the page TSconfig
@@ -151,7 +151,7 @@ page itself and all its subpages.
 .. note::
    The configuration is stored in the database and not in the file
    system. Therefore it cannot be kept under version control. This
-   strategy is not recommended. Setting Page TSconfig in the page properties
+   strategy is not recommended. Setting page TSconfig in the page properties
    directly is available for backward-compatibility reasons and for quickly trying
    out some settings in development only.
 
@@ -161,7 +161,7 @@ page itself and all its subpages.
 Verify the final configuration
 ==============================
 
-The full Page TSconfig for any given page can be viewed using the module
+The full page TSconfig for any given page can be viewed using the module
 :guilabel:`Web > Info` module, action :guilabel:`Page TSconfig`.
 
 .. figure:: /Images/ManualScreenshots/Info/TSconfigOverview.png
@@ -176,20 +176,20 @@ Overriding and modifying values
 
 Page TSconfig is loaded in the following order, the latter override the former:
 
-#. :ref:`Default Page TSconfig <pagesettingdefaultpagetsconfig>` that was
+#. :ref:`Default page TSconfig <pagesettingdefaultpagetsconfig>` that was
    set globally
-#. :ref:`Static Page TSconfig <pagesettingdefaultpagetsconfig>` that was
+#. :ref:`Static page TSconfig <pagesettingdefaultpagetsconfig>` that was
    included for a page tree.
-#. :ref:`Direct Page TSconfig <pagetsconfig-enter-data>` entered directly in
+#. :ref:`Direct page TSconfig <pagetsconfig-enter-data>` entered directly in
    the page properties.
 #. :ref:`User TSconfig overrides <userrelationshiptovaluessetinpagetsconfig>`
 
-Static and direct Page TSconfig are loaded for the page they are set on and
+Static and direct page TSconfig are loaded for the page they are set on and
 all their subpages.
 
 The TypoScript syntax to
 :ref:`modify <t3coreapi:typoscript-syntax-syntax-value-modification>` values
-can also be used for the Page TSconfig.
+can also be used for the page TSconfig.
 
 
 Example
