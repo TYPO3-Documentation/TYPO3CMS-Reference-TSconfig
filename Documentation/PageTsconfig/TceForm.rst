@@ -142,7 +142,6 @@ altLabels
       The Page types with modified labels
 
    .. note::
-
       If the item has an **empty** value, the syntax is slightly different and an additional dot must be provided,
       like on this example:
 
