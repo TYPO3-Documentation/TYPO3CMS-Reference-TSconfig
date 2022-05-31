@@ -2,6 +2,7 @@
 
 .. _useradmpanel:
 
+========
 admPanel
 ========
 
@@ -25,6 +26,13 @@ Example user TSconfig to disable the admin panel for a user:
 .. code-block:: typoscript
 
    admPanel.hide = 1
+
+Properties
+==========
+
+.. contents::
+   :depth: 2
+   :local:
 
 
 enable
