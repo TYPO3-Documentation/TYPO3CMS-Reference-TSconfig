@@ -64,10 +64,17 @@ Consider the following Page TSconfig examples:
    # But disable RTE for tt_content bodytext again if the record type is "text"
    RTE.config.tt_content.bodytext.types.text.disabled = 1
 
+Properties
+==========
+
+.. contents::
+   :depth: 2
+   :local:
+
 .. index:: RTE; disable
 
 disabled
-========
+--------
 
 :aspect:`Datatype`
     boolean
@@ -83,7 +90,7 @@ disabled
    RTE; proc
 
 proc
-====
+----
 
 The `proc` section allows customization of the server processing of the content, see
 the :ref:`transformation section <t3coreapi:transformations-tsconfig>` of the RTE chapter in
@@ -103,7 +110,7 @@ This means that options limited to `ts_transform` will also work for `ts_css` of
    RTE; Classes allowed
 
 allowedClasses
---------------
+~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
     string with comma separated values
@@ -128,7 +135,7 @@ allowedClasses
    RTE; Tags allowed
 
 allowTags
----------
+~~~~~~~~~
 
 :aspect:`Datatype`
     string with comma separated values
@@ -151,7 +158,7 @@ allowTags
    RTE; Tags outside paragraphs
 
 allowTagsOutside
-----------------
+~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
     string with comma separated values
@@ -175,7 +182,7 @@ allowTagsOutside
    RTE; block elements
 
 blockElementList
-----------------
+~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
     string with comma separated values
@@ -188,7 +195,7 @@ blockElementList
    RTE; tags denyed
 
 denyTags
---------
+~~~~~~~~
 
 :aspect:`Datatype`
     string with comma separated values
@@ -203,7 +210,7 @@ denyTags
    RTE; HTMLparser DB entry
 
 entryHTMLparser_db
--------------------
+~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
     boolean / :ref:`HTMLparser <t3tsref:htmlparser>`
@@ -218,7 +225,7 @@ entryHTMLparser_db
    RTE; HTMLparser RTE entry
 
 entryHTMLparser_rte
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
     boolean / :ref:`HTMLparser <t3tsref:htmlparser>`
@@ -234,7 +241,7 @@ entryHTMLparser_rte
    RTE; HTMLparser DB exit
 
 exitHTMLparser_db
------------------
+~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
     boolean / :ref:`HTMLparser <t3tsref:htmlparser>`
@@ -250,7 +257,7 @@ exitHTMLparser_db
    RTE; HTMLparser RTE exit
 
 exitHTMLparser_rte
-------------------
+~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
     boolean / :ref:`HTMLparser <t3tsref:htmlparser>`
@@ -267,7 +274,7 @@ exitHTMLparser_rte
 .. _pageTsRteProcHtmlParserDb:
 
 HTMLparser_db
---------------
+~~~~~~~~~~~~~
 
 :aspect:`Datatype`
     :ref:`HTMLparser <t3tsref:htmlparser>`
@@ -294,7 +301,7 @@ HTMLparser_db
    RTE; HTMLparser RTE
 
 HTMLparser_rte
---------------
+~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
     :ref:`HTMLparser <t3tsref:htmlparser>`
@@ -320,7 +327,7 @@ HTMLparser_rte
    RTE; Transformations overruled
 
 overruleMode
-------------
+~~~~~~~~~~~~
 
 :aspect:`Datatype`
     Comma list of RTE transformations
