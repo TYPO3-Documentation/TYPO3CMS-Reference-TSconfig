@@ -15,12 +15,20 @@ cache menu for non admin users:
 
    options.clearCache.pages = 1
 
+Properties
+==========
+
+.. contents::
+   :depth: 2
+   :local:
+
+
 .. todo:: How does this work with site configurations?
 .. index:: Localization; preview languages
 .. _useroptions-additionalPreviewLanguages:
 
 additionalPreviewLanguages
-==========================
+--------------------------
 
 :aspect:`Datatype`
    list of sys_language ids
@@ -35,7 +43,7 @@ additionalPreviewLanguages
 .. _useroptions-alertPopups:
 
 alertPopups
-===========
+-----------
 
 :aspect:`Datatype`
    bitmask
@@ -61,7 +69,7 @@ alertPopups
 .. _useroptions-bookmarkGroups:
 
 bookmarkGroups
-==============
+--------------
 
 :aspect:`Datatype`
    Array of integers/ strings
@@ -116,7 +124,7 @@ bookmarkGroups
 .. _useroptions-clearCache-all:
 
 clearCache.all
-==============
+--------------
 
 :aspect:`Datatype`
    boolean
@@ -134,7 +142,7 @@ clearCache.all
 .. _useroptions-clearCache-pages:
 
 clearCache.pages
-================
+----------------
 
 :aspect:`Datatype`
    boolean
@@ -150,7 +158,7 @@ clearCache.pages
 .. _useroptions-clipboardNumberPads:
 
 clipboardNumberPads
-===================
+-------------------
 
 :aspect:`Datatype`
    integer (0-20)
@@ -166,7 +174,7 @@ clipboardNumberPads
 .. _useroptions-contextMenu-key-disableItems:
 
 contextMenu disableItems
-========================
+------------------------
 
 :aspect:`Datatype`
    list of items
@@ -219,7 +227,7 @@ contextMenu disableItems
 .. _useroptions-createFoldersInEB:
 
 createFoldersInEB
-=================
+-----------------
 
 :aspect:`Datatype`
    boolean
@@ -233,7 +241,7 @@ createFoldersInEB
 .. _useroptions-dashboard-dashboardPresetsForNewUsers:
 
 dashboard.dashboardPresetsForNewUsers
-=====================================
+-------------------------------------
 
 :aspect:`Datatype`
    list of dashboard identifiers
@@ -254,7 +262,7 @@ dashboard.dashboardPresetsForNewUsers
 .. _useroptions-defaultUploadFolder:
 
 defaultUploadFolder
-===================
+-------------------
 
 :aspect:`Datatype`
    string
@@ -278,7 +286,7 @@ defaultUploadFolder
 .. _useroptions-disableDelete:
 
 disableDelete
-=============
+-------------
 
 :aspect:`Datatype`
    boolean
@@ -299,7 +307,7 @@ disableDelete
 .. _useroptions-dontMountAdminMounts:
 
 dontMountAdminMounts
-====================
+--------------------
 
 :aspect:`Datatype`
    boolean
@@ -316,7 +324,7 @@ dontMountAdminMounts
 .. _useroptions-enableBookmarks:
 
 enableBookmarks
-===============
+---------------
 
 :aspect:`Datatype`
    boolean
@@ -331,14 +339,14 @@ enableBookmarks
 .. index:: File list
 
 file_list
-=========
+---------
 
 
 .. index:: File list; Clipboard enable
 .. _useroptions-file_list-enableClipBoard:
 
 file_list.enableClipBoard
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    list of keywords
@@ -363,7 +371,7 @@ file_list.enableClipBoard
 .. _useroptions-file_list-displayColumnSelector:
 
 file_list.displayColumnSelector
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
     boolean
@@ -394,7 +402,7 @@ file_list.displayColumnSelector
 .. _useroptions-file_list-enableDisplayBigControlPanel:
 
 file_list.enableDisplayBigControlPanel
---------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. versionchanged:: 11.3
    The checkbox :guilabel:`Extended view` was removed with TYPO3 11.3.
@@ -405,7 +413,7 @@ file_list.enableDisplayBigControlPanel
 .. _useroptions-file_list-enableDisplayThumbnails:
 
 file_list.enableDisplayThumbnails
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    list of keywords
@@ -430,7 +438,7 @@ file_list.enableDisplayThumbnails
 .. _useroptions-file_list-filesPerPage:
 
 file_list.filesPerPage
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    integer
@@ -446,7 +454,7 @@ file_list.filesPerPage
 .. _useroptions-file_list-thumbnail-height:
 
 file_list.thumbnail.height
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    integer
@@ -462,7 +470,7 @@ file_list.thumbnail.height
 .. _useroptions-file_list-thumbnail-width:
 
 file_list.thumbnail.width
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    integer
@@ -478,7 +486,7 @@ file_list.thumbnail.width
 .. _useroptions-file_list-uploader-defaultaction:
 
 file_list.uploader.defaultAction
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    string
@@ -498,14 +506,14 @@ file_list.uploader.defaultAction
 .. index:: Folder tree
 
 folderTree
-==========
+----------
 
 
 .. index:: Folder tree; File mounts in element browser
 .. _useroptions-folderTree-altElementBrowserMountPoints:
 
 folderTree.altElementBrowserMountPoints
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    list of "storageUid:folderName" items
@@ -540,7 +548,7 @@ folderTree.altElementBrowserMountPoints
 .. _useroptions-folderTree-hideCreateFolder:
 
 folderTree.hideCreateFolder
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    boolean
@@ -558,7 +566,7 @@ folderTree.hideCreateFolder
 .. _useroptions-folderTree-uploadFieldsInLinkBrowser:
 
 folderTree.uploadFieldsInLinkBrowser
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    integer
@@ -574,7 +582,7 @@ folderTree.uploadFieldsInLinkBrowser
 .. _useroptions-hideModules:
 
 hideModules.[moduleGroup]
-=========================
+-------------------------
 
 :aspect:`Datatype`
    list of module groups or modules
@@ -604,7 +612,7 @@ hideModules.[moduleGroup]
 .. _useroptions-hideRecords-pages:
 
 hideRecords.pages
-=================
+-----------------
 
 :aspect:`Datatype`
    list of page ids
@@ -631,7 +639,7 @@ hideRecords.pages
 .. _useroptions-impexp-enableImportForNonAdminUser:
 
 impexp.enableImportForNonAdminUser
-==================================
+----------------------------------
 
 :aspect:`Datatype`
    boolean
@@ -648,7 +656,7 @@ impexp.enableImportForNonAdminUser
 .. _useroptions-mayNotCreateEditBookmarks:
 
 mayNotCreateEditBookmarks
-=========================
+-------------------------
 
 :aspect:`Datatype`
    boolean
@@ -663,7 +671,7 @@ mayNotCreateEditBookmarks
 .. _useroptions-noThumbsInEB:
 
 noThumbsInEB
-============
+------------
 
 :aspect:`Datatype`
    boolean
@@ -675,7 +683,7 @@ noThumbsInEB
 .. _useroptions-overridePageModule:
 
 overridePageModule
-==================
+------------------
 
 :aspect:`Datatype`
    string
@@ -698,14 +706,14 @@ overridePageModule
 .. index:: Page tree
 
 pageTree
-========
+--------
 
 
 .. index:: Page tree; Webmounts replace
 .. _useroptions-pageTree-altElementBrowserMountPoints:
 
 pageTree.altElementBrowserMountPoints
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    list of integers
@@ -730,7 +738,7 @@ pageTree.altElementBrowserMountPoints
 .. _useroptions-pageTree-altElementBrowserMountPoints-append:
 
 pageTree.altElementBrowserMountPoints.append
---------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    boolean
@@ -752,7 +760,7 @@ pageTree.altElementBrowserMountPoints.append
 .. _useroptions-pageTree-backgroundColor:
 
 pageTree.backgroundColor
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    string
@@ -781,7 +789,7 @@ pageTree.backgroundColor
 .. _useroptions-pageTree-doktypesToShowInNewPageDragArea:
 
 pageTree.doktypesToShowInNewPageDragArea
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    string
@@ -803,7 +811,8 @@ pageTree.doktypesToShowInNewPageDragArea
 .. _useroptions-pageTree-excludeDoktypes:
 
 pageTree.excludeDoktypes
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
+
 :aspect:`Datatype`
    list of integers
 
@@ -820,7 +829,7 @@ pageTree.excludeDoktypes
 .. _useroptions-pageTree-showDomainNameWithTitle:
 
 pageTree.showDomainNameWithTitle
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    boolean
@@ -835,7 +844,7 @@ pageTree.showDomainNameWithTitle
 .. _useroptions-pageTree-showNavTitle:
 
 pageTree.showNavTitle
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    boolean
@@ -850,7 +859,7 @@ pageTree.showNavTitle
 .. _useroptions-pageTree-showPageIdWithTitle:
 
 pageTree.showPageIdWithTitle
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    boolean
@@ -863,7 +872,7 @@ pageTree.showPageIdWithTitle
 .. _useroptions-pageTree-showPathAboveMounts:
 
 pageTree.showPathAboveMounts
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :aspect:`Datatype`
    boolean
@@ -917,7 +926,7 @@ passwordReset
 .. _useroptions-saveClipboard:
 
 saveClipboard
-=============
+-------------
 
 :aspect:`Datatype`
    boolean
@@ -931,7 +940,7 @@ saveClipboard
 .. _useroptions-saveDocNew:
 
 saveDocNew
-==========
+----------
 
 :aspect:`Datatype`
    boolean / "top"
@@ -960,7 +969,7 @@ saveDocNew
 .. _useroptions-saveDocView:
 
 saveDocView
-===========
+-----------
 
 :aspect:`Datatype`
    boolean
@@ -979,7 +988,7 @@ saveDocView
 .. _useroptions-showDuplicate:
 
 showDuplicate
-=============
+-------------
 
 :aspect:`Datatype`
    boolean
@@ -998,7 +1007,7 @@ showDuplicate
 .. _useroptions-showHistory:
 
 showHistory
-===========
+-----------
 
 :aspect:`Datatype`
    boolean
