@@ -20,10 +20,10 @@ email templates and templates of the install tool.
 .. caution::
 
    While this feature is powerful and allows overriding nearly any backend
-   template, **it should be used with care**: Fluid templates of the core
-   extensions are not considered API. The core development needs the freedom to
+   template, **it should be used with care**: Fluid templates of the Core
+   extensions are not considered API. The Core development needs the freedom to
    add, change and delete Fluid templates any time, even for bugfix releases.
-   Template overrides are similar to an XCLASS in PHP - the core can not
+   Template overrides are similar to an XCLASS in PHP - the Core can not
    guarantee integrity on this level across versions.
 
 
@@ -45,8 +45,11 @@ extension:
 .. code-block:: typoscript
    :caption: EXT:site_package/Configuration/page.tsconfig
 
-   # Pattern: templates."composer-name"."something-unique" = "overriding-extension-composer-name":"entry-path"
-   templates.typo3/cms-linkvalidator.1643293191 = my-vendor/my-extension:Resources/Private/TemplateOverrides
+   # Left pattern (before equal sign): templates."composer-name"."something-unique"
+   # Right pattern (after equal sign): "overriding-extension-composer-name":"entry-path"
+   templates.typo3/cms-linkvalidator {
+      1643293191 = my-vendor/my-extension:Resources/Private/TemplateOverrides
+   }
 
 If the target extension, identified by its composer name
 `my-vendor/my-extension`, provides the
@@ -95,8 +98,13 @@ into smaller partial files so an extension can override a specific partial only.
 
    .. code-block:: typoscript
 
-      templates.typo3/cms-linkvalidator.23 = other-vendor/other-extension:Resources/Private/TemplateOverrides/Linkvalidator
-      templates.typo3/cms-linkvalidator.2300 = my-vendor/my-extension:Resources/Private/MyOverrideIsBigger
+      templates.typo3/cms-linkvalidator {
+         23 = other-vendor/other-extension:Resources/Private/TemplateOverrides/Linkvalidator
+      }
+
+      templates.typo3/cms-linkvalidator {
+         2300 = my-vendor/my-extension:Resources/Private/MyOverrideIsBigger
+      }
 
 
 Combinations of overrides
