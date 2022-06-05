@@ -97,10 +97,14 @@ into smaller partial files so an extension can override a specific partial only.
    numerical value wins:
 
    .. code-block:: typoscript
+      :caption: EXT:site_package/Configuration/page.tsconfig
 
       templates.typo3/cms-linkvalidator {
          23 = other-vendor/other-extension:Resources/Private/TemplateOverrides/Linkvalidator
       }
+
+   .. code-block:: typoscript
+      :caption: EXT:another_extension/Configuration/page.tsconfig
 
       templates.typo3/cms-linkvalidator {
          2300 = my-vendor/my-extension:Resources/Private/MyOverrideIsBigger
