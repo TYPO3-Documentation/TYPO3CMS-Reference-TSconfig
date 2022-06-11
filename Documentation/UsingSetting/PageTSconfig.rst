@@ -212,12 +212,12 @@ Default page TSconfig
 
 .. code-block:: typoscript
 
-	RTE.default.showButtons = bold
+   RTE.default.proc.allowTagsOutside = hr
 
 Static page TSconfig included on the parent page
 
 .. code-block:: typoscript
 
-	RTE.default.showButtons := addToList(italic)
+   RTE.default.proc.allowTagsOutside := addToList(blockquote)
 
-Finally you get the value "bold,italic".
+Finally you get the value "hr,blockquote".
