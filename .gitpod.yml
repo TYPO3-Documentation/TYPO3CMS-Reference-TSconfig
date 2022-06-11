@@ -1,0 +1,19 @@
+# Example
+# https://gitpod.io/#https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig.git
+
+image: gitpod/workspace-full
+
+tasks:
+  - name: TDK
+    init: |
+      # DO WHATEVER NEEDED ONLY ONCE
+      gp open .gitpod/info.md
+
+    command: |
+      # DO REDO THINGS ON RESTART 
+      gp sync-done tdk-done
+
+ports:
+  - port: 8001
+    name: apache
+    onOpen: ignore
