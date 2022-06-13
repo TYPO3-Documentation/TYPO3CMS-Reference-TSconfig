@@ -256,10 +256,10 @@ Sanitization
 .. versionadded:: 9.5.29/10.4.19
 
 An HTML sanitizer is available to sanitize and remove XSS from markup. It
-strips tags, attributes or values that were not explicitly allowed.
+strips tags, attributes and values that are not explicitly allowed.
 
-Sanitization for persisting data is disabled by default and can be enabled
-globally by using a corresponding feature flag in
+Sanitizatin for persisting data is disabled by default and can be enabled
+globally by using the corresponding feature flag in
 :file:`typo3conf/LocalConfiguration.php` or
 :file:`typo3conf/AdditionalConfiguration.php`:
 
