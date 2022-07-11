@@ -445,6 +445,10 @@ defLangBinding
 disableNewContentElementWizard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. attention::
+
+   This setting will be removed in TYPO3 v12.
+
 :aspect:`Datatype`
     boolean
 
@@ -1018,6 +1022,10 @@ listOnlyInSingleTableView
 
 newContentElementWizard.override
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. attention::
+
+   This setting will be removed in TYPO3 v12.
 
 :aspect:`Datatype`
     string
