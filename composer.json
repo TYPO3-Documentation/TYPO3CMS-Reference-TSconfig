@@ -5,5 +5,23 @@
     "license": "OPL-1.0",
     "require": {
       "typo3/cms-core": "^11.0"
+    },
+    "config": {
+        "bin-dir": ".Build/bin",
+        "sort-packages": true,
+        "vendor-dir": ".Build/vendor"
+    },
+    "extra": {
+        "typo3/cms": {
+            "web-dir": ".Build/web"
+        }
+    },
+    "scripts": {
+        "docs:generate": [
+            "docker run --rm t3docs/render-documentation show-shell-commands > tempfile.sh; echo 'dockrun_t3rd makehtml' >> tempfile.sh; bash tempfile.sh; rm tempfile.sh"
+        ]
+    },
+    "scripts-descriptions": {
+        "docs:generate": "Renders the extension ReST documentation."
     }
 }
