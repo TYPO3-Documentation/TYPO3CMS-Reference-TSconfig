@@ -13,7 +13,7 @@ composer docs:generate
 ## Create Issues
 
 * If you find something missing or something is wrong in this manual, you are welcome to open an issue and describe the problem.
-* If you can, please try to fix the problem yourself.
+* Please feel free to submit a fix to the problem.
 * For minor changes, it is not necessary to create an issue first.
 
 ## Make changes (create pull requests)
