@@ -1,17 +1,14 @@
 # Example
-# https://gitpod.io/#https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig.git
+# https://gitpod.io/#https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-TSconfig/tree/lwolf-gitpod
 
 image: gitpod/workspace-full
 
 tasks:
-  - name: TDK
-    init: |
-      # DO WHATEVER NEEDED ONLY ONCE
-      gp open .gitpod/info.md
+  - name: RenderT3Docs
 
     command: |
-      # DO REDO THINGS ON RESTART 
-      gp sync-done tdk-done
+      eval "$(docker run --rm t3docs/render-documentation:develop show-shell-commands)"
+      dockrun_t3rd makehtml-no-cache
 
 ports:
   - port: 8001
