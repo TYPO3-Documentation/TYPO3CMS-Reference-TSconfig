@@ -472,7 +472,7 @@ file_list.primaryActions
     Option to add more primary actions to the list view.
     The list of actions to be displayed can be given in the TSConfig of
     the backend user. The actions that can be added are `view`, `metadata`,
-`copy` and `cut`.
+    `delete`, `copy` and `cut`. `translations` is always active.
 
 :aspect:`Default`
     :typoscript:`view,metadata,translations,delete`
