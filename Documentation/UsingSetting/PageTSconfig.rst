@@ -123,7 +123,7 @@ These can be :ref:`selected in the page properties <include-static-page-tsconfig
 
    ExtensionManagementUtility::registerPageTSConfigFile(
       'extension_name',
-      'Configuration/TSconfig/Page/myPageTSconfigFile.tsconfig',
+      'Configuration/TsConfig/Page/myPageTSconfigFile.tsconfig',
       'My special config'
    );
 
@@ -139,7 +139,7 @@ the API function:
    $GLOBALS['TCA']['pages']['columns']['tsconfig_includes']['config']['items'][] =
    [
       'LLL:EXT:my_sitepackage/Resources/Private/Language/locallang_db.xlf:pages.pageTSconfig.my_ext_be_layouts'
-      'EXT:my_sitepackage/Configuration/TSconfig/Page/myPageTSconfigFile.tsconfig',
+      'EXT:my_sitepackage/Configuration/TsConfig/Page/myPageTSconfigFile.tsconfig',
    ];
 
 .. index:: pair: Page TSconfig; Enter data
@@ -164,7 +164,7 @@ page itself and all its subpages.
 .. note::
    The configuration is stored in the database and not in the file
    system. Therefore it cannot be kept under version control. This
-   strategy is not recommended. Setting Page TSconfig in the page properties
+   strategy is not recommended. Setting page TSconfig in the page properties
    directly is available for backward-compatibility reasons and for quickly trying
    out some settings in development only.
 
@@ -174,7 +174,7 @@ page itself and all its subpages.
 Verify the final configuration
 ==============================
 
-The full Page TSconfig for any given page can be viewed using the module
+The full page TSconfig for any given page can be viewed using the module
 :guilabel:`Web > Info` module, action :guilabel:`Page TSconfig`.
 
 .. figure:: /Images/ManualScreenshots/Info/TSconfigOverview.png
@@ -189,20 +189,20 @@ Overriding and modifying values
 
 Page TSconfig is loaded in the following order, the latter override the former:
 
-#. :ref:`Default Page TSconfig <pagesettingdefaultpagetsconfig>` that was
+#. :ref:`Default page TSconfig <pagesettingdefaultpagetsconfig>` that was
    set globally
-#. :ref:`Static Page TSconfig <pagesettingdefaultpagetsconfig>` that was
+#. :ref:`Static page TSconfig <pagesettingdefaultpagetsconfig>` that was
    included for a page tree.
-#. :ref:`Direct Page TSconfig <pagetsconfig-enter-data>` entered directly in
+#. :ref:`Direct page TSconfig <pagetsconfig-enter-data>` entered directly in
    the page properties.
 #. :ref:`User TSconfig overrides <userrelationshiptovaluessetinpagetsconfig>`
 
-Static and direct Page TSconfig are loaded for the page they are set on and
+Static and direct page TSconfig are loaded for the page they are set on and
 all their subpages.
 
 The TypoScript syntax to
 :ref:`modify <t3coreapi:typoscript-syntax-syntax-value-modification>` values
-can also be used for the Page TSconfig.
+can also be used for the page TSconfig.
 
 
 Example
