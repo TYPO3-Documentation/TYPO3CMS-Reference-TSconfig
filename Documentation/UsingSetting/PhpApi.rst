@@ -13,8 +13,8 @@ PHP API
 Retrieving TSconfig settings
 ============================
 
-The PHP API to retrieve page and user TSconfig in a backend module is
-straightforward:
+The PHP API to retrieve page and user TSconfig in a backend module can be used
+as follows:
 
 ..  code-block:: php
     :caption: EXT:my_sitepackage/Classes/Controller/MyBackendController.php
