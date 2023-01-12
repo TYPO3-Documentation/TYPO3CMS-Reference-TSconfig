@@ -293,13 +293,13 @@ config
    This property is available for various levels:
 
    table level, example:
-      `TCEFORM.tt_content.header.config.max`
+      `TCEFORM.tt_content.header.config.maxitems`
 
    table and record type level, example:
-      `TCEFORM.tt_content.header.types.textpic.config.max`
+      `TCEFORM.tt_content.header.types.textpic.config.maxitems`
 
    Flex form field level, example:
-      `TCEFORM.tt_content.pi_flexform.my_ext_pi1.sDEF.myField.config.max`
+      `TCEFORM.tt_content.pi_flexform.my_ext_pi1.sDEF.myField.config.maxitems`
 
       Where `sDEF` is the sheet name.
 
