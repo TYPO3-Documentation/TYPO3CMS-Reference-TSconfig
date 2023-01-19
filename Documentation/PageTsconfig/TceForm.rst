@@ -296,7 +296,7 @@ config
       `TCEFORM.tt_content.header.config.max`
 
    table and record type level, example:
-      `TCEFORM.tt_content.header.types.textpic.config.maxitems`
+      `TCEFORM.tt_content.header.types.textpic.config.max`
 
    Flex form field level, example:
       `TCEFORM.tt_content.pi_flexform.my_ext_pi1.sDEF.myInputField.config.max`
