@@ -293,7 +293,7 @@ config
    This property is available for various levels:
 
    table level, example:
-      `TCEFORM.tt_content.header.config.maxitems`
+      `TCEFORM.tt_content.header.config.max`
 
    table and record type level, example:
       `TCEFORM.tt_content.header.types.textpic.config.maxitems`
