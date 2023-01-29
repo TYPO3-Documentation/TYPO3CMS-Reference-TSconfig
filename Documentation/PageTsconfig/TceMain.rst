@@ -174,11 +174,104 @@ disablePrependAtCopy
         Hidden page with added suffix after copying its original page
 
 
+.. index:: Link handler
+.. _pagetcemaintables-linkhandler:
+
+linkHandler
+-----------
+
+:aspect:`Datatype`
+    array of link handler configurations
+
+:aspect:`Description`
+    Contains an array of link handler configurations.
+
+    ..  attention::
+        The keys in this array
+        uniquely identify the type of link and are used in the TYPO3 link format,
+        for example `t3://record?identifier=my_content&uid=123`. Therefore the key
+        must never be changed or all existing links in the content will stop working.
+
+    :typoscript:`handler`
+        Fully qualified name of the class containing the backend link handler.
+
+    :typoscript:`configuration`
+        Configuration for the link handler, depends on the :typoscript:`handler`.
+        For :php:`TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler`
+        :typoscript:`configuration.table` must be defined.
+
+    :typoscript:`scanBefore` / :typoscript:`scanAfter`
+        Define the order in which handlers are queried when determining
+        the responsible tab for editing an existing link.
+
+    :typoscript:`displayBefore` / :typoscript:`displayAfter`
+        Define the order of how the various tabs are displayed in the
+        link browser.
+
+:aspect:`Example`
+    The following page TSconfig display an additional tab with the `label` as
+    title in the linkbrowser. It then saves the link in the format
+    `t3://record?identifier=my_content&uid=123`. To render the link in the
+    frontend you need to define the same key in the TypoScript setup
+    :ref:`config.recordLinks <t3tsref:recordLinks>`.
+
+    ..  tip::
+        For a complete example see also the :ref:`Record link tutorial
+        in TYPO3 Explained <t3coreapi:TableRecordLinkBrowserTutorials>`.
+
+    ..  code-block:: typoscript
+        :caption: Page TSconfig definition for identifier `my_content`
+
+        TCEMAIN.linkHandler.my_content {
+            handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+            label = LLL:EXT:my_extension/Resources/Private/Language/locallang.xlf:link.customTab
+            configuration {
+                table = tx_myextension_content
+            }
+            scanBefore = page
+        }
+
+
 .. index:: Page permissions
 .. _pagetcemain-permissions-user-group:
 
 permissions
-===========
+-----------
+
+
+.. index:: Page permissions; copyFromParent
+.. _pagetcemain-permissions-copyFromParent:
+
+Value copyFromParent
+~~~~~~~~~~~~~~~~~~~~
+
+The value :typoscript:`copyFromParent` can be set for each of the
+page TSconfig :typoscript:`TCEMAIN.permissions.*` sub keys. If this value is
+set, the page access permissions are copied from the parent page.
+
+Example: Inherit the group id of the parent page
+""""""""""""""""""""""""""""""""""""""""""""""""
+
+.. code-block:: php
+   :caption: config/system/settings.php | typo3conf/system/settings.php
+
+   $GLOBALS['TYPO3_CONF_VARS']['BE']['defaultPageTSconfig'] .= '
+       TCEMAIN.permissions.groupid = copyFromParent
+       TCEMAIN.permissions.group = 31
+       TCEMAIN.permissions.everybody = 0
+   ';
+
+By default all new pages created by users will inherit the group of the parent
+page. Members of this group get all permissions. Users not in the group get no
+permissions.
+
+When an administrator creates a new page she can use the module
+:guilabel:`System > Access` to set a different owner group for this new page.
+
+All subpages created to this new page will now automatically have the new pages
+group. The administrator does not have to set custom TSconfig to achieve this.
+
+This behaviour is similar to the "group sticky bit" in Unix for directories.
 
 
 .. index:: Page permissions; everybody
