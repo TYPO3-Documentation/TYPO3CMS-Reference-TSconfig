@@ -238,42 +238,6 @@ linkHandler
 permissions
 -----------
 
-
-.. index:: Page permissions; copyFromParent
-.. _pagetcemain-permissions-copyFromParent:
-
-Value copyFromParent
-~~~~~~~~~~~~~~~~~~~~
-
-The value :typoscript:`copyFromParent` can be set for each of the
-page TSconfig :typoscript:`TCEMAIN.permissions.*` sub keys. If this value is
-set, the page access permissions are copied from the parent page.
-
-Example: Inherit the group id of the parent page
-""""""""""""""""""""""""""""""""""""""""""""""""
-
-.. code-block:: php
-   :caption: config/system/settings.php | typo3conf/system/settings.php
-
-   $GLOBALS['TYPO3_CONF_VARS']['BE']['defaultPageTSconfig'] .= '
-       TCEMAIN.permissions.groupid = copyFromParent
-       TCEMAIN.permissions.group = 31
-       TCEMAIN.permissions.everybody = 0
-   ';
-
-By default all new pages created by users will inherit the group of the parent
-page. Members of this group get all permissions. Users not in the group get no
-permissions.
-
-When an administrator creates a new page she can use the module
-:guilabel:`System > Access` to set a different owner group for this new page.
-
-All subpages created to this new page will now automatically have the new pages
-group. The administrator does not have to set custom TSconfig to achieve this.
-
-This behaviour is similar to the "group sticky bit" in Unix for directories.
-
-
 .. index:: Page permissions; everybody
 
 everybody
