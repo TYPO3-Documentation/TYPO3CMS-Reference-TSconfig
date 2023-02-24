@@ -8,6 +8,11 @@ TSFE
 
 Configuration options that apply to frontend configuration.
 
+.. deprecated:: 9.5
+   This option was removed in TYPO3 v10 with the breaking change
+   :doc:`ext_core:Changelog/10.0/Breaking-88564-PageTSconfigSettingTSFEconstantsRemoved`.
+
+
 constants
 ---------
 
