@@ -605,6 +605,7 @@ noCreateRecordsLink
 .. index::
    preview
    Content elements; Preview definition
+   _pageweblayoutpreview
 
 preview
 ~~~~~~~
