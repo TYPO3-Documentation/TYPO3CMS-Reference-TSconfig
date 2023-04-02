@@ -527,7 +527,7 @@ typo3.branch
    .. code-block:: typoscript
       :caption: EXT:site_package/Configuration/TypoScript/setup.typoscript
 
-      [typo3.branch == "11.5"]
+      [typo3.branch == "12.4"]
 
 
 .. index:: Conditions; typo3.devIpMask
