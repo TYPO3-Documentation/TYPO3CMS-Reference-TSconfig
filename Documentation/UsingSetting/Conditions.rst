@@ -505,7 +505,7 @@ typo3.version
    .. code-block:: typoscript
       :caption: EXT:site_package/Configuration/TypoScript/setup.typoscript
 
-      [typo3.version == "9.5.5"]
+      [typo3.version == "12.4.0"]
 
 
 .. index:: Conditions; typo3.branch
