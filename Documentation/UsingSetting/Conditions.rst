@@ -291,7 +291,7 @@ backend.user.isAdmin
    .. code-block:: typoscript
       :caption: EXT:site_package/Configuration/TypoScript/setup.typoscript
 
-      # Evaluates to true if current BE-User is administrator
+      # Evaluates to true if current backend user is administrator
       [backend.user.isAdmin]
 
 
