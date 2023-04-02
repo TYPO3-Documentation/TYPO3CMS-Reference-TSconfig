@@ -521,7 +521,7 @@ typo3.branch
    String
 
 :aspect:`Description`
-   TYPO3_branch (e.g. 9.4)
+   TYPO3 branch (e.g. 12.4)
 
 :aspect:`Example`
    .. code-block:: typoscript
