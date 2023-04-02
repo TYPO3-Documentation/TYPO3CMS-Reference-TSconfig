@@ -337,7 +337,7 @@ backend.user.userId
    .. code-block:: typoscript
       :caption: EXT:site_package/Configuration/TypoScript/setup.typoscript
 
-      # Evaluates to true if user uid of current logged in BE-User is equal to 5
+      # Evaluates to true if user uid of current logged in backend user is equal to 5
       [backend.user.userId == 5]
 
 
