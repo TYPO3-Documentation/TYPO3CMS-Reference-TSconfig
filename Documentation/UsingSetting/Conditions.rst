@@ -499,7 +499,7 @@ typo3.version
    String
 
 :aspect:`Description`
-   TYPO3_version (e.g. 9.4.0-dev)
+   TYPO3_version (e.g. 12.4.0-dev)
 
 :aspect:`Example`
    .. code-block:: typoscript
