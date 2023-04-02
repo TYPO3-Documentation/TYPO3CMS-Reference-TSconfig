@@ -314,7 +314,7 @@ backend.user.isLoggedIn
    .. code-block:: typoscript
       :caption: EXT:site_package/Configuration/TypoScript/setup.typoscript
 
-      # Evaluates to true if an BE-User is logged in
+      # Evaluates to true if an backend user is logged in
       [backend.user.isLoggedIn]
 
 
