@@ -764,7 +764,7 @@ site()
       :caption: EXT:site_package/Configuration/TypoScript/setup.typoscript
 
       # Site identifier
-      [site("identifier") == "typo395"]
+      [site("identifier") == "my_website"]
 
       # Match site base host
       [site("base").getHost() == "www.example.org"]
