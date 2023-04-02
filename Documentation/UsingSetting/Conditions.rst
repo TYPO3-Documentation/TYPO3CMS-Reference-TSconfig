@@ -16,7 +16,7 @@ TSconfig TypoScript conditions offer a way to conditionally change TypoScript ba
 on current context. See the :ref:`TypoScript syntax condition chapter <t3coreapi:typoscript-syntax-conditions>`
 for the basic syntax of conditions.
 
-It is possible to use TypoScript conditions in both User TSconfig and Page TSconfig,
+It is possible to use TypoScript conditions in both user TSconfig and page TSconfig,
 just as it is done in frontend TypoScript. The list of available variables and
 functions is different, though.
 
