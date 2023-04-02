@@ -549,7 +549,7 @@ typo3.devIpMask
    .. code-block:: typoscript
       :caption: EXT:site_package/Configuration/TypoScript/setup.typoscript
 
-      [typo3.devIpMask == "172.18.0.6"]
+      [typo3.devIpMask == "203.0.113.6"]
 
 
 .. index:: Conditions; date
