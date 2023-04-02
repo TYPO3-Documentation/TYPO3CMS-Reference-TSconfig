@@ -20,7 +20,7 @@ It is possible to use TypoScript conditions in both User TSconfig and Page TScon
 just as it is done in frontend TypoScript. The list of available variables and
 functions is different, though.
 
-The symfony expression language tends to throw warnings when sub arrays are
+The Symfony expression language tends to throw warnings when sub arrays are
 checked in a condition that do not exist. Use the :ref:`traverse <condition-function-traverse>`
 
 .. contents::
