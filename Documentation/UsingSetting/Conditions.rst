@@ -674,7 +674,7 @@ compatVersion()
       :caption: EXT:site_package/Configuration/TypoScript/setup.typoscript
 
       # True if current version is 12.4.x
-      [compatVersion("11.5")]
+      [compatVersion("12.4")]
       [compatVersion("11.5.0")]
       [compatVersion("11.5.1")]
 
