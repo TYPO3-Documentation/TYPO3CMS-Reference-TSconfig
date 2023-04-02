@@ -148,7 +148,7 @@ tree.pagelayout
 
 :aspect:`Description`
    Check for the defined backend layout of a page including the inheritance of
-   the field `Backend Layout (subpages of this page)`. Only available in page TSconfig,
+   the field :guilabel:`Backend Layout (subpages of this page)`. Only available in page TSconfig,
    not in user TSconfig.
 
 :aspect:`Example`
