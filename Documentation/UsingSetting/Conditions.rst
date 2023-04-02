@@ -354,7 +354,7 @@ backend.user.userGroupIds
    array
 
 :aspect:`Description`
-   Array of user group ids of the current backend user.
+   Array of user group IDs of the current backend user.
 
 :aspect:`Context`
    Frontend, Backend
