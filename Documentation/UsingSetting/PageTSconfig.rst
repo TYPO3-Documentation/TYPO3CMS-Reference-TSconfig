@@ -37,54 +37,48 @@ installations that contain only one site and use only one sitepackage extension.
 Extensions supplying custom default Page TSconfig that should always be included,
 can also set the Page TSconfig globally.
 
-Use extension API function :code:`addPageTSConfig()` in the
-:file:`ext_localconf.php` file of your extension:
-
-.. code-block:: php
-   :caption: EXT:my_sitepackage/ext_localconf.php
-
-   use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-
-   ExtensionManagementUtility::addPageTSConfig('
-      TCEMAIN.table.pages {
-         disablePrependAtCopy = 1
-      }
-   ');
-
-There is a global `TYPO3_CONF_VARS` value called
-:ref:`$GLOBALS['TYPO3_CONF_VARS']['BE']['defaultPageTSconfig'] <t3coreapi:typo3ConfVars_be_defaultPageTSconfig>`.
-
-The API function above adds content to that array. The array value itself
-however should **not** be changed or set directly (for example in the
-:file:`LocalConfiguration.php`).
-
-It is best practice to use the above API method to add your default
-Page TSconfig in a project-specific
+It is best practice to use :php:`ExtensionManagementUtility::addPageTSConfig`
+(see below) to add your default Page TSconfig in a project-specific
 :doc:`sitepackage <t3sitepackage:Index>` extension.
 
 Use the :typoscript:`@import '...'` syntax to keep the Page TSconfig in a
 separate file.
 
+.. _page-tsconfig-v11-v12:
+
+Global page TSconfig, compatible with TYPO3 v11 and v12
+-------------------------------------------------------
+
+Starting with TYPO3 v12, the content of the
+file:`EXT:myextension/Configuration/page.tsconfig` is loaded automatically.
+This is not the case yet in TYPO3 v11 installations. You can achieve
+compatibility with both TYPO3 v11 and v12 by importing the content of this file
+with the API function :php:`ExtensionManagementUtility::addPageTSConfig`:
+
 .. code-block:: php
    :caption: EXT:my_sitepackage/ext_localconf.php
 
+   use TYPO3\CMS\Core\Information\Typo3Version;
    use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+   use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-   ExtensionManagementUtility::addPageTSConfig(
-       "@import 'EXT:myexample/Configuration/TSconfig/Page/Mod/Wizards/NewContentElement.tsconfig'"
-   );
-
-   ExtensionManagementUtility::addPageTSConfig(
-       "@import 'EXT:myexample/Configuration/TSconfig/Page/Basic.tsconfig'
-       @import 'EXT:myexample/Configuration/TSconfig/Page/TCEFORM.tsconfig'"
-   );
-
-   if (ExtensionManagementUtility::isLoaded('linkvalidator')) {
-        ExtensionManagementUtility::addPageTSConfig(
-            "@import 'EXT:myexample/Configuration/TSconfig/Page/Linkvalidator.tsconfig'"
-        );
+   $versionInformation = GeneralUtility::makeInstance(Typo3Version::class);
+   // Only include page.tsconfig if TYPO3 version is below 12 so that it is not imported twice.
+   if ($versionInformation->getMajorVersion() < 12) {
+      ExtensionManagementUtility::addPageTSConfig('
+         @import "EXT:my_sitepackage/Configuration/page.tsconfig"
+      ');
    }
 
+How it works
+------------
+
+There is a global `TYPO3_CONF_VARS` value called
+:ref:`$GLOBALS['TYPO3_CONF_VARS']['BE']['defaultPageTSconfig'] <t3coreapi:typo3ConfVars_be_defaultPageTSconfig>`.
+
+The API function :php:`ExtensionManagementUtility::addPageTSConfig` adds content
+to that array. The array value itself however should **not** be changed or set
+directly (for example in the :file:`LocalConfiguration.php`).
 
 .. index:: pair: Page TSconfig; Static TSconfig files
 .. _pagesettingstaticpagetsconfigfiles:
