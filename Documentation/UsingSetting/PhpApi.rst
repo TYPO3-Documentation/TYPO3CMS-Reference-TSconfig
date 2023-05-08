@@ -31,7 +31,7 @@ sub-properties return their sub-properties using the property name with a
 trailing dot, while a single property is accessible by the property
 name itself. The example below gives more insight on this.
 
-If accessing TSconfig arrays, the PHP null coalescence operator :php:`??` is
+If accessing TSconfig arrays, the PHP null coalescing operator :php:`??` is
 useful: TSconfig options may or not be set, accessing non-existent
 array keys in PHP would thus raise PHP notice level warnings.
 
