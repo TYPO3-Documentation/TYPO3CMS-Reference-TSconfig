@@ -1,4 +1,4 @@
-
+..  include:: /Includes.rst.txt
 .. index:: User TSconfig
 .. _setting-user-tsconfig:
 
