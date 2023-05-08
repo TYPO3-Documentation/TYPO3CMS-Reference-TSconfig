@@ -102,7 +102,7 @@ selected groups are evaluated from top to bottom.
 
 **Example:**
 
-*   Add in User TSconfig
+*   Add in user TSconfig
 
     ..  code-block:: typoscript
         :caption: EXT:site_package/Configuration/user.tsconfig
