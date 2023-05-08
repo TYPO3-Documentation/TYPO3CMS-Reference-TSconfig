@@ -111,7 +111,7 @@ selected groups are evaluated from top to bottom.
 
 *   You get the value "bold".
 
-*   Add later in User TSconfig
+*   Add later in user TSconfig
 
     ..  code-block:: typoscript
         :caption: EXT:site_package/Configuration/user.tsconfig
