@@ -40,7 +40,7 @@ these optional array structures.
 
 
 ..  literalinclude:: _PhpApi/_user.tsconfig
-    :language: tsconfig
+    :language: typoscript
     :caption: Incoming (user) TSconfig:
 
 ..  literalinclude:: _PhpApi/_getTSConfig.php
