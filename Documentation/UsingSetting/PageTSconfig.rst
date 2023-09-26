@@ -56,6 +56,10 @@ installations that contain only one site and use only one sitepackage extension.
 Extensions supplying custom default page TSconfig that should always be included,
 can also set the page TSconfig globally.
 
+The PSR-14 event :ref:`t3coreapi:BeforeLoadedPageTsConfigEvent` is available to
+add global static page TSconfig before anything else is loaded.
+
+
 .. _page-tsconfig-v11-v12:
 
 Global page TSconfig, compatible with TYPO3 v11 and v12
@@ -147,10 +151,7 @@ Verify the final configuration
 ==============================
 
 The full page TSconfig for any given page can be viewed using the module
-:guilabel:`Web > Info` module, action :guilabel:`Page TSconfig`.
-
-.. figure:: /Images/ManualScreenshots/Info/TSconfigOverview.png
-   :alt: Viewing Page TSconfig using the Info module
+:guilabel:`Page TSconfig` with in the :guilabel:`Site Management` section.
 
 
 .. index:: pair: Page TSconfig; Override values
