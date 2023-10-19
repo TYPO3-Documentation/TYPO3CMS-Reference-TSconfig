@@ -122,7 +122,8 @@ edit_docModuleUpload
     boolean
 
 :aspect:`Description`
-    File upload directly in Doc. module
+    Allow file upload directly from within CE edit masks.
+    Caution: In most cases the uploaded file will in put into `fileadmin/user_upload/`.
 
 
 .. index:: Email me at login
@@ -134,7 +135,7 @@ emailMeAtLogin
     boolean
 
 :aspect:`Description`
-    Notify me by email, when somebody logs in from my account
+    Notify me by email, when somebody logs into my account
 
 
 .. index:: Backend; Language
@@ -171,7 +172,8 @@ startModule
     string
 
 :aspect:`Description`
-    Name of the module that is called when the user logs into the Backend
+    Name of the module that is called when the user logs into the Backend, e.g.
+    `web_layout`, `web_list`, `web_view`, `web_info`, `web_ts`, etc.
 
 
 .. index:: Title length, max
@@ -183,4 +185,6 @@ titleLen
     positive integer
 
 :aspect:`Description`
-    Max. Title Length
+    Maximum length of rendered record titles in the BE interface.
+    It's used in several places: page tree, edit masks, workspace module, etc.
+    Tip: to find out where exactly set it to a low number.
