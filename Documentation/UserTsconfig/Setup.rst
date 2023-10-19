@@ -139,6 +139,18 @@ neverHideAtCopy
     If set, then the hideAtCopy feature for records in TCE will not be used.
 
 
+.. index:: File list; Show hidden files and folders
+
+showHiddenFilesAndFolders
+=========================
+
+:aspect:`Datatype`
+    boolean
+
+:aspect:`Description`
+    If set, hidden files and folders will be shown in the filelist.
+
+
 .. index:: Start module
 
 startModule
