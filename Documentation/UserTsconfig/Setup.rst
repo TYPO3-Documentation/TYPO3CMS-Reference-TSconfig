@@ -125,7 +125,7 @@ lang
     language-key
 
 :aspect:`Description`
-    One of the language-keys. For current options see
+    One of the language keys. For current options see
     :file:`typo3/sysext/core/Classes/Localization/Locales.php`, for example
     `dk`, `de`, `es` etc.
 
