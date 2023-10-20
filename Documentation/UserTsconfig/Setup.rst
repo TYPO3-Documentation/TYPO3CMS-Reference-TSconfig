@@ -35,7 +35,6 @@ setup.override.[someProperty]
     value will overrule it.
 
     .. attention::
-
         There is a tricky aspect to these `setup.override`: If first you have set a
         value by `setup.override` and then remove it again, you will experience
         that the value persists to exist. This is because it is saved in the
@@ -98,8 +97,11 @@ edit_docModuleUpload
     boolean
 
 :aspect:`Description`
-    Allow file upload directly from within CE edit masks.
-    Caution: In most cases the uploaded file will in put into `fileadmin/user_upload/`.
+    Allow file upload directly from file reference fields within backend forms.
+
+    .. note::
+        The uploaded file will be stored in the default upload folder,
+        see :ref:`user TSconfig <useroptions-defaultUploadFolder>` and :ref:`page TSconfig <pagedefaultuploadfolder>`
 
 
 .. index:: Email me at login
@@ -124,7 +126,8 @@ lang
 
 :aspect:`Description`
     One of the language-keys. For current options see
-    :file:`typo3/sysext/core/Classes/Localization/Locales.php`, e.g. `dk`, `de`, `es` etc.
+    :file:`typo3/sysext/core/Classes/Localization/Locales.php`, for example
+    `dk`, `de`, `es` etc.
 
 
 .. index:: Records; Hide at copy
@@ -160,8 +163,8 @@ startModule
     string
 
 :aspect:`Description`
-    Name of the module that is called when the user logs into the Backend, e.g.
-    `web_layout`, `web_list`, `web_view`, `web_info`, `web_ts`, etc.
+    Name of the module that is called when the user logs into the backend, for
+    example `web_layout`, `web_list`, `web_view`, `web_info`, `web_ts` etc.
 
 
 .. index:: Title length, max
@@ -173,6 +176,8 @@ titleLen
     positive integer
 
 :aspect:`Description`
-    Maximum length of rendered record titles in the BE interface.
-    It's used in several places: page tree, edit masks, workspace module, etc.
-    Tip: to find out where exactly set it to a low number.
+    Maximum length of rendered record titles in the backend interface.
+    It is used in several places: page tree, edit masks, workspace module, etc.
+
+    .. tip::
+        To find out where this setting is applied, set it to a low number.
