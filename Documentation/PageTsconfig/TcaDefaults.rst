@@ -36,4 +36,4 @@ Example:
 
 ..  note::
     `TCAdefaults` is not applied to :ref:`FlexForm <t3coreapi:flexforms>` values. These can only be addressed via
-    actual :xml:`<default>` elements within the FlexForm DataStructure.
+    :xml:`<default>` elements within the FlexForm data structure.
