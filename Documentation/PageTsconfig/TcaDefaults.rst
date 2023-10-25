@@ -35,5 +35,5 @@ Example:
    TCAdefaults.pages.hidden = 0
 
 ..  note::
-    `TCAdefaults` is not (yet) applied to FlexForm values. These can only be addressed via
+    `TCAdefaults` is not applied to :ref:`FlexForm <t3coreapi:flexforms>` values. These can only be addressed via
     actual :xml:`<default>` elements within the FlexForm DataStructure.
