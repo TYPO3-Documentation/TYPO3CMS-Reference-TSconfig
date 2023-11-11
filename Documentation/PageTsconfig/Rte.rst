@@ -16,7 +16,7 @@ for more general information on RTE configuration and data processing.
 The order in which the configuration for the RTE is loaded is (the first one which
 is set will be used, see :ref:`example <pageTsRteOverridePreset>` below):
 
-1. preset defined for a specific field via PageTS
+1. preset defined for a specific field via page TSconfig
 2. :ref:`richtextConfiguration <t3tca:columns-text-properties-richtextConfiguration>`
    defined for a specific field via TCA
 3. general preset defined via PageTS (:typoscript:`RTE.default.preset`)
