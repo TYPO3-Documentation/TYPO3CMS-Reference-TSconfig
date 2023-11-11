@@ -13,7 +13,7 @@ The `RTE` prefix key is used for configuration of the Rich Text Editor.
 Please refer to the :ref:`RTE chapter <t3coreapi:rte>` in Core API document
 for more general information on RTE configuration and data processing.
 
-The order in which configuration for the RTE is loaded is (the first one which
+The order in which the configuration for the RTE is loaded is (the first one which
 is set, is used, see :ref:`example <pageTsRteOverridePreset>` below):
 
 1. preset defined for a specific field via PageTS
