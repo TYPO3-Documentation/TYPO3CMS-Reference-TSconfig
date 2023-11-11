@@ -77,7 +77,7 @@ Example: Disable RTE
 Example: Override preset
 ------------------------
 
-Check the description of the order above to see which setting overrides which.
+Refer to the description of the order above for details of which setting has priority over which.
 
 Summary:
 
