@@ -39,7 +39,7 @@ Configure RTE for a specific field in a table for a specific :ref:`record type <
 Configuring RTE via page TSconfig is general and not specific to a
 particular rich-text editor. However, TYPO3 comes with EXT:rte_ckeditor, so this one
 will usually be used. This page covers only the general configuration, for
-more information about configuring rte_ckeditor, see the
+more information about configuring EXT:rte_ckeditor, see the
 :ref:`rte_ckeditor configuration <ext_rte_ckeditor:configuration>`.
 
 Examples
