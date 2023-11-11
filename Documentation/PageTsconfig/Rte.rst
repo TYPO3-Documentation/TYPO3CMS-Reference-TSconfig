@@ -19,7 +19,7 @@ is set will be used, see :ref:`example <pageTsRteOverridePreset>` below):
 1. preset defined for a specific field via page TSconfig
 2. :ref:`richtextConfiguration <t3tca:columns-text-properties-richtextConfiguration>`
    defined for a specific field via TCA
-3. general preset defined via PageTS (:typoscript:`RTE.default.preset`)
+3. general preset defined via page TSconfig (:typoscript:`RTE.default.preset`)
 4. default (the preset "default", e.g. as defined by EXT:rte_ckeditor or overridden
    in :file:`ext_localconf.php`)
 
