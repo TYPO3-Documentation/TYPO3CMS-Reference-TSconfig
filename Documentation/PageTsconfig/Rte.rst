@@ -14,7 +14,7 @@ Please refer to the :ref:`RTE chapter <t3coreapi:rte>` in Core API document
 for more general information on RTE configuration and data processing.
 
 The order in which the configuration for the RTE is loaded is (the first one which
-is set, is used, see :ref:`example <pageTsRteOverridePreset>` below):
+is set will be used, see :ref:`example <pageTsRteOverridePreset>` below):
 
 1. preset defined for a specific field via PageTS
 2. :ref:`richtextConfiguration <t3tca:columns-text-properties-richtextConfiguration>`
