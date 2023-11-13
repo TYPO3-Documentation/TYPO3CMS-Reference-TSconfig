@@ -134,8 +134,8 @@ lang
     language-key
 
 :aspect:`Description`
-    One of the language-keys. For current options see
-    :file:`typo3/sysext/core/Classes/Localization/Locales.php`, e.g. `dk`, `de`, `es` etc.
+    One of the language keys. For current options see
+    :ref:`t3coreapi:i18n_languages`, for example `dk`, `de`, `es` etc.
 
 
 .. index:: Records; Hide at copy
