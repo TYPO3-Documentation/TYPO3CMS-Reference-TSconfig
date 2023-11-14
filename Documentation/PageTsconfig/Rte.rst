@@ -81,7 +81,7 @@ Refer to the description of the order above for details of which setting has pri
 
 Summary:
 
-*   Setting the preset via page TSconfig *for a specific field* overrides all
+*   Setting the preset via page TSconfig *for a specific field* overrides all,
     else
 *   TCA richtextConfiguration (for a specific field) overrides the page TSconfig
     default preset (:typoscript:`RTE.default.preset`)
