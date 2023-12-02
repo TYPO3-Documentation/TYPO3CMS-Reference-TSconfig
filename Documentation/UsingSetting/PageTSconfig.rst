@@ -181,7 +181,7 @@ can also be used for the page TSconfig.
 Overriding FlexForm settings
 ============================
 
-It is possible to override some FlexForm settings via TSconfig. You can find
+It is possible to override some :ref:`FlexForm <t3coreapi:flexforms>` settings via TSconfig. You can find
 some examples for this in the reference section, for example on the
 :ref:`TCEFORM <tceform>` page.
 
