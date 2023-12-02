@@ -31,7 +31,7 @@ and `TCEFORM.[tableName].[fieldName].types.[typeName]` to configure a field for 
 type, see the :ref:`TCA type section <t3tca:types>` for details on types.
 
 While all that property path munging looks messy at first, it should become more
-clear if reading through the single properties below and looking at the examples.
+clear when reading through the single properties below and looking at the examples.
 
 .. youtube:: B3IQq7pIJ_o
 
