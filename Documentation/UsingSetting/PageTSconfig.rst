@@ -175,7 +175,7 @@ The TypoScript syntax to
 :ref:`modify <t3coreapi:typoscript-syntax-syntax-value-modification>` values
 can also be used for the page TSconfig.
 
-Overriding Flexform settings
+Overriding FlexForm settings
 ============================
 
 It is possible to override some FlexForm settings via TSconfig. You can find
