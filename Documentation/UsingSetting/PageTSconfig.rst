@@ -182,7 +182,7 @@ It is possible to override some :ref:`FlexForm <t3coreapi:flexforms>` settings v
 some examples for this in the reference section, for example on the
 :ref:`TCEFORM <tceform>` page.
 
-The syntax is similar as when overriding TCA settings, but a little different:
+The syntax is similar as when overriding TCA settings, but a little different.
 
 
 
