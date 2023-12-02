@@ -40,7 +40,7 @@ clear when reading through the single properties below and looking at the exampl
 Applying properties to FlexForm fields
 --------------------------------------
 
-Other properties also apply to flex form fields, in this case the full property
+Other properties also apply to :ref:`FlexForm <t3coreapi:flexforms>` fields, in this case the full property
 path including the data structure key has to be set:
 
 .. code-block:: typoscript
