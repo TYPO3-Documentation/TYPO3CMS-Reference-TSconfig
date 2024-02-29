@@ -63,8 +63,7 @@
     },
     "scripts": {
         "check": [
-            "@check:php",
-            "@check:rst"
+            "@check:php"
         ],
         "check:php": [
             "@check:php:lint",
@@ -72,7 +71,6 @@
         ],
         "check:php:cs": "Build/Scripts/runTests.sh -n -s cgl",
         "check:php:lint": "Build/Scripts/runTests.sh -s lint",
-        "check:rst": "Build/Scripts/runTests.sh -s checkRst",
         "fix": [
             "@fix:php"
         ],
