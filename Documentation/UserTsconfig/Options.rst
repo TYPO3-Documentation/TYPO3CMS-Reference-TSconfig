@@ -899,8 +899,8 @@ pageTree.backgroundColor
 
 ..  deprecated:: 13.1
     This setting has been deprecated and will be removed in TYPO3 v14 due to its
-    lack of accessibility. It is being replaced with a new label system for tree
-    nodes.
+    lack of accessibility. It is being replaced with a
+    :ref:`new label system <useroptions-pageTree-label>` for tree nodes.
 
     In TYPO3 v13 the setting will be migrated to the new label system. Since the
     use case is unknown, the generated label will be "Color: <value>". This
