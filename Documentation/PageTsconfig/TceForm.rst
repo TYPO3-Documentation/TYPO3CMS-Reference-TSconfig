@@ -366,7 +366,7 @@ config
     Also, if for example the :typoscript:`max` definition of a field is made
     larger than the TCA definition of that field, you may need to to change
     the file :file:`ext_tables.sql` (see :ref:`t3coreapi:ext_tables-sql`)
-    to adjust column definitions, especially when otherwise using the
+    to adjust column definitions, especially when using the
     :ref:`Auto-generated structure <t3coreapi:auto-generated-db-structure>`.
 
     The property :typoscript:`config` is available for these levels:
