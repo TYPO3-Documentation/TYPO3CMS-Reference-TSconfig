@@ -68,7 +68,6 @@ The example creates a basic backend layout and sets the "Left" column to be not 
     `0` (the "Content" columns as defined above):
 
     ..  code-block:: typoscript
-        :caption: EXT:site_package/Configuration/page.tsconfig
 
         mod.SHARED.colPos_list = 0
 
