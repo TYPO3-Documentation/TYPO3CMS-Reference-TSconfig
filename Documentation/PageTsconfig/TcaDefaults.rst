@@ -17,7 +17,7 @@ This key is also available on :ref:`User TSconfig level <userTsTcaDefaults>`, th
 values when creating new records in the backend is this:
 
 #.  Value from `$GLOBALS['TCA']`
-#.  Value from :ref:`User TSconfig <userTsTcaDefaults>`
+#.  Value from :ref:`user TSconfig <userTsTcaDefaults>`
 #.  Value from page TSconfig (these settings)
 #.  Value from "defVals" GET variables
 #.  Value from previous record based on
