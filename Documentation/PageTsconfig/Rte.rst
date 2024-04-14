@@ -321,7 +321,7 @@ This means that options limited to `ts_transform` will also work for `ts_css` of
 ..  _rte-proc-allowedClasses:
 
 allowedClasses
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 ..  confval:: proc.allowedClasses
     :name: rte-proc-allowedClasses:
