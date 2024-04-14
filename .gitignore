@@ -33,4 +33,3 @@ nbproject
 Thumbs.db
 var/
 .cache/
-!/.ddev/config.yaml
