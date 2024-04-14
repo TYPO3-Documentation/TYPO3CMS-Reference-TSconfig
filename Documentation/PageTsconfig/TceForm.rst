@@ -1207,7 +1207,6 @@ suggest.receiverClass
 suggest.renderFunc
 ~~~~~~~~~~~~~~~~~~
 
-    :name: tceform-suggest.renderFunc
 ..  confval::
     :name: tceform-suggest-renderFunc
     :type: string
