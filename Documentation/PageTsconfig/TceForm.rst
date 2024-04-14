@@ -1250,7 +1250,7 @@ suggest.searchWholePhrase
 ..  confval:: suggest.searchWholePhrase
     :name: tceform-suggest-searchWholePhrase
     :type: boolean
-    :Default: false
+    :Default: 0
 
     Whether to do a `LIKE=%mystring%` (searchWholePhrase = 1) or a
     `LIKE=mystring%` (to do a real find as you type).
