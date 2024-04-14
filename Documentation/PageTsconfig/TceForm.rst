@@ -1006,11 +1006,11 @@ suggest.addWhere
 
     Markers possible for replacement:
 
-    *  ###THIS_UID###
-    *  ###CURRENT_PID###
-    *  :ref:`###PAGE_TSCONFIG_ID### <page_tsconfig_id>`
-    *  :ref:`###PAGE_TSCONFIG_IDLIST### <page_tsconfig_idlist>`
-    *  :ref:`###PAGE_TSCONFIG_STR### <page_tsconfig_str>`
+    *   ###THIS_UID###
+    *   ###CURRENT_PID###
+    *   :ref:`###PAGE_TSCONFIG_ID### <page_tsconfig_id>`
+    *   :ref:`###PAGE_TSCONFIG_IDLIST### <page_tsconfig_idlist>`
+    *   :ref:`###PAGE_TSCONFIG_STR### <page_tsconfig_str>`
 
 ..  _tceform-suggest-addWhere-example:
 
