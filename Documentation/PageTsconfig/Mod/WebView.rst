@@ -82,6 +82,6 @@ Example: Show pages of type 42 in the preview
     :caption: EXT:site_package/Configuration/page.tsconfig
 
     mod.web_view {
-        # Frontend link will be something like index.php?id=123&type=1
+        # Frontend link will be something like index.php?id=123&type=42
         type = 42
     }
