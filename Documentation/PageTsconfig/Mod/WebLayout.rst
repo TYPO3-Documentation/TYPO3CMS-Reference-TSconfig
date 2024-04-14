@@ -307,7 +307,7 @@ tt_content.preview
 ==================
 
 ..  confval:: tt_content.preview
-    :name: mod-web-layout-preview
+    :name: mod-web-layout-tt-content-preview
     :type: boolean
 
     It is possible to render previews of your own content elements in the page module.
