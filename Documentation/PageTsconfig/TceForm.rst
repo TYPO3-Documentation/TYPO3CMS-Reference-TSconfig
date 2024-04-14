@@ -194,7 +194,7 @@ Example: Override labels for document types
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
 
-    TCEFORM.tt_content.space_before_class.altLabels..  = foo
+    TCEFORM.tt_content.space_before_class.altLabels.. = foo
 
 Note the *double dot* after `altLabels`.
 
