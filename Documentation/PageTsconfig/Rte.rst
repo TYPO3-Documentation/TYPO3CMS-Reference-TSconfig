@@ -154,7 +154,7 @@ buttons.link.targetSelector.disabled
 ..  confval:: buttons.link.targetSelector.disabled
     :name: rte-buttons-link-targetselector-disabled
     :type: boolean
-    :Default: false
+    :Default: 0
 
     If set, the selection of link target is removed from the link
     insertion/update dialog.
