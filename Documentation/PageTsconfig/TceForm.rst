@@ -984,7 +984,7 @@ Configuration of one suggest wizard field in a flex form field of one table for 
 ..  _tceform-additionalSearchFields:
 
 suggest.additionalSearchFields
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: suggest.additionalSearchFields
     :name: tceform-suggest-additionalSearchFields
