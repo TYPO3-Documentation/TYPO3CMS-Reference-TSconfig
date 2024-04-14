@@ -197,7 +197,7 @@ buttons.link.relAttribute.enabled
 ..  confval:: buttons.link.relAttribute.enabled
     :name: rte-buttons-link-relattribute-enabled:
     :type: boolean
-    :Default: false
+    :Default: 0
 
     If set, an additional field is enabled in the link insertion/update
     dialogue allowing authors to specify a rel attribute to be added to
