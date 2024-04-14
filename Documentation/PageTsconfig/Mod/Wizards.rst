@@ -93,7 +93,7 @@ Example: Add a new element to the "common" group
 
 ..  _pageexample2:
 
-Example: Create a new group and add a element to it
+Example: Create a new group and add an element to it
 ---------------------------------------------------
 
 ..  code-block:: typoscript
