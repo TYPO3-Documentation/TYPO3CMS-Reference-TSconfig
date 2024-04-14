@@ -721,7 +721,7 @@ keepItems
 
 ..  _tceform-keepItems-example:
 
-Example: Show only spacer and standard pages
+Example: Show only standard and spacer pages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: typoscript
