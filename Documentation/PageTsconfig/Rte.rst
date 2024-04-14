@@ -183,7 +183,7 @@ buttons.link.queryParametersSelector.enabled
 ..  confval:: buttons.link.queryParametersSelector.enabled
     :name: rte-buttons-link-queryparametersselector-enabled
     :type: boolean
-    :Default: false
+    :Default: 0
 
     If set, an additional field is enabbled in the link insertion/update
     dialogue allowing authors to specify query parameters to be added on
