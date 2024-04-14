@@ -250,7 +250,7 @@ PAGE_TSCONFIG_IDLIST
 
 ..  _page_tsconfig_idlist-example:
 
-Example: substitute an id list in a plugin FlexForm
+Example: substitute a list of IDs in a plugin FlexForm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: typoscript
