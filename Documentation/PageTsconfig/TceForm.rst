@@ -931,7 +931,7 @@ sheetTitle
 
 ..  _tceform-sheetTitle-example:
 
-Example: Rename the first tab of the FlexForm plug-in
+Example: Rename the first tab of the FlexForm plugin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: typoscript
