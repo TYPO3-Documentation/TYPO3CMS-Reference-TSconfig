@@ -192,7 +192,9 @@ newRecord.pages
         Show or hide the link to create new pages at a selected position.
 
 ..  _mod-wizards-newRecord-pages-example:
+
 Example: Hide the "Page (inside)" link in the "New Record" dialog
+-----------------------------------------------------------------
 
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
