@@ -207,9 +207,9 @@ PAGE_TSCONFIG_ID
     :name: tceform-PAGE_TSCONFIG_ID
     :type: integer
 
-This option allows to provide a value for dynamic SQL-WHERE parameters. The
-value is defined for a specific field of a table. For usage with flexform
-fields, the entire path to a sub-field must be provided.
+    This option allows to provide a value for dynamic SQL-WHERE parameters. The
+    value is defined for a specific field of a table. For usage with flexform
+    fields, the entire path to a sub-field must be provided.
 
 ..  note::
 
@@ -218,7 +218,7 @@ fields, the entire path to a sub-field must be provided.
 
 ..  _page_tsconfig_id-example:
 
-Example: substitute a marker in a plugin FlexForm
+Example: Substitute a marker in a plugin FlexForm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: typoscript
@@ -250,8 +250,8 @@ PAGE_TSCONFIG_IDLIST
 
 ..  _page_tsconfig_idlist-example:
 
-Example: substitute a list of IDs in a plugin FlexForm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example: Substitute a list of IDs in a plugin FlexForm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
@@ -283,7 +283,7 @@ PAGE_TSCONFIG_STR
 
 ..  _page_tsconfig_str-example:
 
-Example: substitute a string in a plugin FlexForm
+Example: Substitute a string in a plugin FlexForm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: typoscript
@@ -896,10 +896,8 @@ sheetShortDescr
 
 ..  confval:: sheetShortDescr
     :name: tceform-sheetShortDescr
-    :type:
-    localized string
+    :type: localized string
 
-:aspect:`Description`
     Specifies a short description of the sheet used as link title in the tab-menu.
 
     This property is only available on flex form sheet level, example:
@@ -915,12 +913,10 @@ sheetShortDescr
 sheetTitle
 ----------
 
-..  confval::
-    :name: tceform-
-    :type:
-    localized string
+..  confval:: sheetTitle
+    :name: tceform-sheetTitle
+    :type: localized string
 
-:aspect:`Description`
     Set the title of the sheet / tab in a FlexForm configuration.
 
     This property is only available on flex form sheet level, example:
@@ -1060,8 +1056,7 @@ suggest.hide
 
 ..  confval:: suggest.hide
     :name: tceform-suggest-hide
-    :type:
-    boolean
+    :type: boolean
 
     Hide the suggest field. Works only for single fields.
 
@@ -1087,8 +1082,7 @@ suggest.maxPathTitleLength
 
 ..  confval:: suggest.maxPathTitleLength
     :name: tceform-suggest-maxPathTitleLength
-    :type:
-    positive integer
+    :type: positive integer
 
     Maximum number of characters to display when a path element is too long.
 
