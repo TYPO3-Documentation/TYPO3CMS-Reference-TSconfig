@@ -167,7 +167,7 @@ buttons.link.pageIdSelector.enabled
 ..  confval:: buttons.link.pageIdSelector.enabled
     :name: rte-buttons-link-pageidselector-enabled
     :type: boolean
-    :Default: false
+    :Default: 0
 
     If set, the specification of a page id, without using the page tree,
     is enabled in the link insertion/update dialog.
