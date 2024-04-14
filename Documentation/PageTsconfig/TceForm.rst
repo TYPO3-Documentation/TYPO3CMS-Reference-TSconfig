@@ -1230,7 +1230,7 @@ suggest.searchCondition
 ..  _tceform-suggest-searchCondition-example:
 
 Example:Only search on pages with doktype=1
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     ..  code-block:: typoscript
         :caption: EXT:site_package/Configuration/page.tsconfig
