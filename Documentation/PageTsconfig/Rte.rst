@@ -42,7 +42,7 @@ will usually be used. This page covers only the general configuration, for
 more information about configuring EXT:rte_ckeditor, see the
 :ref:`rte_ckeditor configuration <ext_rte_ckeditor:configuration>`.
 
-.. contents::
+..  contents::
     :local:
 
 ..  _pageTsRte-examples:
