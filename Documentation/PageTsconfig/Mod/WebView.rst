@@ -44,7 +44,7 @@ previewFrameWidths
 Example: Define a new preview preset
 ------------------------------------
 
-With this configuration a new preset '1014' with size 1027x768 will be configured with a label
+With this configuration a new preset '1014' with size 1024x768 will be configured with a label
 loaded from an xlf file and the category 'desktop'.
 
 ..  code-block:: typoscript
