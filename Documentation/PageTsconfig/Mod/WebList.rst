@@ -405,7 +405,7 @@ newPageWizard.override
 
 ..  confval:: newPageWizard.override
     :name: mod-web-list-newPageWizard-override
-    :type:  string
+    :type: string
 
     If set to an extension key, then the specified module or route will be used for creating
     new elements on the page.
