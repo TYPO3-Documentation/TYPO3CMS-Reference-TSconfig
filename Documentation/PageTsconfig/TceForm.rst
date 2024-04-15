@@ -856,6 +856,8 @@ removeItems
         Where `sDEF` is the sheet name. For a description
         see the section :ref:`tceformApplyPropertiesFlexForm` on this page.
 
+..  _tceform-removeItems-example:
+
 Example: Remove "Recycler" and "Spacer" page types
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
