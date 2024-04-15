@@ -296,7 +296,7 @@ This behaviour is similar to the "group sticky bit" in Unix for directories.
 
 ..  index:: Page permissions; everybody
 
-..  _tcemain-permissions-everybody:
+..  _pagetcemain-permissions-everybody:
 
 everybody
 ~~~~~~~~~
@@ -317,7 +317,7 @@ everybody
     :ref:`copyFromParent <pagetcemain-permissions-copyFromParent>` to inherit
     the value from the parent page.
 
-..  _tcemain-permissions-everybody-example:
+..  _pagetcemain-permissions-everybody-example:
 
 Example: Set permissions defaults so that everybody can see the page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -341,7 +341,7 @@ Example: Set permissions defaults so that everybody can see the page
 
 ..  index:: Page permissions; Group
 
-..  _tcemain-permissions-group:
+..  _pagetcemain-permissions-group:
 
 group
 ~~~~~
@@ -363,7 +363,7 @@ group
    the value from the parent page.
 
 
-..  _tcemain-permissions-group-example:
+..  _pagetcemain-permissions-group-example:
 
 Example: Set permission defaults so that the group can do anything but delete a page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -387,7 +387,7 @@ delete the page by default:
     Page with altered permissions for backend users, groups and everybody
 
 ..  index:: Page permissions; Group id
-..  _tcemain-permissions-groupid:
+..  _pagetcemain-permissions-groupid:
 
 groupid
 ~~~~~~~
@@ -406,7 +406,7 @@ groupid
     The owner group of a newly created page can be hardcoded by setting this
     property to a positive integer greater then zero.
 
-..  _tcemain-permissions-groupid-example:
+..  _pagetcemain-permissions-groupid-example:
 
 Example: Set default user group for permissions on new pages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -464,7 +464,7 @@ Example: Set permission defaults so that the pages owner can do anything
     }
 
 ..  index:: Page permissions; User id
-..  _tcemain-permissions-userid:
+..  _pagetcemain-permissions-userid:
 
 userid
 ~~~~~~
@@ -483,7 +483,7 @@ userid
    When this property is set to a positive integer the owner of new pages is
    hardcoded to the user of that uid.
 
-..  _tcemain-permissions-userid-example:
+..  _pagetcemain-permissions-userid-example:
 
 Example: Set default user for permissions on new pages
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
