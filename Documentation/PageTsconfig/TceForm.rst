@@ -198,7 +198,7 @@ Example: Override labels for document types
 
 Note the *double dot* after `altLabels`.
 
-..  _page_tsconfig_id:
+..  _tceform-page_tsconfig_id:
 
 PAGE_TSCONFIG_ID
 ----------------
@@ -216,7 +216,7 @@ PAGE_TSCONFIG_ID
     This value can be used for the TCA property :ref:`foreign_table_where <t3tca:columns-select-properties-foreign-table-where>`
     and for the `addWhere` part of the :ref:`suggest wizard <pagetceformsuggest>`.
 
-..  _page_tsconfig_id-example:
+..  _tceform-page_tsconfig_id-example:
 
 Example: Substitute a marker in a plugin FlexForm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -237,7 +237,7 @@ This example might be used for a record in an extension. It refers to a
 table called `tx_myext_table` and the field `myfield`. Here the marker will
 be substituted by the value `22`.
 
-..  _page_tsconfig_idlist:
+..  _tceform-page_tsconfig_idlist:
 
 PAGE_TSCONFIG_IDLIST
 --------------------
@@ -248,7 +248,7 @@ PAGE_TSCONFIG_IDLIST
 
     See above.
 
-..  _page_tsconfig_idlist-example:
+..  _tceform-page_tsconfig_idlist-example:
 
 Example: Substitute a list of IDs in a plugin FlexForm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -270,7 +270,7 @@ table called `tx_myext_table` and the field `myfield`. Here the marker will
 be substituted by the list of integers.
 
 
-..  _page_tsconfig_str:
+..  _tceform-page_tsconfig_str:
 
 PAGE_TSCONFIG_STR
 -----------------
@@ -281,7 +281,7 @@ PAGE_TSCONFIG_STR
 
     See above.
 
-..  _page_tsconfig_str-example:
+..  _tceform-page_tsconfig_str-example:
 
 Example: Substitute a string in a plugin FlexForm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -464,7 +464,7 @@ config.treeConfig
 
 ..  index::
     Records; field description
-..  _tceform-:
+..  _tceform-description:
 
 description
 -----------
@@ -977,7 +977,7 @@ Configuration of one suggest wizard field in a flex form field of one table for 
 
 ..  index::
     Suggest wizard; Search fields additional
-..  _tceform-additionalSearchFields:
+..  _tceform-suggest-additionalSearchFields:
 
 suggest.additionalSearchFields
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1026,7 +1026,7 @@ Example: limit storage_pid to the children of a certain page
 
 ..  index::
     Suggest wizard; CSS class
-..  _tceform-cssClass:
+..  _tceform-suggest-cssClass:
 
 suggest.cssClass
 ~~~~~~~~~~~~~~~~
@@ -1181,7 +1181,7 @@ Example: Limit suggest search to records on certain pages
 
 ..  index::
     Suggest wizard; receiver php class
-..  _tceform-suggest.receiverClass:
+..  _tceform-suggest-receiverClass:
 
 suggest.receiverClass
 ~~~~~~~~~~~~~~~~~~~~~
@@ -1201,7 +1201,7 @@ suggest.receiverClass
 suggest.renderFunc
 ~~~~~~~~~~~~~~~~~~
 
-..  confval::
+..  confval:: suggest.renderFunc
     :name: tceform-suggest-renderFunc
     :type: string
 
@@ -1215,7 +1215,7 @@ suggest.searchCondition
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  confval::
-    :name: tceform-suggest.searchCondition
+    :name: tceform-suggest-searchCondition
     :type: string
 
     Additional WHERE clause (no AND needed to prepend).
