@@ -368,7 +368,7 @@ listOnlyInSingleTableView
 ..  confval:: listOnlyInSingleTableView
     :name: mod-web-list-listOnlyInSingleTableView
     :type:  boolean
-    :Default: `false`
+    :Default: 0
 
     If set, the default view will not show the single records inside a
     table anymore, but only the available tables and the number of records
@@ -422,7 +422,7 @@ noCreateRecordsLink
 ..  confval:: noCreateRecordsLink
     :name: mod-web-list-noCreateRecordsLink
     :type:  boolean
-    :Default: `false`
+    :Default: 0
 
     If set, the link "Create new record" is hidden.
 
@@ -451,7 +451,7 @@ noExportRecordsLinks
 ..  confval:: noExportRecordsLinks
     :name: mod-web-list-noExportRecordsLinks
     :type:  boolean
-    :Default: `false`
+    :Default: 0
 
     If set, the :guilabel:`Download` and :guilabel:`Export` buttons are hidden
     in the list module. This applies to
@@ -504,7 +504,7 @@ table.[tableName].hideTable
 ..  confval:: table.[tableName].hideTable
     :name: mod-web-list-table-tableName-hideTable
     :type:  boolean
-    :Default: `false`
+    :Default: 0
 
     If set to non-zero, the table is hidden. If it is zero, table is shown
     even if table name is listed in "hideTables" list.
