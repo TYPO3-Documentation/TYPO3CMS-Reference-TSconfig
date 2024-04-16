@@ -232,7 +232,7 @@ buttons.link.[ *type* ].properties.class.required
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: buttons.link.[type].properties.class.required
-    :name: rte-buttons-link-type-properties-class-required:
+    :name: rte-buttons-link-type-properties-class-required
     :type: boolean
 
     If set, a class must be selected for any link of the given type.
