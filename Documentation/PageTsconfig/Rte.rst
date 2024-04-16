@@ -422,7 +422,7 @@ entryHTMLparser_db
 ~~~~~~~~~~~~~~~~~~
 
 ..  confval:: proc.entryHTMLparser_db
-    :name: rte-proc-entryHTMLparser_db:
+    :name: rte-proc-entryHTMLparser_db
     :type: boolean / :ref:`HTMLparser <t3tsref:htmlparser>`
 
     Applies to all kinds of processing.
