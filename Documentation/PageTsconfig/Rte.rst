@@ -582,7 +582,7 @@ overruleMode
 ~~~~~~~~~~~~
 
 ..  confval:: proc.overruleMode
-    :name: rte-proc-overruleMode:
+    :name: rte-proc-overruleMode
     :type: Comma list of RTE transformations
 
     This can overrule the RTE transformation set from TCA. Notice, this is a  *comma list* of transformation keys.
