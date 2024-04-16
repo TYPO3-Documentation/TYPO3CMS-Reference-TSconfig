@@ -245,7 +245,7 @@ buttons.link.properties.target.default
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: buttons.link.properties.target.default
-    :name: rte-buttons-link-properties-target-default:
+    :name: rte-buttons-link-properties-target-default
     :type: string
 
     This sets the default target for new links in the RTE.
