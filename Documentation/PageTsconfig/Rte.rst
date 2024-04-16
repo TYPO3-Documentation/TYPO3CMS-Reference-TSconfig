@@ -470,7 +470,7 @@ exitHTMLparser_rte
 ~~~~~~~~~~~~~~~~~~
 
 ..  confval:: proc.exitHTMLparser_rte
-    :name: rte-proc-exitHTMLparser_rte:
+    :name: rte-proc-exitHTMLparser_rte
     :type: boolean / :ref:`HTMLparser <t3tsref:htmlparser>`
 
     Applies to all kinds of processing.
