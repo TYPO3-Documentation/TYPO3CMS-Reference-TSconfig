@@ -438,7 +438,7 @@ entryHTMLparser_rte
 ~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: proc.entryHTMLparser_rte
-    :name: rte-proc-entryHTMLparser_rte:
+    :name: rte-proc-entryHTMLparser_rte
     :type: boolean / :ref:`HTMLparser <t3tsref:htmlparser>`
 
     Applies to all kinds of processing.
