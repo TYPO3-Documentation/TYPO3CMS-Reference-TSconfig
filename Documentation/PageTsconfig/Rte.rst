@@ -367,7 +367,7 @@ allowTagsOutside
 ~~~~~~~~~~~~~~~~
 
 ..  confval:: proc.allowTagsOutside
-    :name: rte-proc-allowTagsOutside:
+    :name: rte-proc-allowTagsOutside
     :type: string with comma separated values
     :Default: `address, article, aside, blockquote, footer, header, hr, nav, section, div`
 
