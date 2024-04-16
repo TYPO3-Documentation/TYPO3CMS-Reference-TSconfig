@@ -257,7 +257,7 @@ buttons.link.[ *type* ].properties.target.default
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: buttons.link.[type].properties.target.default
-    :name: rte-buttons-link-type-properties-target-default:
+    :name: rte-buttons-link-type-properties-target-default
     :type: string
 
     Specifies a default target for links of the given type.
