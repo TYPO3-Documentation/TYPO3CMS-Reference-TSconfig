@@ -273,7 +273,7 @@ config.contentsLanguageDirection
 --------------------------------
 
 ..  confval:: config.contentsLanguageDirection
-    :name: rte-config-contentsLanguageDirection:
+    :name: rte-config-contentsLanguageDirection
     :type: string
 
     The configuration `contentsLangDirection` of the ckeditor is used to define the
