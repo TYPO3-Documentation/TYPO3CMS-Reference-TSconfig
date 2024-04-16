@@ -209,7 +209,7 @@ buttons.link.properties.class.allowedClasses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: buttons.link.properties.class.allowedClasses
-    :name: rte-buttons-link-properties-class-allowedclasses:
+    :name: rte-buttons-link-properties-class-allowedclasses
     :type: list of id-strings
 
     Classes available in the Insert/Modify link dialogue.
