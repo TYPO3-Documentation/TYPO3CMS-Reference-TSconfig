@@ -349,7 +349,7 @@ allowTags
 ~~~~~~~~~
 
 ..  confval:: proc.allowTags
-    :name: rte-proc-allowTags:
+    :name: rte-proc-allowTags
     :type: string with comma separated values
 
     Applies for `ts_transform` and `css_transform` only.
