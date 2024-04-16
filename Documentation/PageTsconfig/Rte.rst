@@ -407,7 +407,7 @@ denyTags
 ~~~~~~~~
 
 ..  confval:: proc.denyTags
-    :name: rte-proc-denyTags:
+    :name: rte-proc-denyTags
     :type: string with comma separated values
 
     Applies for `ts_transform` and `css_transform` only.
