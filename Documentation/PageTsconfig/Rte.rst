@@ -487,7 +487,7 @@ HTMLparser_db
 ~~~~~~~~~~~~~
 
 ..  confval:: proc.HTMLparser_db
-    :name: rte-proc-HTMLparser_db:
+    :name: rte-proc-HTMLparser_db
     :type: :ref:`HTMLparser <t3tsref:htmlparser>`
 
     Applies for `ts_transform` and `css_transform` only.
