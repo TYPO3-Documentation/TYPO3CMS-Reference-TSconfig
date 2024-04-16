@@ -393,7 +393,7 @@ blockElementList
 ~~~~~~~~~~~~~~~~
 
 ..  confval:: proc.blockElementList
-    :name: rte-proc-blockElementList:
+    :name: rte-proc-blockElementList
     :type: string with comma separated values
 
     Comma-separated list of uppercase tags (e.g. :code:`P,HR`) that overrides the list of HTML
