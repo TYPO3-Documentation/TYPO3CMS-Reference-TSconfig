@@ -220,7 +220,7 @@ buttons.link.properties.class.required
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: buttons.link.properties.class.required
-    :name: rte-buttons-link-properties-class-required:
+    :name: rte-buttons-link-properties-class-required
     :type: boolean
 
     If set, a class must be selected for any link. Therefore, the empty
