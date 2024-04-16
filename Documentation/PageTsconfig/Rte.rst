@@ -195,7 +195,7 @@ buttons.link.relAttribute.enabled
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  confval:: buttons.link.relAttribute.enabled
-    :name: rte-buttons-link-relattribute-enabled:
+    :name: rte-buttons-link-relattribute-enabled
     :type: boolean
     :Default: 0
 
