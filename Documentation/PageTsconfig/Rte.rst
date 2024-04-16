@@ -324,7 +324,7 @@ allowedClasses
 ~~~~~~~~~~~~~~
 
 ..  confval:: proc.allowedClasses
-    :name: rte-proc-allowedClasses:
+    :name: rte-proc-allowedClasses
     :type: string with comma separated values
 
     Applies for `ts_transform` and `css_transform` only.
