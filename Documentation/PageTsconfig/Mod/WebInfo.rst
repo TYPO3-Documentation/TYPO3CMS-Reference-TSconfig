@@ -76,22 +76,28 @@ menu.function
 
 ..  versionchanged:: 12.0
     The TSconfig option :tsconfig:`mod.web_info.menu.function` has been removed
-    with TYPO3 v12.0.
+    with TYPO3 v12.0. Use **user** TSconfig option
+    :ref:`options.hideModules <useroptions-hideModules>` instead.
 
 ..  _pageblindingfunctionmenuoptions-webinfo-migration:
 
 Migration from menu.function to options.hideModules
 ---------------------------------------------------
 
-..  todo: link to options.hideModules once it is documented
+Migrate former usage of :tsconfig:`mod.web_info.menu.function` in **page** TSconfig
+to option :ref:`options.hideModules <useroptions-hideModules>`.
 
 ..  code-block:: typoscript
+    :caption: **Page** Tsconfig, for example EXT:my_extension/Configuration/page.tsconfig
 
     # before
     mod.web_info.menu.function.TYPO3\CMS\Info\Controller\TranslationStatusController = 0
 
+..  code-block:: typoscript
+    :caption: **User** Tsconfig, for example EXT:my_extension/Configuration/user.tsconfig
+
     # after
     options.hideModules := addToList(web_info_translations)
 
-You can find the names of all TypoScript modules in
-:file:`EXT:info/Configuration/Backend/Modules.php`.
+See also :ref:`setting-user-tsconfig`. You can find the names of all
+TypoScript modules in :t3src:`typo3/sysext/info/Configuration/Backend/Modules.php`.
