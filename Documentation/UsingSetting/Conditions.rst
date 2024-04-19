@@ -29,8 +29,8 @@ function to avoid this.
 
 ..  _condition-variables:
 
-Condition variables in available in TSconfig
-============================================
+Condition variables available in TSconfig
+=========================================
 
 
 ..  index:: Conditions; applicationContext
@@ -47,7 +47,7 @@ applicationContext
 
 ..  _condition-applicationContext-example:
 
-Example: Condition applies in application context "Development
+Example: Condition applies in application context "Development"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ..  code-block:: typoscript
@@ -61,7 +61,7 @@ Example: Condition applies in any application context that does not start with "
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This condition applies in any context that is "Production" or starts with
-"Production" (for example Production/Staging").
+"Production" (for example Production/Staging"):
 
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
@@ -209,7 +209,7 @@ tree.rootLine
     :name: condition-tree-rootLine
     :type: array
 
-    array of arrays with uid and pid. Only available in page TSconfig, not
+    An array of arrays with uid and pid. Only available in page TSconfig, not
     in user TSconfig.
 
 ..  _condition-tree-rootLine-example:
@@ -237,7 +237,7 @@ tree.rootLineIds
     :name: condition-tree-rootLineIds
     :type: array
 
-    An array with UIDs of the rootline. Only available in page TSconfig, not
+    An array with UIDs of the root line. Only available in page TSconfig, not
     in user TSconfig.
 
 ..  _condition-tree-rootLineIds-example:
@@ -620,8 +620,8 @@ Example: Condition only applies if the devIpMask is set to a certain value
 
 ..  _condition-functions:
 
-Condition functions in available in TSconfig
-============================================
+Condition functions available in TSconfig
+=========================================
 
 ..  index:: Conditions; date
 ..  _condition-function-date:
@@ -811,11 +811,13 @@ feature()
 Example: condition applies if a feature toggle is enabled
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+..  todo: Add another feature as TypoScript.strictSyntax is not available anymore in current versions.
+
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
 
     # True if feature toggle for strict TypoScript syntax is enabled:
-    [feature("TypoScript.strictSyntax") --- false]
+    [feature("TypoScript.strictSyntax") === false]
         // Your settings go here
     [end]
 
