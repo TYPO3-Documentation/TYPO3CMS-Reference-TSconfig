@@ -35,7 +35,7 @@ Migrate former usage of :tsconfig:`mod.web_ts.menu.function` in **page** TSconfi
 to option :ref:`options.hideModules <useroptions-hideModules>`.
 
 ..  code-block:: typoscript
-    :caption: **Page** Tsconfig, for example EXT:my_extension/Configuration/page.tsconfig
+    :caption: **Page** TSconfig, for example EXT:my_extension/Configuration/page.tsconfig
 
     # before
     mod.web_ts.menu.function {
@@ -43,10 +43,10 @@ to option :ref:`options.hideModules <useroptions-hideModules>`.
     }
 
 ..  code-block:: typoscript
-    :caption: **User** Tsconfig, for example EXT:my_extension/Configuration/user.tsconfig
+    :caption: **User** TSconfig, for example EXT:my_extension/Configuration/user.tsconfig
 
     # after
     options.hideModules := addToList(web_typoscript_analyzer)
 
 See also :ref:`setting-user-tsconfig`. You can find the names of all
-TypoScript modules in :t3src:`typo3/sysext/tstemplate/Configuration/Backend/Modules.php`.
+TypoScript modules in :t3src:`tstemplate/Configuration/Backend/Modules.php`.

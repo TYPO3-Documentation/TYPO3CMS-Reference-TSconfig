@@ -209,8 +209,8 @@ by default:
     TCAdefaults.pages.hidden = 0
     TCEMAIN.table.pages.disableHideAtCopy = 1
 
-If we activate the following configuration in the TSconfig of a certain backend
-user group, new and copied pages will be hidden for that group. The TSconfig to
+If we activate the following configuration in the user TSconfig of a certain backend
+user group, new and copied pages will be hidden for that group. The user TSconfig to
 be used is the same, but prefixed with :tsconfig:`page.`
 
 ..  code-block:: typoscript
