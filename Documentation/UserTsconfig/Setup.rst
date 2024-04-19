@@ -58,7 +58,7 @@ setup.override.[someProperty]
 
 ..  confval:: setup.override.[someProperty]
     :name: user-setup-override
-    :type: any
+    :type: mixed
 
     This forces values for the properties of the list below, a user can not override these
     setting in its :guilabel:`User settings` module. So, overriding values will be impossible for the
@@ -123,7 +123,7 @@ copyLevels
 
 ..  confval:: copyLevels
     :name: user-setup-copyLevels
-    :type:  positive integer
+    :type: positive integer
 
     Recursive Copy: Enter the number of page sub-levels to include, when a page is copied
 
@@ -137,7 +137,7 @@ edit_docModuleUpload
 
 ..  confval:: edit_docModuleUpload
     :name: user-setup-edit-docModuleUpload
-    :type:  boolean
+    :type: boolean
 
     Allow file upload directly from file reference fields within backend forms.
 
@@ -169,7 +169,7 @@ lang
 
 ..  confval:: lang
     :name: user-setup-lang
-    :type:  language-key
+    :type: language-key
 
     One of the language keys. For current options see
     :ref:`t3coreapi:i18n_languages`, for example `dk`, `de`, `es` etc.
@@ -184,7 +184,7 @@ neverHideAtCopy
 
 ..  confval:: neverHideAtCopy
     :name: user-setup-neverHideAtCopy
-    :type:  boolean
+    :type: boolean
 
     If set, then the hideAtCopy feature for records in TCE will not be used.
 
@@ -198,7 +198,7 @@ showHiddenFilesAndFolders
 
 ..  confval:: showHiddenFilesAndFolders
     :name: user-setup-showHiddenFilesAndFolders
-    :type:  boolean
+    :type: boolean
 
     If set, hidden files and folders will be shown in the filelist.
 
@@ -212,7 +212,7 @@ startModule
 
 ..  confval:: startModule
     :name: user-setup-startModule
-    :type:  string
+    :type: string
 
     Name of the module that is called when the user logs into the backend, for
     example `web_layout`, `web_list`, `web_view`, `web_info`, `web_ts` etc.
@@ -227,7 +227,7 @@ titleLen
 
 ..  confval:: titleLen
     :name: user-setup-titleLen
-    :type:  positive integer
+    :type: positive integer
 
     Maximum length of rendered record titles in the backend interface.
     It is used in several places: page tree, edit masks, workspace module, etc.
