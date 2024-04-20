@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
-.. index:: Syntax
-.. _syntax:
+..  include:: /Includes.rst.txt
+..  index:: Syntax
+..  _syntax:
 
 ======
 Syntax
