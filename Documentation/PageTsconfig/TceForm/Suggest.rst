@@ -4,8 +4,9 @@
     Suggest wizard
 ..  _pagetceformsuggest:
 
-suggest
--------
+===============
+TCEFORM.suggest
+===============
 
 Configuration of the suggest wizard that is available and often enabled
 for :ref:`TCA type=group <t3tca:columns-group>` fields.
@@ -41,7 +42,7 @@ Configuration of one suggest wizard field in a flex form field of one table for 
 ..  _tceform-suggest-additionalSearchFields:
 
 suggest.additionalSearchFields
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==============================
 
 ..  confval:: suggest.additionalSearchFields
     :name: tceform-suggest-additionalSearchFields
@@ -57,7 +58,7 @@ suggest.additionalSearchFields
 ..  _tceform-suggest-addWhere:
 
 suggest.addWhere
-~~~~~~~~~~~~~~~~
+================
 
 ..  confval:: suggest.addWhere
     :name: tceform-suggest-addWhere
@@ -76,7 +77,7 @@ suggest.addWhere
 ..  _tceform-suggest-addWhere-example:
 
 Example: limit storage_pid to the children of a certain page
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------------------------------
 
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
@@ -90,7 +91,7 @@ Example: limit storage_pid to the children of a certain page
 ..  _tceform-suggest-cssClass:
 
 suggest.cssClass
-~~~~~~~~~~~~~~~~
+================
 
 ..  confval:: suggest.cssClass
     :name: tceform-suggest-cssClass
@@ -113,7 +114,7 @@ suggest.cssClass
 ..  _tceform-suggest-hide:
 
 suggest.hide
-~~~~~~~~~~~~
+============
 
 ..  confval:: suggest.hide
     :name: tceform-suggest-hide
@@ -124,7 +125,7 @@ suggest.hide
 ..  _tceform-suggest-hide-example:
 
 Example: Hide the suggest field for the storage_pid
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------
 
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
@@ -139,7 +140,7 @@ Example: Hide the suggest field for the storage_pid
 ..  _tceform-suggest-maxPathTitleLength:
 
 suggest.maxPathTitleLength
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================
 
 ..  confval:: suggest.maxPathTitleLength
     :name: tceform-suggest-maxPathTitleLength
@@ -150,7 +151,7 @@ suggest.maxPathTitleLength
 ..  _tceform-suggest-maxPathTitleLength-example:
 
 Example: Limit the suggest field to 30 characters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------------------
 
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
@@ -164,7 +165,7 @@ Example: Limit the suggest field to 30 characters
 ..  _tceform-suggest-minimumCharacters:
 
 suggest.minimumCharacters
-~~~~~~~~~~~~~~~~~~~~~~~~~
+=========================
 
 ..  confval:: suggest.minimumCharacters
     :name: tceform-suggest-minimumCharacters
@@ -176,7 +177,7 @@ suggest.minimumCharacters
 ..  _tceform-suggest-minimumCharacters-example:
 
 Example: Start the suggest search after 3 characters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------------
 
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
@@ -191,7 +192,7 @@ Example: Start the suggest search after 3 characters
 ..  _tceform-suggest-pidDepth:
 
 suggest.pidDepth
-~~~~~~~~~~~~~~~~
+================
 
 ..  confval:: suggest.pidDepth
     :name: tceform-suggest-pidDepth
@@ -202,7 +203,7 @@ suggest.pidDepth
 ..  _tceform-suggest-pidDepth-example:
 
 Example: Set search depth for suggest field
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------------
 
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
@@ -217,7 +218,7 @@ Example: Set search depth for suggest field
 ..  _tceform-suggest-pidList:
 
 suggest.pidList
-~~~~~~~~~~~~~~~
+===============
 
 ..  confval:: suggest.pidList
     :name: tceform-suggest-pidList
@@ -229,7 +230,7 @@ suggest.pidList
 ..  _tceform-suggest-pidList-example:
 
 Example: Limit suggest search to records on certain pages
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------------
 
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig
@@ -245,7 +246,7 @@ Example: Limit suggest search to records on certain pages
 ..  _tceform-suggest-receiverClass:
 
 suggest.receiverClass
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 ..  confval:: suggest.receiverClass
     :name: tceform-suggest-receiverClass
@@ -260,7 +261,7 @@ suggest.receiverClass
 ..  _tceform-suggest-renderFunc:
 
 suggest.renderFunc
-~~~~~~~~~~~~~~~~~~
+==================
 
 ..  confval:: suggest.renderFunc
     :name: tceform-suggest-renderFunc
@@ -273,7 +274,7 @@ suggest.renderFunc
 ..  _tceform-suggest-searchCondition:
 
 suggest.searchCondition
-~~~~~~~~~~~~~~~~~~~~~~~
+=======================
 
 ..  confval:: suggest.searchCondition
     :name: tceform-suggest-searchCondition
@@ -284,7 +285,7 @@ suggest.searchCondition
 ..  _tceform-suggest-searchCondition-example:
 
 Example: Only search on pages with doktype=1
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------------
 
     ..  code-block:: typoscript
         :caption: EXT:site_package/Configuration/page.tsconfig
@@ -300,7 +301,7 @@ Example: Only search on pages with doktype=1
 ..  _tceform-suggest-searchWholePhrase:
 
 suggest.searchWholePhrase
-~~~~~~~~~~~~~~~~~~~~~~~~~
+=========================
 
 ..  confval:: suggest.searchWholePhrase
     :name: tceform-suggest-searchWholePhrase
@@ -313,7 +314,7 @@ suggest.searchWholePhrase
 ..  _tceform-suggest-searchWholePhrase-example:
 
 Example: Search only for whole phrases
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------
 
 ..  code-block:: typoscript
     :caption: EXT:site_package/Configuration/page.tsconfig

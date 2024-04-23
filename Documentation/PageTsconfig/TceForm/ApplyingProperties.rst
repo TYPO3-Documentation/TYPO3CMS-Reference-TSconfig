@@ -5,7 +5,7 @@
 Applying properties
 ===================
 
-The properties listed below apply to various contexts which are explained per
+The :ref:`TCEFORM properties <tceform-properties>` apply to various contexts which are explained per
 property. The full property path thus depends on the property and where it should
 apply. In general, a more specific property path overrides a less specific one:
 
