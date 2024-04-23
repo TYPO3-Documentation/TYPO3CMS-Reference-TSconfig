@@ -19,6 +19,9 @@ details on how records are rendered in the backend.
 
 Read more on how to :ref:`Apply TCEFORM properties <tceform-apply-properties>`.
 
+..  rubric:: Topics
+    :class: h2
+
 ..  toctree::
     :glob:
 
