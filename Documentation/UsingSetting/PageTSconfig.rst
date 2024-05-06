@@ -89,7 +89,7 @@ site configuration file :file:`config.yaml` and is scoped to pages within that
 site.
 
 This way sites and sets can ship page TSconfig without the need for database
-entries or by polluting global scope. Dependencies can expressed via site sets,
+entries or by polluting global scope. Dependencies can be expressed via site sets,
 allowing for automatic ordering and deduplication.
 
 See also :ref:`Feature: #103437 - Introduce site sets <changelog:feature-103437-1712062105>`
