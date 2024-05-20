@@ -204,7 +204,7 @@ Example: Apply disablePrependAtCopy as default to all tables
     :caption: EXT:site_package/Configuration/page.tsconfig
 
     TCEMAIN.default {
-       disablePrependAtCopy = 1
+      disablePrependAtCopy = 1
     }
 
 
