@@ -151,7 +151,7 @@ Example: Apply disableHideAtCopy as default to all tables
     :caption: EXT:site_package/Configuration/page.tsconfig
 
     TCEMAIN.default {
-       disableHideAtCopy = 1
+      disableHideAtCopy = 1
     }
 
 
