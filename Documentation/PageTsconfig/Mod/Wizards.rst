@@ -22,8 +22,8 @@ newContentElement.wizardItems
 ..  versionchanged:: 13.0
     New content elements added via TCA to the
     :ref:`items <t3tca:columns-select-properties-items>` of field :sql:`CType`
-    of table :sql:`tt_content` are automatically added to the newContentElement
-    wizard. The following page TSconfig can be used to override values set via
+    of table :sql:`tt_content` are automatically added to the New Content Element
+    Wizard. The following page TSconfig can be used to override values set via
     TCA.
 
 ..  confval-menu::
@@ -34,7 +34,7 @@ newContentElement.wizardItems
         :type: array
         :Path: mod.wizards.newContentElement.wizardItems
 
-        In the new content element wizard, content element types are grouped
+        In the New Content Element Wizard, content element types are grouped
         together by type. Each such group can be configured independently. The
         four default groups are: `default`, `special`, `forms` and `plugins`.
 
@@ -50,7 +50,7 @@ newContentElement.wizardItems
             ..  versionchanged:: 13.0
 
             With this setting one or several groups with all their content
-            elements can be hidden in the "create new content element" wizard.
+            elements can be hidden in the New Content Element Wizard.
 
             .. code-block:: typoscript
 
