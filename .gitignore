@@ -1,3 +1,4 @@
+
 #########################
 # Git
 # global ignore file
@@ -33,3 +34,4 @@ nbproject
 Thumbs.db
 var/
 .cache/
+/composer.json.testing

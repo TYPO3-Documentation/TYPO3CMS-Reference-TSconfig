@@ -17,7 +17,8 @@ The options described below are available for setting page TSconfig in
 non-sitepackage extensions.
 
 Page TSconfig can be defined globally as
-:ref:`Default page TSconfig <pagesettingdefaultpagetsconfig>` or for a
+:ref:`Default page TSconfig <pagesettingdefaultpagetsconfig>`, on site level via
+:ref:`Page TSconfig via site or set <include-static-page-tsconfig-per-site>` or for a
 :ref:`page tree <include-static-page-tsconfig>`, a page and all its subpages.
 
 It is also possible to set
@@ -58,6 +59,9 @@ installations that contain only one site and use only one sitepackage extension.
 Extensions supplying custom default page TSconfig that should always be included,
 can also set the page TSconfig globally.
 
+The PSR-14 event :ref:`t3coreapi:BeforeLoadedPageTsConfigEvent` is available to
+add global static page TSconfig before anything else is loaded.
+
 .. _page-tsconfig-v11-v12:
 
 Global page TSconfig, compatible with TYPO3 v11 and v12
@@ -71,6 +75,74 @@ TYPO3 v11 and v12 by importing the content of this file with the API function
 ..  literalinclude:: _PageTSconfig/_ext_localconf_page_tsconfig_v11.php
     :language: php
     :caption: EXT:my_sitepackage/ext_localconf.php
+
+.. _include-static-page-tsconfig-per-site:
+
+Page TSconfig on site level
+===========================
+
+..  versionadded:: 13.1
+    Page TSconfig can be included on a per site level.
+
+Page TSconfig can be defined on a site level by placing a file called
+:file:`page.tsconfig` in the storage directory of the site
+(:ref:`config/sites/<identifier>/ <t3coreapi:site-storage>`).
+
+Extensions and site packages can provide page TSconfig in
+:ref:`site sets <t3coreapi:site-sets>` by placing a file called :file:`page.tsconfig`
+into the folder of that set.
+
+This way sites and sets can ship page TSconfig without the need for database
+entries or by polluting global scope. Dependencies can be expressed via site sets,
+allowing for automatic ordering and deduplication.
+
+See also
+:ref:`site sets as page TSconfig provider <t3coreapi:site-sets-page-tsconfig>`.
+
+.. _include-static-page-tsconfig-per-site-example:
+
+Example: load page TSconfig from the site set and the site
+----------------------------------------------------------
+
+Let us assume, you have a site set defined in your extension:
+
+..  code-block:: yaml
+    :caption: EXT:my_extension/Configuration/Sets/MySet/config.yaml
+
+    name: my-vendor/my-set
+    label: My Set
+
+And use it in a site in your project:
+
+..  code-block:: yaml
+    :caption: config/sites/my-site/config.yaml
+
+    base: 'http://example.com/'
+    rootPageId: 1
+    dependencies:
+      - my-vendor/my-set
+
+You can now put a file called :file:`page.tsconfig` in the same folder like your
+site configuration and it will be automatically loaded for all pages in that
+site.
+
+..  code-block:: tsconfig
+    :caption: config/sites/my-site/page.tsconfig
+
+    # This tsconfig will be loaded for pages in site "my-site"
+    # [...]
+
+Or you can put the file :file:`page.tsconfig` in the same directory like the
+site set you defined in your extension. It will then be loaded by all pages
+of all sites that depend on this set:
+
+
+..  code-block:: tsconfig
+    :caption: EXT:my_extension/Configuration/Sets/MySet/page.tsconfig
+
+    # This tsconfig will be loaded for pages in all sites that depend on set 'my-vendor/my-set'
+    # [...]
+
 
 .. index:: pair: Page TSconfig; Static TSconfig files
 .. _pagesettingstaticpagetsconfigfiles:
@@ -87,8 +159,8 @@ Static page TSconfig that has been
 :ref:`registered <register-static-page-tsconfig>` by your sitepackage or a
 third party extension can be included in the page properties.
 
-#. Go to the page properties of the page where you want to include the page TSconfig.
-#. Go to the tab :guilabel:`Resources`, then to
+#.  Go to the page properties of the page where you want to include the page TSconfig.
+#.  Go to the tab :guilabel:`Resources`, then to
     :guilabel:`page TSconfig > Include static page TSconfig (from extensions)` and
     select the desired configurations from the :guilabel:`Available Items`.
 

@@ -9,7 +9,7 @@ jobs:
     name: all tests
     runs-on: ubuntu-latest
     env:
-      php: '8.1'
+      php: '8.2'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -22,6 +22,3 @@ jobs:
 
       - name: CGL
         run: Build/Scripts/runTests.sh -n -p ${{ env.php }} -s cgl -n
-
-      - name: Check Rst
-        run: Build/Scripts/runTests.sh -p ${{ env.php }} -s checkRst

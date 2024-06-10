@@ -803,31 +803,41 @@ noThumbsInEB
     If set, then image thumbnails are not shown in the element browser.
 
 
-..  todo:: can we remove this?
 ..  _useroptions-overridePageModule:
 
 overridePageModule
 ------------------
 
-..  confval:: overridePageModule
+..  versionchanged:: 13.0
+    This setting has been removed.
 
-    :Data type: string
+Migration
+~~~~~~~~~
 
-    By this value you can substitute the default :guilabel:`Web > Page` module
-    key ("web\_layout") with another backend module key.
+In order to replace the :guilabel:`Web > Page` module within a third-party
+extension, such as TemplaVoila, it is possible to create a custom module entry
+in an extension's :file:`Configuration/Backend/Modules.php` with the following
+entry:
 
-    ..  note::
-        This property has been introduced for EXT:templavoila in the old days.
-        It is of little use nowadays and can be achieved using
-        :ref:`hideModules <useroptions-hideModules>`, too.
+..  code-block:: php
+    :caption: EXT:my_extension/Configuration/Backend/Modules.php
 
-    Example:
-
-    ..  code-block:: typoscript
-        :caption: EXT:site_package/Configuration/user.tsconfig
-
-        # Enable TemplaVoila page module as default page module.
-        options.overridePageModule = web_txtemplavoilaM1
+    return [
+        'my_module' => [
+            'parent' => 'web',
+            'position' => ['before' => '*'],
+            'access' => 'user',
+            'aliases' => ['web_layout'],
+            'path' => '/module/my_module',
+            'iconIdentifier' => 'module-page',
+            'labels' => 'LLL:EXT:backend/Resources/Private/Language/locallang_mod.xlf',
+            'routes' => [
+                '_default' => [
+                    'target' => \MyVendor\MyExtension\Controller\MyController::class . '::mainAction',
+                ],
+            ],
+        ],
+    ];
 
 
 ..  index:: Page tree
@@ -895,6 +905,15 @@ pageTree.altElementBrowserMountPoints.append
 
 pageTree.backgroundColor
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
+..  deprecated:: 13.1
+    This setting has been deprecated and will be removed in TYPO3 v14 due to its
+    lack of accessibility. It is being replaced with a
+    :ref:`new label system <useroptions-pageTree-label>` for tree nodes.
+
+    In TYPO3 v13 the setting will be migrated to the new label system. Since the
+    use case is unknown, the generated label will be "Color: <value>". This
+    information will be displayed on all affected nodes.
 
 ..  confval:: pageTree.backgroundColor
     :name: useroptions-pageTree-backgroundColor
@@ -973,6 +992,47 @@ pageTree.excludeDoktypes
 
         options.pageTree.excludeDoktypes = 254,1
 
+
+..  index:: Page tree; Node labels
+..  _useroptions-pageTree-label:
+
+pageTree.label
+~~~~~~~~~~~~~~
+
+..  versionadded:: 13.1
+    This setting is the successor of :ref:`useroptions-pageTree-backgroundColor`.
+
+..  confval:: pageTree.label.<page-id>
+    :name: useroptions-pageTree-label
+    :type: list of page IDs
+
+    Labels offer customizable color markings for tree nodes and require an
+    associated label for accessibility.
+
+    Example:
+
+    ..  code-block:: typoscript
+        :caption: EXT:my_extension/Configuration/user.tsconfig
+
+        options.pageTree.label.296 {
+          label = Campaign A
+          color = #ff8700
+        }
+
+    Display:
+
+    ..  figure:: /Images/ManualScreenshots/List/optionsPageTreeLabel.png
+        :alt: Page with configured color and label
+        :class: with-shadow
+
+        Page with configured color and label
+
+    ..  note::
+        Only one label per page can be set through this method. Use the
+        PSR-14 event :ref:`t3coreapi:AfterPageTreeItemsPreparedEvent` to assign
+        multiple labels to a page.
+
+..  todo:: does this still work with site configuration?
 ..  index:: Page tree; Show domain names
 ..  _useroptions-pageTree-showDomainNameWithTitle:
 
@@ -1052,15 +1112,13 @@ passwordReset
     will be disabled. This does not affect the password reset by
     CLI command.
 
-    To completely disable the password reset in the backend for all users, you can
-    set the user TSconfig globally in your :file:`ext_localconf.php`:
+    To completely disable the password reset in the backend for all users, you
+    can set the user TSconfig globally in your :file:`Configuration/user.tsconfig`:
 
-    ..  code-block:: php
-        :caption: EXT:site_package/ext_localconf.php
+    ..  code-block:: typoscript
+        :caption: EXT:site_package/Configuration/user.tsconfig
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
-            'options.passwordReset = 0'
-        );
+        options.passwordReset = 0
 
     If required, this setting can be overridden on a per user basis
     in the corresponding :guilabel:`TSconfig` field of the backend
