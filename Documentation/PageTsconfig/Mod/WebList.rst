@@ -239,7 +239,7 @@ downloadPresets
     ..  todo:: Link event after it is merged
 
     Additionally, the list of presets can be manipulated via the event
-    `BeforeRecordDownloadPresetsAreDisplayedEvent`.
+    :php:`BeforeRecordDownloadPresetsAreDisplayedEvent`.
 
 ..  _pageTsConfigWebList-downloadPresets-example:
 
