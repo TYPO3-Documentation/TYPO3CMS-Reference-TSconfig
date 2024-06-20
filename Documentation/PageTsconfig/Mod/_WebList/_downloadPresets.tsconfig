@@ -1,0 +1,14 @@
+mod.web_list.downloadPresets {
+    pages {
+        10 {
+            label = Quick overview
+            columns = uid, title, crdate, slug
+        }
+
+        20 {
+            identifier = LLL:EXT:myext/Resources/Private/Language/locallang.xlf:preset2.label
+            label = UID and titles only
+            columns = uid, title
+        }
+    }
+}
