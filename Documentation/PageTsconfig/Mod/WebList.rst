@@ -238,7 +238,7 @@ downloadPresets
 
     ..  todo:: Link event after it is merged
 
-    Additionally, the list of presets can be manipulated via the event
+    Additionally, the list of presets can be manipulated via the PSR-14 event
     :php:`BeforeRecordDownloadPresetsAreDisplayedEvent`.
 
 ..  _pageTsConfigWebList-downloadPresets-example:
