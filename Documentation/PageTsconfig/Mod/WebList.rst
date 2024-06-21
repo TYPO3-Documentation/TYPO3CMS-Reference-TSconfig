@@ -210,8 +210,8 @@ downloadPresets
     :type: array of presets
 
     ..  versionadded:: 13.2
-        A new feature has been introduced, adding the ability to pick the exported
-        data columns from a list of configurable presets.
+        A new function has been introduced that makes it possible to select the data columns
+        to be exported from a list of configurable presets.
 
     This property adds presets of preselected fields to the download area in
     the :guilabel:`Web > List` backend module.
@@ -227,7 +227,7 @@ downloadPresets
     Each preset contains a :typoscript:`label` (the displayed name of the preset,
     which can be a locallang key), a comma-separated list of each column that
     should be included in the export as :typoscript:`columns` and optionally
-    a :typoscript:`identifier`. In case :typoscript:`identifier` is not provided,
+    an :typoscript:`identifier`. In case :typoscript:`identifier` is not provided,
     the identifier is generated as hash of the :typoscript:`label` and
     :typoscript:`columns`.
 
@@ -249,8 +249,8 @@ Example: Create download presets for table page
 ..  literalinclude:: _WebList/_downloadPresets.tsconfig
     :caption: EXT:my_extension/Configuration/page.tsconfig
 
-This can be manipulated with user TSConfig by adding the :typoscript:`page.`
-prefix. User TSConfig is loaded after page TSConfig, so you can overwrite
+This can be manipulated with user TSconfig by adding the :typoscript:`page.`
+prefix. User TSconfig is loaded after page TSconfig, so you can overwrite
 existing keys or replace the whole list of keys:
 
 ..  literalinclude:: _WebList/_downloadPresets.tsconfig
