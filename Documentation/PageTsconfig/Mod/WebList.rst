@@ -251,7 +251,7 @@ Example: Create download presets for table page
 
 This can be manipulated with user TSconfig by adding the :typoscript:`page.`
 prefix. User TSconfig is loaded after page TSconfig, so you can overwrite
-existing keys or replace the whole list of keys:
+the existing default settings using the same TypoScript path.
 
 ..  literalinclude:: _WebList/_downloadPresets.tsconfig
     :caption: EXT:my_extension/Configuration/user.tsconfig
