@@ -296,7 +296,7 @@ dashboard.dashboardPresetsForNewUsers
 ..  _useroptions-defaultResourcesViewMode:
 
 defaultResourcesViewMode
--------------------
+------------------------
 
 ..  confval:: defaultResourcesViewMode
     :name: useroptions-defaultResourcesViewMode
