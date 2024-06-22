@@ -312,7 +312,7 @@ defaultResourcesViewMode
     between `list` and `tiles`. TYPO3 serves by default `tiles`, if the user
     has not already made a choice.
 
-    ..  code-block:: typoscript:
+    ..  code-block:: typoscript
         :caption: EXT:site_package/Configuration/user.tsconfig
 
         options.defaultResourcesViewMode = list
