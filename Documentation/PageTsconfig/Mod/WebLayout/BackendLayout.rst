@@ -1,8 +1,5 @@
 ..  include:: /Includes.rst.txt
 
-..  index::
-    mod; web_layout
-    Modules; Page
 ..  _backend-layouts:
 
 ===============
