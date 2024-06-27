@@ -88,7 +88,7 @@ package (GitHub) <https://github.com/benjaminkott/bootstrap_package/tree/master/
                 :name: mod-web-layout-BackendLayouts-backendLayout-title-config-backend_layout-rows-row-columns-col-identifier
                 :type: string
 
-                An identifier that can will be used by the page content
+                An identifier that can be used by the page content
                 DataProcessor to identify the content elements within this
                 area.
 
