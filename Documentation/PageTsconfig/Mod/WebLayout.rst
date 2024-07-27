@@ -305,8 +305,8 @@ tt_content.preview
         Have a look at :php:`\TYPO3\CMS\Backend\Preview\StandardContentPreviewRenderer`
         and the various methods for customizing the preview rendering:
 
-        #. :ref:`Register a preview renderer <t3coreapi:ConfigureCE-Preview>`
-        #. Register an event listener for :ref:`PageContentPreviewRenderingEvent <t3coreapi:PageContentPreviewRenderingEvent>`
+        #.  :ref:`Register a preview renderer <t3coreapi:ConfigureCE-Preview>`
+        #.  Register an event listener for :ref:`PageContentPreviewRenderingEvent <t3coreapi:PageContentPreviewRenderingEvent>`
 
         For checking for event listeners, see the list
         :guilabel:`System > Configuration > Event Listeners (PSR-14)`.
