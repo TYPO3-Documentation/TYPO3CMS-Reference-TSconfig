@@ -309,7 +309,7 @@ tt_content.preview
         #.  Register an event listener for :ref:`PageContentPreviewRenderingEvent <t3coreapi:PageContentPreviewRenderingEvent>`
 
         For checking for event listeners, see the list
-        :guilabel:`System > Configuration > Event Listeners (PSR-14)`.
+        :guilabel:`System > Configuration > Event Listeners (PSR-14)` (available with installed EXT:lowlevel).
 
 
 ..  _pageweblayoutpreview-example:
