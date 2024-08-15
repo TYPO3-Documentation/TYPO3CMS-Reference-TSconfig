@@ -538,7 +538,7 @@ file_list.primaryActions
     ..  code-block:: tsconfig
         :caption: EXT:site_package/Configuration/user.tsconfig
 
-        # This will add "copy", "cut" and "replace" buttons to the three default
+        # This will add "copy", "cut" and "replace" buttons in addition to the three default
         # values. "translations" can be omit, as it will be added by default,
         # if a TYPO3 site is set up multilingual.
         options.file_list.primaryActions = view,metadata,delete,copy,cut,replace
