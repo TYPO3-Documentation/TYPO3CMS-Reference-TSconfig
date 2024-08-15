@@ -536,7 +536,7 @@ file_list.primaryActions
     :Default: :typoscript:`view,metadata,translations,delete`
 
     Option to add more primary actions to the list view,
-    which are otherwise only accessible through the "..." menu in file list
+    which are otherwise only accessible through the "..." menu in the file list
     module.
 
     The list of actions to be displayed can be given in the TSConfig of
