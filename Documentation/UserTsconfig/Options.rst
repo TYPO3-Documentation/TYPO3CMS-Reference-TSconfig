@@ -511,17 +511,25 @@ file_list.primaryActions
     :type: string
     :Default: :typoscript:`view,metadata,translations,delete`
 
-    Option to add more primary actions to the list view.
+    Option to add more primary actions to the list view,
+    which are otherwise only accessible through the "..." menu.
     The list of actions to be displayed can be given in the TSConfig of
-    the backend user. The actions that can be added are
+    the backend user. The actions that can be set are
 
-    *   :typoscript:`view`
-    *   :typoscript:`metadata`
-    *   :typoscript:`delete`
     *   :typoscript:`copy`
     *   :typoscript:`cut`
-
-    :typoscript:`translations` is always active.
+    *   :typoscript:`delete`
+    *   :typoscript:`download`
+    *   :typoscript:`edit`
+    *   :typoscript:`info`
+    *   :typoscript:`metadata`
+    *   :typoscript:`paste`
+    *   :typoscript:`rename`
+    *   :typoscript:`replace`
+    *   :typoscript:`translations` (always active)
+    *   :typoscript:`updateOnlineMedia`
+    *   :typoscript:`upload`
+    *   :typoscript:`view`
 
 
 ..  index:: File list; Thumbnails height
