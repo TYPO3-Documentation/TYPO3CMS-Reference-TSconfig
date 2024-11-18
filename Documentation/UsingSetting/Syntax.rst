@@ -10,7 +10,7 @@ While the objects, properties and conditions are different,
 the *syntax* of TSconfig is basically the same as it is for
 TypoScript in frontend TypoScript templates.
 
-..  versionchanged:: 13.1
+..  versionchanged:: 12.4
     :ref:`Site settings <t3coreapi:sitehandling-settings>` can be used with the
     TypoScript constant syntax in TSconfig.
 
